@@ -1,6 +1,8 @@
-# 🎭 The Agency: AI Specialists Ready to Transform Your Workflow
+# 🎭 The Agency: AI-специалисты, готовые преобразить ваш рабочий процесс
 
-> **A complete AI agency at your fingertips** - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
+> **Полное ИИ-агентство у вас под рукой** — от мастеров фронтенда до ниндзя Reddit-сообществ, от генераторов креатива до проверяющих реальность. Каждый агент — узкопрофильный эксперт со своим характером, процессами и проверенными результатами.
+>
+> **Это форк.** Данный репозиторий — русскоязычная версия проекта [agency-agents](https://github.com/msitarzewski/agency-agents) (форк `ALNIuser/agency-agents`), предназначенная для русскоязычных пользователей. Идентификаторы агентов, имена файлов, интеграции и функциональность исходного проекта сохранены.
 
 [![GitHub stars](https://img.shields.io/github/stars/msitarzewski/agency-agents?style=social)](https://github.com/msitarzewski/agency-agents)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -8,74 +10,74 @@
 [![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-pink?logo=github)](https://github.com/sponsors/msitarzewski)
 [![Download the app](https://img.shields.io/github/v/release/msitarzewski/agency-agents-app?label=Download%20app&color=2563eb)](https://github.com/msitarzewski/agency-agents-app/releases/latest)
 
-> ### 🆕 There's an app now
+> ### 🆕 Теперь есть приложение
 >
-> **[Agency Agents](https://agencyagents.app)** is a native app for **macOS, Linux & Windows** that browses the entire roster and installs it into Claude Code, Cursor, Codex, Gemini, Osaurus, and more — with a click. No clone, no scripts, and it auto-updates.
+> **[Agency Agents](https://agencyagents.app)** — нативное приложение для **macOS, Linux и Windows**, которое просматривает весь реестр агентов и устанавливает его в Claude Code, Cursor, Codex, Gemini, Osaurus и другие инструменты — в один клик. Без клонирования, без скриптов, с автоматическим обновлением.
 >
-> **→ [Download the latest release](https://github.com/msitarzewski/agency-agents-app/releases/latest) · [agencyagents.app](https://agencyagents.app)**
+> **→ [Скачать последнюю версию](https://github.com/msitarzewski/agency-agents-app/releases/latest) · [agencyagents.app](https://agencyagents.app)**
 
 ---
 
-## 🚀 What Is This?
+## 🚀 Что это?
 
-Born from a Reddit thread and months of iteration, **The Agency** is a growing collection of meticulously crafted AI agent personalities. Each agent is:
+Рождённое из ветки на Reddit и месяцев итераций, **The Agency** — это растущая коллекция тщательно проработанных личностей ИИ-агентов. Каждый агент:
 
-- **🎯 Specialized**: Deep expertise in their domain (not generic prompt templates)
-- **🧠 Personality-Driven**: Unique voice, communication style, and approach
-- **📋 Deliverable-Focused**: Real code, processes, and measurable outcomes
-- **✅ Production-Ready**: Battle-tested workflows and success metrics
+- **🎯 Узкоспециализированный**: глубокая экспертиза в своей области (а не универсальные шаблоны промптов)
+- **🧠 С характером**: уникальный голос, стиль общения и подход
+- **📋 Нацеленный на результат**: реальный код, процессы и измеримые итоги
+- **✅ Готовый к продакшену**: проверенные в бою рабочие процессы и метрики успеха
 
-**Think of it as**: Assembling your dream team, except they're AI specialists who never sleep, never complain, and always deliver.
+**Представьте это так**: вы собираете команду мечты, только это ИИ-специалисты, которые никогда не спят, никогда не жалуются и всегда доводят дело до конца.
 
 ---
 
-## ⚡ Quick Start
+## ⚡ Быстрый старт
 
-### Option 1: Install the app (Recommended)
+### Вариант 1: Установить приложение (рекомендуется)
 
-The fastest way in — no clone, no terminal. [**Agency Agents**](https://agencyagents.app) is a native desktop app (macOS · Linux · Windows) that browses the whole roster and installs agents into Claude Code, Cursor, Codex, Gemini CLI, OpenCode, Qwen, and Osaurus for you, then keeps them up to date.
+Самый быстрый способ начать — без клонирования и без терминала. [**Agency Agents**](https://agencyagents.app) — нативное десктопное приложение (macOS · Linux · Windows), которое просматривает весь реестр и устанавливает агентов в Claude Code, Cursor, Codex, Gemini CLI, OpenCode, Qwen и Osaurus за вас, а затем поддерживает их в актуальном состоянии.
 
-**[⬇ Download the latest release](https://github.com/msitarzewski/agency-agents-app/releases/latest)** — or on a Mac:
+**[⬇ Скачать последнюю версию](https://github.com/msitarzewski/agency-agents-app/releases/latest)** — или на Mac:
 
 ```bash
 brew install --cask msitarzewski/agency-agents/agency-agents
 ```
 
-Prefer the command line? The script-based options below install the same agents.
+Предпочитаете командную строку? Варианты на основе скриптов ниже устанавливают тех же агентов.
 
-### Option 2: Use with Claude Code
+### Вариант 2: Использовать с Claude Code
 
 ```bash
-# Install all agents to your Claude Code directory
+# Установить всех агентов в каталог Claude Code
 ./scripts/install.sh --tool claude-code
 
-# Or manually copy a category if you only want one division
+# Или скопировать категорию вручную, если нужен только один подраздел
 cp engineering/*.md ~/.claude/agents/
 
-# Then activate any agent in your Claude Code sessions:
+# Затем активируйте любого агента в сессиях Claude Code:
 # "Hey Claude, activate Frontend Developer mode and help me build a React component"
 ```
 
-### Option 3: Use as Reference
+### Вариант 3: Использовать как справочник
 
-Each agent file contains:
-- Identity & personality traits
-- Core mission & workflows
-- Technical deliverables with code examples
-- Success metrics & communication style
+Каждый файл агента содержит:
+- Идентичность и черты характера
+- Основную миссию и рабочие процессы
+- Технические результаты с примерами кода
+- Метрики успеха и стиль общения
 
-Browse the agents below and copy/adapt the ones you need!
+Просмотрите агентов ниже и скопируйте/адаптируйте нужных!
 
-### Option 4: Use with Other Tools (GitHub Copilot, Antigravity, Gemini CLI, OpenCode, OpenClaw, Cursor, Aider, Windsurf, Kimi Code, Codex, Osaurus, Hermes, Mistral Vibe, DeepSeek Harness)
+### Вариант 4: Использовать с другими инструментами (GitHub Copilot, Antigravity, Gemini CLI, OpenCode, OpenClaw, Cursor, Aider, Windsurf, Kimi Code, Codex, Osaurus, Hermes, Mistral Vibe, DeepSeek Harness)
 
 ```bash
-# Step 1 -- generate integration files for all supported tools
+# Шаг 1 — сгенерировать файлы интеграции для всех поддерживаемых инструментов
 ./scripts/convert.sh
 
-# Step 2 -- install interactively (auto-detects what you have installed)
+# Шаг 2 — установить интерактивно (автоматически определяет, что у вас установлено)
 ./scripts/install.sh
 
-# Or target a specific tool directly
+# Или нацелиться на конкретный инструмент напрямую
 ./scripts/install.sh --tool antigravity
 ./scripts/install.sh --tool gemini-cli
 ./scripts/install.sh --tool opencode
@@ -92,17 +94,17 @@ Browse the agents below and copy/adapt the ones you need!
 ./scripts/install.sh --tool dsh
 ```
 
-**Install only the teams you need** (not everyone wants every division):
+**Установите только нужные команды** (не всем нужен каждый подраздел):
 
 ```bash
-./scripts/install.sh                                    # interactive wizard: pick tools + teams
+./scripts/install.sh                                    # интерактивный мастер: выберите инструменты + команды
 ./scripts/install.sh --tool claude-code --division engineering,security
 ./scripts/install.sh --tool cursor --agent frontend-developer,ui-designer
-./scripts/install.sh --list teams                       # see every team + agent count
+./scripts/install.sh --list teams                       # увидеть каждую команду + количество агентов
 ./scripts/install.sh --tool opencode --division engineering --dry-run
 ```
 
-`--agent` and `--agents-file` take an agent's slug (as `--list agents` prints it), its display name, or its file name without `.md` — the id the [runbook rosters](strategy/runbooks.json) use — so a runbook's team installs as listed:
+`--agent` и `--agents-file` принимают slug агента (как его выводит `--list agents`), его отображаемое имя или имя файла без `.md` — тот же id, который используют [реестры runbook](strategy/runbooks.json) — поэтому команда runbook устанавливается в точности как перечислена:
 
 ```bash
 python3 -c 'import json, sys
@@ -111,194 +113,194 @@ for r in json.load(open("strategy/runbooks.json"))["runbooks"]:
 ./scripts/install.sh --tool claude-code --agents-file team.txt
 ```
 
-> **OpenCode note:** OpenCode's runtime currently registers only ~119 agents and silently drops the rest ([upstream bug](https://github.com/anomalyco/opencode/issues/27988)). Installing a subset with `--division` keeps you under that limit. The installer warns you when a selection would exceed it.
+> **Примечание для OpenCode:** среда выполнения OpenCode в настоящее время регистрирует только ~119 агентов и молча отбрасывает остальные ([ошибка в upstream](https://github.com/anomalyco/opencode/issues/27988)). Установка подмножества с помощью `--division` удерживает вас ниже этого лимита. Установщик предупреждает, когда выбор превышает лимит.
 
-See the [Multi-Tool Integrations](#-multi-tool-integrations) section below for full details.
+Подробности см. в разделе [Интеграции с несколькими инструментами](#-multi-tool-integrations) ниже.
 
 ---
 
-## 🎨 The Agency Roster
+## 🎨 Реестр The Agency
 
-### 💻 Engineering Division
+### 💻 Подразделение Engineering
 
-Building the future, one commit at a time.
+Строим будущее — по одному коммиту за раз.
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🎨 [Frontend Developer](engineering/engineering-frontend-developer.md) | React/Vue/Angular, UI implementation, performance | Modern web apps, pixel-perfect UIs, Core Web Vitals optimization |
-| 🏗️ [Backend Architect](engineering/engineering-backend-architect.md) | API design, database architecture, scalability | Server-side systems, microservices, cloud infrastructure |
-| 📱 [Mobile App Builder](engineering/engineering-mobile-app-builder.md) | iOS/Android, React Native, Flutter | Native and cross-platform mobile applications |
-| 🤖 [AI Engineer](engineering/engineering-ai-engineer.md) | ML models, deployment, AI integration | Machine learning features, data pipelines, AI-powered apps |
-| 🚀 [DevOps Automator](engineering/engineering-devops-automator.md) | CI/CD, infrastructure automation, cloud ops | Pipeline development, deployment automation, monitoring |
-| 🌐 [Network Engineer](engineering/engineering-network-engineer.md) | Cisco IOS/IOS-XE, Juniper Junos, Palo Alto PAN-OS | Router/switch/firewall configuration, BGP/OSPF, ACLs, show-output troubleshooting |
-| ⚡ [Rapid Prototyper](engineering/engineering-rapid-prototyper.md) | Fast POC development, MVPs | Quick proof-of-concepts, hackathon projects, fast iteration |
-| 💎 [Senior Developer](engineering/engineering-senior-developer.md) | Laravel/Livewire, advanced patterns | Complex implementations, architecture decisions |
-| 🔧 [Filament Optimization Specialist](engineering/engineering-filament-optimization-specialist.md) | Filament PHP admin UX, structural form redesign, resource optimization | Restructuring Filament resources/forms/tables for faster, cleaner admin workflows |
-| ⚡ [Autonomous Optimization Architect](engineering/engineering-autonomous-optimization-architect.md) | LLM routing, cost optimization, shadow testing | Autonomous systems needing intelligent API selection and cost guardrails |
-| 🔩 [Embedded Firmware Engineer](engineering/engineering-embedded-firmware-engineer.md) | Bare-metal, RTOS, ESP32/STM32/Nordic firmware | Production-grade embedded systems and IoT devices |
-| 🚨 [Incident Response Commander](engineering/engineering-incident-response-commander.md) | Incident management, post-mortems, on-call | Managing production incidents and building incident readiness |
-| ⛓️ [Solidity Smart Contract Engineer](engineering/engineering-solidity-smart-contract-engineer.md) | EVM contracts, gas optimization, DeFi | Secure, gas-optimized smart contracts and DeFi protocols |
-| 🧭 [Codebase Onboarding Engineer](engineering/engineering-codebase-onboarding-engineer.md) | Fast developer onboarding, read-only codebase exploration, factual explanation | Helping new developers understand unfamiliar repos quickly by reading the code, tracing code paths, and stating facts about structure and behavior |
-| 📚 [Technical Writer](engineering/engineering-technical-writer.md) | Developer docs, API reference, tutorials | Clear, accurate technical documentation |
-| 💬 [WeChat Mini Program Developer](engineering/engineering-wechat-mini-program-developer.md) | WeChat ecosystem, Mini Programs, payment integration | Building performant apps for the WeChat ecosystem |
-| 👁️ [Code Reviewer](engineering/engineering-code-reviewer.md) | Constructive code review, security, maintainability | PR reviews, code quality gates, mentoring through review |
-| 🗄️ [Database Optimizer](engineering/engineering-database-optimizer.md) | Schema design, query optimization, indexing strategies | PostgreSQL/MySQL tuning, slow query debugging, migration planning |
-| 🌿 [Git Workflow Master](engineering/engineering-git-workflow-master.md) | Branching strategies, conventional commits, advanced Git | Git workflow design, history cleanup, CI-friendly branch management |
-| 🏛️ [Software Architect](engineering/engineering-software-architect.md) | System design, DDD, architectural patterns, trade-off analysis | Architecture decisions, domain modeling, system evolution strategy |
-| 🛡️ [SRE](engineering/engineering-sre.md) | SLOs, error budgets, observability, chaos engineering | Production reliability, toil reduction, capacity planning |
-| 🧬 [AI Data Remediation Engineer](engineering/engineering-ai-data-remediation-engineer.md) | Self-healing pipelines, air-gapped SLMs, semantic clustering | Fixing broken data at scale with zero data loss |
-| 🔧 [Data Engineer](engineering/engineering-data-engineer.md) | Data pipelines, lakehouse architecture, ETL/ELT | Building reliable data infrastructure and warehousing |
-| 🔗 [Feishu Integration Developer](engineering/engineering-feishu-integration-developer.md) | Feishu/Lark Open Platform, bots, workflows | Building integrations for the Feishu ecosystem |
-| 🧱 [CMS Developer](engineering/engineering-cms-developer.md) | WordPress & Drupal themes, plugins/modules, content architecture | Code-first CMS implementation and customization |
-| 📧 [Email Intelligence Engineer](engineering/engineering-email-intelligence-engineer.md) | Email parsing, MIME extraction, structured data for AI agents | Turning raw email threads into reasoning-ready context |
-| 🎙️ [Voice AI Integration Engineer](engineering/engineering-voice-ai-integration-engineer.md) | Speech-to-text pipelines, Whisper, ASR, speaker diarization | End-to-end transcription pipelines, audio preprocessing, structured transcript delivery |
-| 🖧 [IT Service Manager](engineering/engineering-it-service-manager.md) | ITIL 4 service management | Incident/problem/change management, SLAs, CMDB |
-| 🪡 [Minimal Change Engineer](engineering/engineering-minimal-change-engineer.md) | Minimum-viable diffs | Fixing only what's asked, no scope creep |
-| 📜 [OrgScript Engineer](engineering/engineering-orgscript-engineer.md) | OrgScript grammar & AST validation | Designing/parsing OrgScript business-logic definitions |
-| 🧬 [Prompt Engineer](engineering/engineering-prompt-engineer.md) | LLM prompt design & optimization | Turning vague instructions into reliable AI behaviors |
-| 🕸️ [Multi-Agent Systems Architect](engineering/engineering-multi-agent-systems-architect.md) | Multi-agent pipeline design & governance | Topology, context, trust, failure recovery for agent systems |
-| 🛒 [Drupal Shopping Cart Engineer](engineering/engineering-drupal-shopping-cart.md) | Drupal Commerce storefronts | Catalog, payments, checkout, orders on Drupal 10/11 |
-| 🛍️ [WordPress Shopping Cart Engineer](engineering/engineering-wordpress-shopping-cart.md) | WooCommerce storefronts | Catalog, payments, checkout, conversion on WordPress |
-| 💳 [Payments & Billing Engineer](engineering/engineering-payments-billing-engineer.md) | PSP integration, idempotent payment flows, subscription billing | Stripe/Adyen/Braintree integrations, webhook processing, dunning, reconciliation |
-| 🌍 [Internationalization Engineer](engineering/engineering-i18n-engineer.md) | ICU MessageFormat, RTL/bidi layouts, CLDR formatting, pseudo-localization | Making apps translation-ready, locale-aware formatting, RTL support, i18n audits |
-| ⚡ [Drupal Performance Engineer](engineering/engineering-drupal-performance.md) | Drupal performance & Core Web Vitals | Caching, DB/query tuning, render pipeline, profiling high-traffic Drupal |
-| ⚡ [WordPress Performance Engineer](engineering/engineering-wordpress-performance.md) | WordPress performance & Core Web Vitals | Caching, query/asset optimization, plugin tuning, profiling high-traffic WP |
-| ♿ [Section 508 Accessibility Specialist](engineering/engineering-section-508-specialist.md) | US federal 508 / WCAG accessibility | ARIA, screen-reader testing, VPAT/ACR authoring, remediation |
-| 🏛️ [USWDS Developer](engineering/engineering-uswds-developer.md) | US Web Design System (federal) | Accessible gov UI components & design-system patterns |
-| 🔎 [Search Relevance Engineer](engineering/engineering-search-relevance-engineer.md) | Search ranking & relevance | Query understanding, embeddings, ranking/eval, relevance tuning |
-| 🔐 [Identity & Access Engineer](engineering/engineering-identity-access-engineer.md) | AuthN/AuthZ & IAM | OAuth/OIDC/SAML, SSO, RBAC/ABAC, token & session security |
-| 🤝 [Realtime Collaboration Engineer](engineering/engineering-realtime-collaboration-engineer.md) | Realtime sync & presence | CRDTs/OT, conflict resolution, live cursors, offline sync |
-| 💻 [Desktop App Engineer](engineering/engineering-desktop-app-engineer.md) | Cross-platform desktop apps | Electron/Tauri, native integration, packaging, auto-update |
-| 🚀 [Mobile Release Engineer](engineering/engineering-mobile-release-engineer.md) | Mobile release & CI/CD | App Store/Play submission, signing, staged rollout, crash triage |
-| 🎬 [Video Streaming Engineer](engineering/engineering-video-streaming-engineer.md) | Video streaming & transcoding | HLS/DASH, ABR, codecs, CDN delivery, low-latency streaming |
-| 💰 [FinOps Engineer](engineering/engineering-finops-engineer.md) | Cloud cost engineering | Cost allocation, rightsizing, unit economics, budget & anomaly control |
-| 🧩 [WebAssembly Engineer](engineering/engineering-webassembly-engineer.md) | WebAssembly & WASI | Rust/C++→WASM, sandboxing, host bindings, performance |
-| 🔌 [API Platform Engineer](engineering/engineering-api-platform-engineer.md) | API gateways & platforms | Gateway design, versioning, rate limiting, developer portals |
-| 🛟 [Database Reliability Engineer](engineering/engineering-database-reliability-engineer.md) | Database reliability (DBRE) | HA/replication, automated failover, PITR backups, zero-downtime ops |
-| 🛠️ [Developer Tooling Engineer](engineering/engineering-developer-tooling-engineer.md) | CLI & developer tooling | Command-line tools, internal DX, build/dev workflows |
-| 📡 [IoT Fleet Engineer](engineering/engineering-iot-fleet-engineer.md) | IoT & edge fleet | Device provisioning/identity, MQTT telemetry, OTA updates |
-| 🔍 [RAG Pipeline Engineer](engineering/engineering-rag-pipeline-engineer.md) | Production RAG pipelines | Chunking, retrieval quality, hybrid search, re-ranking, eval-driven iteration |
-| 🗄️ [GaussDB Expert Engineer](engineering/engineering-gaussdb-expert.md) | Huawei GaussDB OLTP | Enterprise OLTP performance, HA, and migration on Huawei's GaussDB |
-| 🕵️ [Privacy Engineer](engineering/engineering-privacy-engineer.md) | PII discovery, data minimization, consent enforcement, DSAR/deletion pipelines | Implementing privacy in code, right-to-be-forgotten across services, retention automation |
-| 🦀 [Rust Refactoring Specialist](engineering/engineering-rust-refactoring-specialist.md) | Behavior-aware Rust refactoring | Reforming crates/traits/modules with evidence-based, behavior-preserving changes |
-| 🧪 [LLM Post-Training Engineer](engineering/engineering-llm-post-training-engineer.md) | Post-training stack (SFT/DPO/GRPO/RLVR) | Evidence-based experiment gating, checkpoint integrity, failure classification |
-| 📈 [Data Visualization Engineer](engineering/engineering-data-visualization-engineer.md) | Perceptually honest data viz | Chart-type selection, colorblind-safe palettes, performant D3/Vega rendering |
-| 🧠 [Knowledge Graph Engineer](engineering/engineering-knowledge-graph-engineer.md) | Knowledge graphs, entity-relationship extraction, graph-enhanced RAG | Structuring documents into queryable Neo4j graphs with LangGraph; provenance, contradiction tracking, subgraph retrieval |
-| 🌏 [China Network Engineer](engineering/engineering-china-network-engineer.md) | Huawei VRP, H3C Comware, Ruijie RGOS, Hillstone StoneOS | Routing/switching/firewall design, NAT, MLPS 2.0 compliant borders, change windows with rollback plans |
-| 🛤️ [Platform Engineer](engineering/engineering-platform-engineer.md) | Internal developer platforms, golden paths, IDPs, self-serve infrastructure | Paved-road scaffolding, developer experience measurement, platform-as-a-product roadmaps |
-| 📑 [PDF Engine Architect](engineering/engineering-pdf-engine-architect.md) | Deterministic HTML-to-PDF compilation, tagged PDF/UA and PDF/A | Playwright render pools, dynamic page sizing, archival-grade document output |
-| 🎯 [ATS Validator Architect](engineering/engineering-ats-validator-architect.md) | Resume parseability, ATS ingestion pipelines | BM25/TF-IDF relevance scoring, layout linearization audits, EU AI Act and NYC LL144 compliance |
-| 📑 [Universal Document Compiler](engineering/engineering-universal-document-compiler.md) | Schema-agnostic document ASTs, data-shape layout inference, paged publishing | Compiling arbitrary YAML trees into proposals, technical specs, executive dossiers |
-| 🛠️ [ServiceNow Developer & Mentor](engineering/engineering-servicenow-developer-mentor.md) | Business Rules, Script Includes, GlideAjax, ACLs, Flow Designer | ServiceNow development and step-by-step instance troubleshooting |
+| 🎨 [Frontend Developer](engineering/engineering-frontend-developer.md) | React/Vue/Angular, реализация UI, производительность | Современные веб-приложения, пиксельно-точные интерфейсы, оптимизация Core Web Vitals |
+| 🏗️ [Backend Architect](engineering/engineering-backend-architect.md) | Проектирование API, архитектура баз данных, масштабируемость | Серверные системы, микросервисы, облачная инфраструктура |
+| 📱 [Mobile App Builder](engineering/engineering-mobile-app-builder.md) | iOS/Android, React Native, Flutter | Нативные и кроссплатформенные мобильные приложения |
+| 🤖 [AI Engineer](engineering/engineering-ai-engineer.md) | ML-модели, развёртывание, интеграция ИИ | Возможности машинного обучения, пайплайны данных, приложения на основе ИИ |
+| 🚀 [DevOps Automator](engineering/engineering-devops-automator.md) | CI/CD, автоматизация инфраструктуры, облачные операции | Разработка пайплайнов, автоматизация развёртывания, мониторинг |
+| 🌐 [Network Engineer](engineering/engineering-network-engineer.md) | Cisco IOS/IOS-XE, Juniper Junos, Palo Alto PAN-OS | Настройка маршрутизаторов/коммутаторов/межсетевых экранов, BGP/OSPF, ACL, диагностика по выводу show |
+| ⚡ [Rapid Prototyper](engineering/engineering-rapid-prototyper.md) | Быстрая разработка POC, MVP | Быстрые проверки концепции, хакатон-проекты, быстрая итерация |
+| 💎 [Senior Developer](engineering/engineering-senior-developer.md) | Laravel/Livewire, продвинутые паттерны | Сложные реализации, архитектурные решения |
+| 🔧 [Filament Optimization Specialist](engineering/engineering-filament-optimization-specialist.md) | UX админки Filament PHP, структурный редизайн форм, оптимизация ресурсов | Реструктуризация ресурсов/форм/таблиц Filament для более быстрых и чистых админ-процессов |
+| ⚡ [Autonomous Optimization Architect](engineering/engineering-autonomous-optimization-architect.md) | Маршрутизация LLM, оптимизация затрат, теневое тестирование | Автономные системы, которым нужен интеллектуальный выбор API и защитные ограничения по затратам |
+| 🔩 [Embedded Firmware Engineer](engineering/engineering-embedded-firmware-engineer.md) | Bare-metal, RTOS, прошивки ESP32/STM32/Nordic | Встраиваемые системы промышленного уровня и IoT-устройства |
+| 🚨 [Incident Response Commander](engineering/engineering-incident-response-commander.md) | Управление инцидентами, пост-мортемы, дежурства | Управление прод-инцидентами и повышение готовности к инцидентам |
+| ⛓️ [Solidity Smart Contract Engineer](engineering/engineering-solidity-smart-contract-engineer.md) | EVM-контракты, оптимизация газа, DeFi | Безопасные смарт-контракты с оптимизацией газа и протоколы DeFi |
+| 🧭 [Codebase Onboarding Engineer](engineering/engineering-codebase-onboarding-engineer.md) | Быстрое онбординг разработчиков, исследование кодовой базы только для чтения, фактологическое объяснение | Помощь новым разработчикам быстро понять незнакомые репозитории: чтение кода, трассировка путей и изложение фактов о структуре и поведении |
+| 📚 [Technical Writer](engineering/engineering-technical-writer.md) | Документация для разработчиков, справочники API, туториалы | Чёткая и точная техническая документация |
+| 💬 [WeChat Mini Program Developer](engineering/engineering-wechat-mini-program-developer.md) | Экосистема WeChat, мини-программы, интеграция платежей | Создание производительных приложений для экосистемы WeChat |
+| 👁️ [Code Reviewer](engineering/engineering-code-reviewer.md) | Конструктивное код-ревью, безопасность, сопровождаемость | Ревью PR, гейты качества кода, наставничество через ревью |
+| 🗄️ [Database Optimizer](engineering/engineering-database-optimizer.md) | Проектирование схем, оптимизация запросов, стратегии индексирования | Тюнинг PostgreSQL/MySQL, отладка медленных запросов, планирование миграций |
+| 🌿 [Git Workflow Master](engineering/engineering-git-workflow-master.md) | Стратегии ветвления, conventional commits, продвинутый Git | Проектирование Git-процессов, очистка истории, управление ветками, дружественное к CI |
+| 🏛️ [Software Architect](engineering/engineering-software-architect.md) | Проектирование систем, DDD, архитектурные паттерны, анализ компромиссов | Архитектурные решения, моделирование домена, стратегия эволюции системы |
+| 🛡️ [SRE](engineering/engineering-sre.md) | SLO, бюджеты ошибок, наблюдаемость, хаос-инжиниринг | Надёжность продакшена, снижение рутины, планирование мощностей |
+| 🧬 [AI Data Remediation Engineer](engineering/engineering-ai-data-remediation-engineer.md) | Самовосстанавливающиеся пайплайны, изолированные SLM, семантическая кластеризация | Исправление повреждённых данных в масштабе с нулевой потерей данных |
+| 🔧 [Data Engineer](engineering/engineering-data-engineer.md) | Пайплайны данных, архитектура lakehouse, ETL/ELT | Построение надёжной инфраструктуры данных и хранилищ |
+| 🔗 [Feishu Integration Developer](engineering/engineering-feishu-integration-developer.md) | Открытая платформа Feishu/Lark, боты, рабочие процессы | Создание интеграций для экосистемы Feishu |
+| 🧱 [CMS Developer](engineering/engineering-cms-developer.md) | Темы WordPress и Drupal, плагины/модули, архитектура контента | Реализация и кастомизация CMS по принципу code-first |
+| 📧 [Email Intelligence Engineer](engineering/engineering-email-intelligence-engineer.md) | Парсинг писем, извлечение MIME, структурированные данные для ИИ-агентов | Превращение сырых цепочек писем в контекст, готовый к рассуждению |
+| 🎙️ [Voice AI Integration Engineer](engineering/engineering-voice-ai-integration-engineer.md) | Пайплайны распознавания речи, Whisper, ASR, диаризация говорящих | Сквозные пайплайны транскрипции, предобработка аудио, структурированная выдача транскриптов |
+| 🖧 [IT Service Manager](engineering/engineering-it-service-manager.md) | Управление сервисами по ITIL 4 | Управление инцидентами/проблемами/изменениями, SLA, CMDB |
+| 🪡 [Minimal Change Engineer](engineering/engineering-minimal-change-engineer.md) | Минимально необходимые изменения | Исправление только того, что просили, без расширения объёма |
+| 📜 [OrgScript Engineer](engineering/engineering-orgscript-engineer.md) | Грамматика OrgScript и валидация AST | Проектирование/парсинг определений бизнес-логики OrgScript |
+| 🧬 [Prompt Engineer](engineering/engineering-prompt-engineer.md) | Проектирование и оптимизация промптов LLM | Превращение расплывчатых инструкций в надёжное поведение ИИ |
+| 🕸️ [Multi-Agent Systems Architect](engineering/engineering-multi-agent-systems-architect.md) | Проектирование и управление мультиагентными пайплайнами | Топология, контекст, доверие, восстановление после сбоев для агентных систем |
+| 🛒 [Drupal Shopping Cart Engineer](engineering/engineering-drupal-shopping-cart.md) | Магазины на Drupal Commerce | Каталог, платежи, оформление заказа, заказы на Drupal 10/11 |
+| 🛍️ [WordPress Shopping Cart Engineer](engineering/engineering-wordpress-shopping-cart.md) | Магазины на WooCommerce | Каталог, платежи, оформление заказа, конверсия на WordPress |
+| 💳 [Payments & Billing Engineer](engineering/engineering-payments-billing-engineer.md) | Интеграция PSP, идемпотентные платёжные потоки, биллинг подписок | Интеграции Stripe/Adyen/Braintree, обработка вебхуков, дуннинг, сверка |
+| 🌍 [Internationalization Engineer](engineering/engineering-i18n-engineer.md) | ICU MessageFormat, раскладки RTL/bidi, форматирование CLDR, псевдолокализация | Подготовка приложений к переводу, форматирование с учётом локали, поддержка RTL, аудиты i18n |
+| ⚡ [Drupal Performance Engineer](engineering/engineering-drupal-performance.md) | Производительность Drupal и Core Web Vitals | Кэширование, тюнинг БД/запросов, пайплайн рендеринга, профилирование Drupal под высокой нагрузкой |
+| ⚡ [WordPress Performance Engineer](engineering/engineering-wordpress-performance.md) | Производительность WordPress и Core Web Vitals | Кэширование, оптимизация запросов/ассетов, тюнинг плагинов, профилирование WP под высокой нагрузкой |
+| ♿ [Section 508 Accessibility Specialist](engineering/engineering-section-508-specialist.md) | Доступность по федеральному стандарту США 508 / WCAG | ARIA, тестирование со скринридерами, составление VPAT/ACR, устранение нарушений |
+| 🏛️ [USWDS Developer](engineering/engineering-uswds-developer.md) | US Web Design System (федеральный) | Доступные UI-компоненты для госсектора и паттерны дизайн-систем |
+| 🔎 [Search Relevance Engineer](engineering/engineering-search-relevance-engineer.md) | Ранжирование и релевантность поиска | Понимание запросов, эмбеддинги, ранжирование/оценка, настройка релевантности |
+| 🔐 [Identity & Access Engineer](engineering/engineering-identity-access-engineer.md) | AuthN/AuthZ и IAM | OAuth/OIDC/SAML, SSO, RBAC/ABAC, безопасность токенов и сессий |
+| 🤝 [Realtime Collaboration Engineer](engineering/engineering-realtime-collaboration-engineer.md) | Реалтайм-синхронизация и присутствие | CRDT/OT, разрешение конфликтов, живые курсоры, офлайн-синхронизация |
+| 💻 [Desktop App Engineer](engineering/engineering-desktop-app-engineer.md) | Кроссплатформенные десктопные приложения | Electron/Tauri, нативная интеграция, упаковка, автообновление |
+| 🚀 [Mobile Release Engineer](engineering/engineering-mobile-release-engineer.md) | Релизы мобильных приложений и CI/CD | Публикация в App Store/Play, подпись, поэтапный выкат, разбор крэшей |
+| 🎬 [Video Streaming Engineer](engineering/engineering-video-streaming-engineer.md) | Видеостриминг и транскодирование | HLS/DASH, ABR, кодеки, доставка через CDN, стриминг с низкой задержкой |
+| 💰 [FinOps Engineer](engineering/engineering-finops-engineer.md) | Инжиниринг затрат на облако | Распределение затрат, оптимизация размеров, юнит-экономика, контроль бюджета и аномалий |
+| 🧩 [WebAssembly Engineer](engineering/engineering-webassembly-engineer.md) | WebAssembly и WASI | Rust/C++ → WASM, песочницы, привязки хоста, производительность |
+| 🔌 [API Platform Engineer](engineering/engineering-api-platform-engineer.md) | API-шлюзы и платформы | Проектирование шлюзов, версионирование, ограничение частоты запросов, порталы разработчика |
+| 🛟 [Database Reliability Engineer](engineering/engineering-database-reliability-engineer.md) | Надёжность баз данных (DBRE) | HA/репликация, автоматический failover, резервные копии PITR, операции без простоев |
+| 🛠️ [Developer Tooling Engineer](engineering/engineering-developer-tooling-engineer.md) | CLI и инструменты разработчика | Инструменты командной строки, внутренний DX, процессы сборки/разработки |
+| 📡 [IoT Fleet Engineer](engineering/engineering-iot-fleet-engineer.md) | Парки IoT и edge-устройств | Провижининг/идентификация устройств, телеметрия MQTT, OTA-обновления |
+| 🔍 [RAG Pipeline Engineer](engineering/engineering-rag-pipeline-engineer.md) | Продакшен RAG-пайплайны | Чанкинг, качество извлечения, гибридный поиск, переранжирование, итерации на основе оценки |
+| 🗄️ [GaussDB Expert Engineer](engineering/engineering-gaussdb-expert.md) | Huawei GaussDB OLTP | Производительность корпоративного OLTP, HA и миграция на GaussDB от Huawei |
+| 🕵️ [Privacy Engineer](engineering/engineering-privacy-engineer.md) | Обнаружение PII, минимизация данных, контроль согласий, пайплайны DSAR/удаления | Реализация приватности в коде, право на забвение в сервисах, автоматизация хранения |
+| 🦀 [Rust Refactoring Specialist](engineering/engineering-rust-refactoring-specialist.md) | Рефакторинг Rust с учётом поведения | Реформирование crate/trait/module на основе доказательств и с сохранением поведения |
+| 🧪 [LLM Post-Training Engineer](engineering/engineering-llm-post-training-engineer.md) | Стек пост-обучения (SFT/DPO/GRPO/RLVR) | Гейтинг экспериментов на основе доказательств, целостность чекпоинтов, классификация сбоев |
+| 📈 [Data Visualization Engineer](engineering/engineering-data-visualization-engineer.md) | Честная с точки зрения восприятия визуализация данных | Выбор типа диаграммы, палитры для дальтоников, производительный рендеринг D3/Vega |
+| 🧠 [Knowledge Graph Engineer](engineering/engineering-knowledge-graph-engineer.md) | Графы знаний, извлечение связей между сущностями, RAG с графами | Структурирование документов в запрашиваемые графы Neo4j с помощью LangGraph; происхождение, отслеживание противоречий, извлечение подграфов |
+| 🌏 [China Network Engineer](engineering/engineering-china-network-engineer.md) | Huawei VRP, H3C Comware, Ruijie RGOS, Hillstone StoneOS | Проектирование маршрутизации/коммутации/межсетевых экранов, NAT, границы, соответствующие MLPS 2.0, окна изменений с планами отката |
+| 🛤️ [Platform Engineer](engineering/engineering-platform-engineer.md) | Внутренние платформы разработчика, золотые пути, IDP, инфраструктура самообслуживания | Скаффолдинг «мощёной дороги», измерение опыта разработчика, роадмапы «платформа как продукт» |
+| 📑 [PDF Engine Architect](engineering/engineering-pdf-engine-architect.md) | Детерминированная компиляция HTML в PDF, тегированный PDF/UA и PDF/A | Пулы рендеринга Playwright, динамический размер страниц, вывод документов архивного качества |
+| 🎯 [ATS Validator Architect](engineering/engineering-ats-validator-architect.md) | Парсируемость резюме, пайплайны приёма в ATS | Оценка релевантности BM25/TF-IDF, аудиты линеаризации разметки, соответствие EU AI Act и NYC LL144 |
+| 📑 [Universal Document Compiler](engineering/engineering-universal-document-compiler.md) | Независимые от схемы AST документов, вывод раскладки по форме данных, постраничная публикация | Компиляция произвольных YAML-деревьев в предложения, техзадания и досье для руководства |
+| 🛠️ [ServiceNow Developer & Mentor](engineering/engineering-servicenow-developer-mentor.md) | Business Rules, Script Includes, GlideAjax, ACL, Flow Designer | Разработка на ServiceNow и пошаговая диагностика инстансов |
 
-### 🎨 Design Division
+### 🎨 Подразделение Design
 
-Making it beautiful, usable, and delightful.
+Делаем это красиво, удобно и восхитительно.
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🎯 [UI Designer](design/design-ui-designer.md) | Visual design, component libraries, design systems | Interface creation, brand consistency, component design |
-| 🔍 [UX Researcher](design/design-ux-researcher.md) | User testing, behavior analysis, research | Understanding users, usability testing, design insights |
-| 🏛️ [UX Architect](design/design-ux-architect.md) | Technical architecture, CSS systems, implementation | Developer-friendly foundations, implementation guidance |
-| 🎭 [Brand Guardian](design/design-brand-guardian.md) | Brand identity, consistency, positioning | Brand strategy, identity development, guidelines |
-| 📖 [Visual Storyteller](design/design-visual-storyteller.md) | Visual narratives, multimedia content | Compelling visual stories, brand storytelling |
-| ✨ [Whimsy Injector](design/design-whimsy-injector.md) | Personality, delight, playful interactions | Adding joy, micro-interactions, Easter eggs, brand personality |
-| 📷 [Image Prompt Engineer](design/design-image-prompt-engineer.md) | AI image generation prompts, photography | Photography prompts for Midjourney, DALL-E, Stable Diffusion |
-| 🌈 [Inclusive Visuals Specialist](design/design-inclusive-visuals-specialist.md) | Representation, bias mitigation, authentic imagery | Generating culturally accurate AI images and video |
-| 🎭 [Persona Walkthrough Specialist](design/design-persona-walkthrough.md) | Persona-driven cognitive walkthroughs | Simulating user reactions and friction at each scroll position |
-| 🧱 [UI Finish-Gate Reviewer](design/design-ui-finish-gate-reviewer.md) | Anti-generic UI finish gate | Catching interchangeable UI before ship via evidence + a written design contract |
+| 🎯 [UI Designer](design/design-ui-designer.md) | Визуальный дизайн, библиотеки компонентов, дизайн-системы | Создание интерфейсов, консистентность бренда, проектирование компонентов |
+| 🔍 [UX Researcher](design/design-ux-researcher.md) | Юзер-тестирование, анализ поведения, исследования | Понимание пользователей, юзабилити-тестирование, дизайн-инсайты |
+| 🏛️ [UX Architect](design/design-ux-architect.md) | Техническая архитектура, CSS-системы, реализация | Дружественные разработчику основы, руководство по реализации |
+| 🎭 [Brand Guardian](design/design-brand-guardian.md) | Идентичность бренда, консистентность, позиционирование | Стратегия бренда, развитие идентичности, гайдлайны |
+| 📖 [Visual Storyteller](design/design-visual-storyteller.md) | Визуальные нарративы, мультимедийный контент | Убедительные визуальные истории, сторителлинг бренда |
+| ✨ [Whimsy Injector](design/design-whimsy-injector.md) | Индивидуальность, восторг, игровые взаимодействия | Добавление радости, микро-взаимодействия, пасхалки, характер бренда |
+| 📷 [Image Prompt Engineer](design/design-image-prompt-engineer.md) | Промпты для генерации ИИ-изображений, фотография | Промпты для фотографии в Midjourney, DALL-E, Stable Diffusion |
+| 🌈 [Inclusive Visuals Specialist](design/design-inclusive-visuals-specialist.md) | Репрезентация, смягчение предвзятости, аутентичные образы | Генерация культурно точных ИИ-изображений и видео |
+| 🎭 [Persona Walkthrough Specialist](design/design-persona-walkthrough.md) | Когнитивные проходки на основе персон | Симуляция реакций и трений пользователя на каждой позиции прокрутки |
+| 🧱 [UI Finish-Gate Reviewer](design/design-ui-finish-gate-reviewer.md) | Гейт финишного качества против «типового» UI | Отлов взаимозаменяемого UI перед релизом с помощью доказательств и письменного дизайн-контракта |
 
-### 💰 Paid Media Division
+### 💰 Подразделение Paid Media
 
-Turning ad spend into measurable business outcomes.
+Превращаем рекламный бюджет в измеримые бизнес-результаты.
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 | --- | --- | --- |
-| 💰 [PPC Campaign Strategist](paid-media/paid-media-ppc-strategist.md) | Google/Microsoft/Amazon Ads, account architecture, bidding | Account buildouts, budget allocation, scaling, performance diagnosis |
-| 🔍 [Search Query Analyst](paid-media/paid-media-search-query-analyst.md) | Search term analysis, negative keywords, intent mapping | Query audits, wasted spend elimination, keyword discovery |
-| 📋 [Paid Media Auditor](paid-media/paid-media-auditor.md) | 200+ point account audits, competitive analysis | Account takeovers, quarterly reviews, competitive pitches |
-| 📡 [Tracking & Measurement Specialist](paid-media/paid-media-tracking-specialist.md) | GTM, GA4, conversion tracking, CAPI | New implementations, tracking audits, platform migrations |
-| ✍️ [Ad Creative Strategist](paid-media/paid-media-creative-strategist.md) | RSA copy, Meta creative, Performance Max assets | Creative launches, testing programs, ad fatigue refreshes |
-| 📺 [Programmatic & Display Buyer](paid-media/paid-media-programmatic-buyer.md) | GDN, DSPs, partner media, ABM display | Display planning, partner outreach, ABM programs |
-| 📱 [Paid Social Strategist](paid-media/paid-media-paid-social-strategist.md) | Meta, LinkedIn, TikTok, cross-platform social | Social ad programs, platform selection, audience strategy |
+| 💰 [PPC Campaign Strategist](paid-media/paid-media-ppc-strategist.md) | Реклама Google/Microsoft/Amazon, архитектура аккаунтов, ставки | Построение аккаунтов, распределение бюджета, масштабирование, диагностика эффективности |
+| 🔍 [Search Query Analyst](paid-media/paid-media-search-query-analyst.md) | Анализ поисковых запросов, минус-слова, маппинг интента | Аудиты запросов, устранение слива бюджета, поиск ключевых слов |
+| 📋 [Paid Media Auditor](paid-media/paid-media-auditor.md) | Аудиты аккаунтов по 200+ пунктам, конкурентный анализ | Перехват аккаунтов, ежеквартальные обзоры, конкурентные питчи |
+| 📡 [Tracking & Measurement Specialist](paid-media/paid-media-tracking-specialist.md) | GTM, GA4, отслеживание конверсий, CAPI | Новые внедрения, аудиты отслеживания, миграции платформ |
+| ✍️ [Ad Creative Strategist](paid-media/paid-media-creative-strategist.md) | Тексты RSA, креативы Meta, ассеты Performance Max | Запуски креативов, тестовые программы, обновление при усталости рекламы |
+| 📺 [Programmatic & Display Buyer](paid-media/paid-media-programmatic-buyer.md) | GDN, DSP, партнёрские медиа, ABM-дисплей | Планирование дисплея, работа с партнёрами, ABM-программы |
+| 📱 [Paid Social Strategist](paid-media/paid-media-paid-social-strategist.md) | Meta, LinkedIn, TikTok, кроссплатформенные соцсети | Соцреклама, выбор платформ, стратегия аудитории |
 
-### 💼 Sales Division
+### 💼 Подразделение Sales
 
-Turning pipeline into revenue through craft, not CRM busywork.
+Превращаем пайплайн в выручку через мастерство, а не рутину в CRM.
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🎯 [Outbound Strategist](sales/sales-outbound-strategist.md) | Signal-based prospecting, multi-channel sequences, ICP targeting | Building pipeline through research-driven outreach, not volume |
-| 🔍 [Discovery Coach](sales/sales-discovery-coach.md) | SPIN, Gap Selling, Sandler — question design and call structure | Preparing for discovery calls, qualifying opportunities, coaching reps |
-| ♟️ [Deal Strategist](sales/sales-deal-strategist.md) | MEDDPICC qualification, competitive positioning, win planning | Scoring deals, exposing pipeline risk, building win strategies |
-| 🛠️ [Sales Engineer](sales/sales-engineer.md) | Technical demos, POC scoping, competitive battlecards | Pre-sales technical wins, demo prep, competitive positioning |
-| 🏹 [Proposal Strategist](sales/sales-proposal-strategist.md) | RFP response, win themes, narrative structure | Writing proposals that persuade, not just comply |
-| 📊 [Pipeline Analyst](sales/sales-pipeline-analyst.md) | Forecasting, pipeline health, deal velocity, RevOps | Pipeline reviews, forecast accuracy, revenue operations |
-| 🗺️ [Account Strategist](sales/sales-account-strategist.md) | Land-and-expand, QBRs, stakeholder mapping | Post-sale expansion, account planning, NRR growth |
-| 🏋️ [Sales Coach](sales/sales-coach.md) | Rep development, call coaching, pipeline review facilitation | Making every rep and every deal better through structured coaching |
-| 🎯 [Sales Outreach](specialized/sales-outreach.md) | Cold prospecting, multi-touch cadences, objection handling, proposals | Top-of-funnel B2B outreach — from cold email to booked discovery call |
-| 🧲 [Offer & Lead Gen Strategist](sales/sales-offer-lead-gen-strategist.md) | Offers & lead magnets | Top-of-funnel offer construction and lead gen |
+| 🎯 [Outbound Strategist](sales/sales-outbound-strategist.md) | Поиск на основе сигналов, многоканальные последовательности, таргетинг ICP | Построение пайплайна через аутрич на основе исследований, а не на объёме |
+| 🔍 [Discovery Coach](sales/sales-discovery-coach.md) | SPIN, Gap Selling, Sandler — дизайн вопросов и структура звонков | Подготовка к discovery-звонкам, квалификация возможностей, коучинг продавцов |
+| ♟️ [Deal Strategist](sales/sales-deal-strategist.md) | Квалификация MEDDPICC, конкурентное позиционирование, планирование победы | Оценка сделок, выявление рисков пайплайна, построение стратегий победы |
+| 🛠️ [Sales Engineer](sales/sales-engineer.md) | Технические демо, определение объёма POC, конкурентные карточки | Технические победы на пресейле, подготовка демо, конкурентное позиционирование |
+| 🏹 [Proposal Strategist](sales/sales-proposal-strategist.md) | Ответы на RFP, темы победы, структура нарратива | Написание предложений, которые убеждают, а не просто соответствуют |
+| 📊 [Pipeline Analyst](sales/sales-pipeline-analyst.md) | Прогнозирование, здоровье пайплайна, скорость сделок, RevOps | Обзоры пайплайна, точность прогнозов, операции с выручкой |
+| 🗺️ [Account Strategist](sales/sales-account-strategist.md) | Land-and-expand, QBR, маппинг стейкхолдеров | Расширение после продажи, планирование аккаунтов, рост NRR |
+| 🏋️ [Sales Coach](sales/sales-coach.md) | Развитие продавцов, коучинг звонков, фасилитация обзоров пайплайна | Улучшение каждого продавца и каждой сделки через структурированный коучинг |
+| 🎯 [Sales Outreach](specialized/sales-outreach.md) | Холодный поиск, многокасательные каденции, обработка возражений, предложения | B2B-аутрич верхней воронки — от холодного письма до назначенного discovery-звонка |
+| 🧲 [Offer & Lead Gen Strategist](sales/sales-offer-lead-gen-strategist.md) | Офферы и лид-магниты | Построение офферов и генерация лидов верхней воронки |
 
-### 📢 Marketing Division
+### 📢 Подразделение Marketing
 
-Growing your audience, one authentic interaction at a time.
+Растим вашу аудиторию — по одному искреннему взаимодействию за раз.
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🚀 [Growth Hacker](marketing/marketing-growth-hacker.md) | Rapid user acquisition, viral loops, experiments | Explosive growth, user acquisition, conversion optimization |
-| 📝 [Content Creator](marketing/marketing-content-creator.md) | Multi-platform content, editorial calendars | Content strategy, copywriting, brand storytelling |
-| 🐦 [Twitter Engager](marketing/marketing-twitter-engager.md) | Real-time engagement, thought leadership | Twitter strategy, LinkedIn campaigns, professional social |
-| 🛰️ [X/Twitter Intelligence Analyst](marketing/marketing-x-twitter-intelligence-analyst.md) | Social listening, trend detection, account monitoring | Brand risk, competitor, and audience intelligence on X/Twitter |
-| 📱 [TikTok Strategist](marketing/marketing-tiktok-strategist.md) | Viral content, algorithm optimization | TikTok growth, viral content, Gen Z/Millennial audience |
-| 📸 [Instagram Curator](marketing/marketing-instagram-curator.md) | Visual storytelling, community building | Instagram strategy, aesthetic development, visual content |
-| 🤝 [Reddit Community Builder](marketing/marketing-reddit-community-builder.md) | Authentic engagement, value-driven content | Reddit strategy, community trust, authentic marketing |
-| 🌱 [Developer Community Builder](marketing/marketing-developer-community-builder.md) | Discord/forum architecture, contributor programs, community health | Building developer communities that members actually value |
-| 📱 [App Store Optimizer](marketing/marketing-app-store-optimizer.md) | ASO, conversion optimization, discoverability | App marketing, store optimization, app growth |
-| 🌐 [Social Media Strategist](marketing/marketing-social-media-strategist.md) | Cross-platform strategy, campaigns | Overall social strategy, multi-platform campaigns |
-| 📕 [Xiaohongshu Specialist](marketing/marketing-xiaohongshu-specialist.md) | Lifestyle content, trend-driven strategy | Xiaohongshu growth, aesthetic storytelling, Gen Z audience |
-| 💬 [WeChat Official Account Manager](marketing/marketing-wechat-official-account.md) | Subscriber engagement, content marketing | WeChat OA strategy, community building, conversion optimization |
-| 🧠 [Zhihu Strategist](marketing/marketing-zhihu-strategist.md) | Thought leadership, knowledge-driven engagement | Zhihu authority building, Q&A strategy, lead generation |
-| 🇨🇳 [Baidu SEO Specialist](marketing/marketing-baidu-seo-specialist.md) | Baidu optimization, China SEO, ICP compliance | Ranking in Baidu and reaching China's search market |
-| 🎬 [Bilibili Content Strategist](marketing/marketing-bilibili-content-strategist.md) | B站 algorithm, danmaku culture, UP主 growth | Building audiences on Bilibili with community-first content |
-| 🎠 [Carousel Growth Engine](marketing/marketing-carousel-growth-engine.md) | TikTok/Instagram carousels, autonomous publishing | Generating and publishing viral carousel content |
-| 💼 [LinkedIn Content Creator](marketing/marketing-linkedin-content-creator.md) | Personal branding, thought leadership, professional content | LinkedIn growth, professional audience building, B2B content |
-| 🛒 [China E-Commerce Operator](marketing/marketing-china-ecommerce-operator.md) | Taobao, Tmall, Pinduoduo, live commerce | Running multi-platform e-commerce in China |
-| 🎥 [Kuaishou Strategist](marketing/marketing-kuaishou-strategist.md) | Kuaishou, 老铁 community, grassroots growth | Building authentic audiences in lower-tier markets |
-| 🔍 [SEO Specialist](marketing/marketing-seo-specialist.md) | Technical SEO, content strategy, link building | Driving sustainable organic search growth |
-| 📘 [Book Co-Author](marketing/marketing-book-co-author.md) | Thought-leadership books, ghostwriting, publishing | Strategic book collaboration for founders and experts |
-| 🌏 [Cross-Border E-Commerce Specialist](marketing/marketing-cross-border-ecommerce.md) | Amazon, Shopee, Lazada, cross-border fulfillment | Full-funnel cross-border e-commerce strategy |
-| 🎵 [Douyin Strategist](marketing/marketing-douyin-strategist.md) | Douyin platform, short-video marketing, algorithm | Growing audiences on China's leading short-video platform |
-| 🎙️ [Livestream Commerce Coach](marketing/marketing-livestream-commerce-coach.md) | Host training, live room optimization, conversion | Building high-performing livestream e-commerce operations |
-| 🎧 [Podcast Strategist](marketing/marketing-podcast-strategist.md) | Podcast content strategy, platform optimization | Chinese podcast market strategy and operations |
-| 🔒 [Private Domain Operator](marketing/marketing-private-domain-operator.md) | WeCom, private traffic, community operations | Building enterprise WeChat private domain ecosystems |
-| 🎬 [Short-Video Editing Coach](marketing/marketing-short-video-editing-coach.md) | Post-production, editing workflows, platform specs | Hands-on short-video editing training and optimization |
-| 🔥 [Weibo Strategist](marketing/marketing-weibo-strategist.md) | Sina Weibo, trending topics, fan engagement | Full-spectrum Weibo operations and growth |
-| 🎙️ [Global Podcast Strategist](marketing/marketing-global-podcast-strategist.md) | Show positioning, audience growth, monetisation | Podcast launch, platform algorithms, sponsorship, community building |
-| 🔮 [AI Citation Strategist](marketing/marketing-ai-citation-strategist.md) | AEO/GEO, AI recommendation visibility, citation auditing | Improving brand visibility across ChatGPT, Claude, Gemini, Perplexity |
-| 🇨🇳 [China Market Localization Strategist](marketing/marketing-china-market-localization-strategist.md) | Full-stack China market localization, Douyin/Xiaohongshu/WeChat GTM | Turning trend signals into executable China go-to-market strategies |
-| 🎬 [Video Optimization Specialist](marketing/marketing-video-optimization-specialist.md) | YouTube algorithm strategy, chaptering, thumbnail concepts | YouTube channel growth, video SEO, audience retention optimization |
-| 🏗️ [AEO Foundations Architect](marketing/marketing-aeo-foundations.md) | AI Engine Optimization infrastructure | llms.txt, AI-aware robots.txt, agent discovery files |
-| 🤖 [Agentic Search Optimizer](marketing/marketing-agentic-search-optimizer.md) | WebMCP & agentic task completion | Making sites usable by AI browsing agents |
-| 📧 [Email Marketing Strategist](marketing/marketing-email-strategist.md) | Lifecycle email & deliverability | CRM campaigns, automation, segmentation |
-| 📡 [Multi-Platform Publisher](marketing/marketing-multi-platform-publisher.md) | One-click Chinese multi-platform publishing | Routing one article to 知乎/小红书/CSDN/B站/公众号/掘金 |
-| 📣 [PR & Communications Manager](marketing/marketing-pr-communications-manager.md) | PR, media relations & crisis comms | Press releases, thought leadership, reputation |
+| 🚀 [Growth Hacker](marketing/marketing-growth-hacker.md) | Быстрое привлечение пользователей, вирусные петли, эксперименты | Взрывной рост, привлечение пользователей, оптимизация конверсии |
+| 📝 [Content Creator](marketing/marketing-content-creator.md) | Мультиплатформенный контент, редакционные календари | Контент-стратегия, копирайтинг, сторителлинг бренда |
+| 🐦 [Twitter Engager](marketing/marketing-twitter-engager.md) | Взаимодействие в реальном времени, лидерство мнений | Стратегия Twitter, кампании LinkedIn, профессиональные соцсети |
+| 🛰️ [X/Twitter Intelligence Analyst](marketing/marketing-x-twitter-intelligence-analyst.md) | Социальный мониторинг, детекция трендов, мониторинг аккаунтов | Интеллект о рисках бренда, конкурентах и аудитории в X/Twitter |
+| 📱 [TikTok Strategist](marketing/marketing-tiktok-strategist.md) | Вирусный контент, оптимизация под алгоритмы | Рост в TikTok, вирусный контент, аудитория Gen Z/миллениалы |
+| 📸 [Instagram Curator](marketing/marketing-instagram-curator.md) | Визуальный сторителлинг, построение сообщества | Стратегия Instagram, развитие эстетики, визуальный контент |
+| 🤝 [Reddit Community Builder](marketing/marketing-reddit-community-builder.md) | Искреннее вовлечение, ценный контент | Стратегия Reddit, доверие сообщества, аутентичный маркетинг |
+| 🌱 [Developer Community Builder](marketing/marketing-developer-community-builder.md) | Архитектура Discord/форумов, программы контрибьюторов, здоровье сообщества | Построение сообществ разработчиков, которые участники реально ценят |
+| 📱 [App Store Optimizer](marketing/marketing-app-store-optimizer.md) | ASO, оптимизация конверсии, заметность | Маркетинг приложений, оптимизация стора, рост приложения |
+| 🌐 [Social Media Strategist](marketing/marketing-social-media-strategist.md) | Кроссплатформенная стратегия, кампании | Общая соцстратегия, мультиплатформенные кампании |
+| 📕 [Xiaohongshu Specialist](marketing/marketing-xiaohongshu-specialist.md) | Лайфстайл-контент, стратегия на трендах | Рост в Xiaohongshu, эстетичный сторителлинг, аудитория Gen Z |
+| 💬 [WeChat Official Account Manager](marketing/marketing-wechat-official-account.md) | Вовлечение подписчиков, контент-маркетинг | Стратегия WeChat OA, построение сообщества, оптимизация конверсии |
+| 🧠 [Zhihu Strategist](marketing/marketing-zhihu-strategist.md) | Лидерство мнений, вовлечение на основе знаний | Построение авторитета в Zhihu, стратегия Q&A, генерация лидов |
+| 🇨🇳 [Baidu SEO Specialist](marketing/marketing-baidu-seo-specialist.md) | Оптимизация под Baidu, SEO для Китая, соответствие ICP | Ранжирование в Baidu и выход на поисковый рынок Китая |
+| 🎬 [Bilibili Content Strategist](marketing/marketing-bilibili-content-strategist.md) | Алгоритмы B站, культура дамму, рост UP主 | Построение аудитории на Bilibili контентом, ориентированным на сообщество |
+| 🎠 [Carousel Growth Engine](marketing/marketing-carousel-growth-engine.md) | Карусели TikTok/Instagram, автономная публикация | Генерация и публикация вирусного карусельного контента |
+| 💼 [LinkedIn Content Creator](marketing/marketing-linkedin-content-creator.md) | Персональный бренд, лидерство мнений, профессиональный контент | Рост в LinkedIn, построение профессиональной аудитории, B2B-контент |
+| 🛒 [China E-Commerce Operator](marketing/marketing-china-ecommerce-operator.md) | Taobao, Tmall, Pinduoduo, лайв-коммерция | Ведение мультиплатформенной электронной коммерции в Китае |
+| 🎥 [Kuaishou Strategist](marketing/marketing-kuaishou-strategist.md) | Kuaishou, сообщество 老铁, grassroots-рост | Построение аутентичной аудитории в рынках нижнего уровня |
+| 🔍 [SEO Specialist](marketing/marketing-seo-specialist.md) | Техническое SEO, контент-стратегия, линкбилдинг | Устойчивый рост органического поиска |
+| 📘 [Book Co-Author](marketing/marketing-book-co-author.md) | Книги по лидерству мнений, гострайтинг, публикация | Стратегическое соавторство книг для основателей и экспертов |
+| 🌏 [Cross-Border E-Commerce Specialist](marketing/marketing-cross-border-ecommerce.md) | Amazon, Shopee, Lazada, трансграничная логистика | Стратегия трансграничной электронной коммерции полного цикла |
+| 🎵 [Douyin Strategist](marketing/marketing-douyin-strategist.md) | Платформа Douyin, короткие видео, алгоритмы | Рост аудитории на ведущей китайской платформе коротких видео |
+| 🎙️ [Livestream Commerce Coach](marketing/marketing-livestream-commerce-coach.md) | Обучение ведущих, оптимизация лайв-румов, конверсия | Построение высокоэффективных операций лайв-коммерции |
+| 🎧 [Podcast Strategist](marketing/marketing-podcast-strategist.md) | Контент-стратегия подкастов, оптимизация платформ | Стратегия и операции на китайском рынке подкастов |
+| 🔒 [Private Domain Operator](marketing/marketing-private-domain-operator.md) | WeCom, частный трафик, операции с сообществами | Построение частных доменов в корпоративном WeChat |
+| 🎬 [Short-Video Editing Coach](marketing/marketing-short-video-editing-coach.md) | Постпродакшен, процессы монтажа, спецификации платформ | Практическое обучение монтажу коротких видео и оптимизация |
+| 🔥 [Weibo Strategist](marketing/marketing-weibo-strategist.md) | Sina Weibo, трендовые темы, вовлечение фанатов | Полный спектр операций и рост в Weibo |
+| 🎙️ [Global Podcast Strategist](marketing/marketing-global-podcast-strategist.md) | Позиционирование шоу, рост аудитории, монетизация | Запуск подкаста, алгоритмы платформ, спонсорство, построение сообщества |
+| 🔮 [AI Citation Strategist](marketing/marketing-ai-citation-strategist.md) | AEO/GEO, видимость в ИИ-рекомендациях, аудит цитирований | Повышение видимости бренда в ChatGPT, Claude, Gemini, Perplexity |
+| 🇨🇳 [China Market Localization Strategist](marketing/marketing-china-market-localization-strategist.md) | Полная локализация под рынок Китая, GTM в Douyin/Xiaohongshu/WeChat | Превращение трендовых сигналов в исполнимые стратегии выхода на рынок Китая |
+| 🎬 [Video Optimization Specialist](marketing/marketing-video-optimization-specialist.md) | Стратегия под алгоритмы YouTube, чаптеры, концепции обложек | Рост канала YouTube, видео-SEO, оптимизация удержания аудитории |
+| 🏗️ [AEO Foundations Architect](marketing/marketing-aeo-foundations.md) | Инфраструктура AI Engine Optimization | llms.txt, robots.txt с учётом ИИ, файлы обнаружения агентов |
+| 🤖 [Agentic Search Optimizer](marketing/marketing-agentic-search-optimizer.md) | WebMCP и агентное выполнение задач | Делаем сайты пригодными для ИИ-агентов браузинга |
+| 📧 [Email Marketing Strategist](marketing/marketing-email-strategist.md) | Жизненный цикл писем и доставляемость | CRM-кампании, автоматизация, сегментация |
+| 📡 [Multi-Platform Publisher](marketing/marketing-multi-platform-publisher.md) | Публикация в один клик на китайских платформах | Маршрутизация одной статьи в 知乎/小红书/CSDN/B站/公众号/掘金 |
+| 📣 [PR & Communications Manager](marketing/marketing-pr-communications-manager.md) | PR, отношения со СМИ и кризисные коммуникации | Пресс-релизы, лидерство мнений, репутация |
 
-### 📊 Product Division
+### 📊 Подразделение Product
 
-Building the right thing at the right time.
+Строим правильную вещь в правильное время.
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🎯 [Sprint Prioritizer](product/product-sprint-prioritizer.md) | Agile planning, feature prioritization | Sprint planning, resource allocation, backlog management |
-| 🔍 [Trend Researcher](product/product-trend-researcher.md) | Market intelligence, competitive analysis | Market research, opportunity assessment, trend identification |
-| 💬 [Feedback Synthesizer](product/product-feedback-synthesizer.md) | User feedback analysis, insights extraction | Feedback analysis, user insights, product priorities |
-| 🔬 [DX Engineer](product/product-dx-engineer.md) | Onboarding friction, SDK ergonomics, error messages | Cutting a developer's time to first success |
-| 🧠 [Behavioral Nudge Engine](product/product-behavioral-nudge-engine.md) | Behavioral psychology, nudge design, engagement | Maximizing user motivation through behavioral science |
-| 🧭 [Product Manager](product/product-manager.md) | Full lifecycle product ownership | Discovery, PRDs, roadmap planning, GTM, outcome measurement |
+| 🎯 [Sprint Prioritizer](product/product-sprint-prioritizer.md) | Agile-планирование, приоритизация функций | Планирование спринтов, распределение ресурсов, управление бэклогом |
+| 🔍 [Trend Researcher](product/product-trend-researcher.md) | Рыночный интеллект, конкурентный анализ | Исследование рынка, оценка возможностей, выявление трендов |
+| 💬 [Feedback Synthesizer](product/product-feedback-synthesizer.md) | Анализ пользовательской обратной связи, извлечение инсайтов | Анализ фидбека, пользовательские инсайты, приоритеты продукта |
+| 🔬 [DX Engineer](product/product-dx-engineer.md) | Трение онбординга, эргономика SDK, сообщения об ошибках | Сокращение времени разработчика до первого успеха |
+| 🧠 [Behavioral Nudge Engine](product/product-behavioral-nudge-engine.md) | Поведенческая психология, дизайн подталкиваний, вовлечение | Максимизация мотивации пользователя через поведенческую науку |
+| 🧭 [Product Manager](product/product-manager.md) | Полное владение жизненным циклом продукта | Дискавери, PRD, планирование роадмапа, GTM, измерение результата |
 
-### 🎬 Project Management Division
+### 🎬 Подразделение Project Management
 
-Keeping the trains running on time (and under budget).
+Поезда ходят по расписанию (и в рамках бюджета).
 
 | Agent | Specialty | When to Use |
 |-------|-----------|-------------|
