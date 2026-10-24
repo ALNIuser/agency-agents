@@ -6,7 +6,7 @@
 
 ---
 
-> **A complete AI agency at your fingertips** - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.
+> **Полное ИИ-агентство у вас под рукой** — от мастеров фронтенда до ниндзя Reddit-сообществ, от генераторов креатива до проверяющих реальность. Каждый агент — узкопрофильный эксперт со своим характером, процессами и проверенными результатами.
 
 [![GitHub stars](https://img.shields.io/github/stars/msitarzewski/agency-agents?style=social)](https://github.com/msitarzewski/agency-agents)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
