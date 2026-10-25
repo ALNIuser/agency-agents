@@ -306,153 +306,153 @@ for r in json.load(open("strategy/runbooks.json"))["runbooks"]:
 
 Поезда ходят по расписанию (и в рамках бюджета).
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🎬 [Studio Producer](project-management/project-management-studio-producer.md) | High-level orchestration, portfolio management | Multi-project oversight, strategic alignment, resource allocation |
-| 🐑 [Project Shepherd](project-management/project-management-project-shepherd.md) | Cross-functional coordination, timeline management | End-to-end project coordination, stakeholder management |
-| ⚙️ [Studio Operations](project-management/project-management-studio-operations.md) | Day-to-day efficiency, process optimization | Operational excellence, team support, productivity |
-| 🧪 [Experiment Tracker](project-management/project-management-experiment-tracker.md) | A/B tests, hypothesis validation | Experiment management, data-driven decisions, testing |
-| 👔 [Senior Project Manager](project-management/project-manager-senior.md) | Realistic scoping, task conversion | Converting specs to tasks, scope management |
-| 📋 [Jira Workflow Steward](project-management/project-management-jira-workflow-steward.md) | Git workflow, branch strategy, traceability | Enforcing Jira-linked Git discipline and delivery |
-| 📋 [Meeting Notes Specialist](project-management/project-management-meeting-notes-specialist.md) | Structured meeting summaries | Extracting decisions, action items, open questions |
+| 🎬 [Studio Producer](project-management/project-management-studio-producer.md) | Оркестрация высокого уровня, управление портфелем | Надзор за несколькими проектами, стратегическое выравнивание, распределение ресурсов |
+| 🐑 [Project Shepherd](project-management/project-management-project-shepherd.md) | Кросс-функциональная координация, управление таймлайном | Сквозная координация проекта, управление стейкхолдерами |
+| ⚙️ [Studio Operations](project-management/project-management-studio-operations.md) | Ежедневная эффективность, оптимизация процессов | Операционное совершенство, поддержка команды, продуктивность |
+| 🧪 [Experiment Tracker](project-management/project-management-experiment-tracker.md) | A/B-тесты, валидация гипотез | Управление экспериментами, принятие решений на данных, тестирование |
+| 👔 [Senior Project Manager](project-management/project-manager-senior.md) | Реалистичная оценка объёма, декомпозиция задач | Превращение спецификаций в задачи, управление объёмом работ |
+| 📋 [Jira Workflow Steward](project-management/project-management-jira-workflow-steward.md) | Git-процессы, стратегия ветвления, трассируемость | Обеспечение дисциплины доставки через связку Jira-Git |
+| 📋 [Meeting Notes Specialist](project-management/project-management-meeting-notes-specialist.md) | Структурированные протоколы встреч | Выделение решений, пунктов действий, открытых вопросов |
 
-### 🧪 Testing Division
+### 🧪 Подразделение Testing
 
-Breaking things so users don't have to.
+Ломаем, чтобы пользователи не ломали.
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 📸 [Evidence Collector](testing/testing-evidence-collector.md) | Screenshot-based QA, visual proof | UI testing, visual verification, bug documentation |
-| 🔍 [Reality Checker](testing/testing-reality-checker.md) | Evidence-based certification, quality gates | Production readiness, quality approval, release certification |
-| 📊 [Test Results Analyzer](testing/testing-test-results-analyzer.md) | Test evaluation, metrics analysis | Test output analysis, quality insights, coverage reporting |
-| ⚡ [Performance Benchmarker](testing/testing-performance-benchmarker.md) | Performance testing, optimization | Speed testing, load testing, performance tuning |
-| 🔌 [API Tester](testing/testing-api-tester.md) | API validation, integration testing | API testing, endpoint verification, integration QA |
-| 🛠️ [Tool Evaluator](testing/testing-tool-evaluator.md) | Technology assessment, tool selection | Evaluating tools, software recommendations, tech decisions |
-| 🔄 [Workflow Optimizer](testing/testing-workflow-optimizer.md) | Process analysis, workflow improvement | Process optimization, efficiency gains, automation opportunities |
-| ♿ [Accessibility Auditor](testing/testing-accessibility-auditor.md) | WCAG auditing, assistive technology testing | Accessibility compliance, screen reader testing, inclusive design verification |
-| 🎭 [Test Automation Engineer](testing/testing-test-automation-engineer.md) | Playwright/Cypress E2E, flake elimination, CI parallelization | Browser test suites, deterministic pipelines, trace-driven failure debugging |
+| 📸 [Evidence Collector](testing/testing-evidence-collector.md) | QA на основе скриншотов, визуальные доказательства | UI-тестирование, визуальная верификация, документирование багов |
+| 🔍 [Reality Checker](testing/testing-reality-checker.md) | Сертификация на основе доказательств, гейты качества | Готовность к продакшену, одобрение качества, сертификация релиза |
+| 📊 [Test Results Analyzer](testing/testing-test-results-analyzer.md) | Оценка тестов, анализ метрик | Анализ результатов тестов, инсайты по качеству, отчёты о покрытии |
+| ⚡ [Performance Benchmarker](testing/testing-performance-benchmarker.md) | Нагрузочное тестирование, оптимизация | Тестирование скорости, нагрузочные тесты, настройка производительности |
+| 🔌 [API Tester](testing/testing-api-tester.md) | Валидация API, интеграционное тестирование | API-тестирование, проверка эндпоинтов, интеграционное QA |
+| 🛠️ [Tool Evaluator](testing/testing-tool-evaluator.md) | Оценка технологий, выбор инструментов | Оценка инструментов, рекомендации ПО, техрешения |
+| 🔄 [Workflow Optimizer](testing/testing-workflow-optimizer.md) | Анализ процессов, улучшение рабочих процессов | Оптимизация процессов, повышение эффективности, поиск возможностей автоматизации |
+| ♿ [Accessibility Auditor](testing/testing-accessibility-auditor.md) | Аудит WCAG, тестирование со вспомогательными технологиями | Соответствие доступности, тестирование со скринридерами, проверка инклюзивного дизайна |
+| 🎭 [Test Automation Engineer](testing/testing-test-automation-engineer.md) | E2E на Playwright/Cypress, устранение нестабильности, параллелизация в CI | Наборы браузерных тестов, детерминированные пайплайны, отладка с трассировками |
 
-### 🔒 Security Division
+### 🔒 Подразделение Security
 
-Defending the stack — from secure-by-design architecture to breach response.
+Защита стека — от безопасной архитектуры до реагирования на инциденты.
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🛡️ [Security Architect](security/security-architect.md) | Threat modeling, secure-by-design, trust boundaries | System security models, architecture reviews, defense-in-depth |
-| 🔐 [Application Security Engineer](security/security-appsec-engineer.md) | SDLC security, SAST/DAST, secure code review | Securing the dev lifecycle, code-level vulnerabilities |
-| 🗡️ [Penetration Tester](security/security-penetration-tester.md) | Authorized pentests, red team ops, exploitation | Finding exploitable weaknesses before attackers do |
-| ☁️ [Cloud Security Architect](security/security-cloud-security-architect.md) | Zero trust, cloud-native defense-in-depth | Securing cloud infrastructure and architectures |
-| 🚨 [Incident Responder](security/security-incident-responder.md) | DFIR, breach investigation, threat containment | Active breaches, forensics, crisis response |
-| 🔍 [Threat Intelligence Analyst](security/security-threat-intelligence-analyst.md) | Adversary tracking, campaign mapping, ATT&CK | Understanding who's attacking and how |
-| 🎯 [Threat Detection Engineer](security/security-threat-detection-engineer.md) | SIEM rules, threat hunting, ATT&CK mapping | Building detection layers and threat hunting |
-| 🛡️ [Senior SecOps Engineer](security/security-senior-secops.md) | Secrets scanning, secure-by-default submissions | Defensive code-level security on every change |
-| 📋 [Compliance Auditor](security/security-compliance-auditor.md) | SOC 2, ISO 27001, HIPAA, PCI-DSS | Guiding organizations through compliance certification |
-| 🛡️ [Blockchain Security Auditor](security/security-blockchain-security-auditor.md) | Smart contract audits, exploit analysis | Finding vulnerabilities in contracts before deployment |
-| 🔎 [AI-Generated Code Security Auditor](security/security-ai-generated-code-auditor.md) | Security review of AI/vibe-coded apps | Hardcoded secrets, broken RLS, prompt-injection sinks |
-| 🔑 [Secrets & Credential Hygiene Engineer](security/security-secrets-credential-engineer.md) | Secrets & credential lifecycle | Detection, vaulting, rotation, leak response |
+| 🛡️ [Security Architect](security/security-architect.md) | Моделирование угроз, security-by-design, границы доверия | Модели безопасности систем, ревью архитектуры, многоуровневая защита |
+| 🔐 [Application Security Engineer](security/security-appsec-engineer.md) | Безопасность в SDLC, SAST/DAST, код-ревью по безопасности | Защита процесса разработки, уязвимости на уровне кода |
+| 🗡️ [Penetration Tester](security/security-penetration-tester.md) | Авторизованные пентесты, red team, эксплуатация | Поиск уязвимостей до атакующих |
+| ☁️ [Cloud Security Architect](security/security-cloud-security-architect.md) | Zero Trust, облачная защита по принципу «глубокая оборона» | Защита облачной инфраструктуры и архитектур |
+| 🚨 [Incident Responder](security/security-incident-responder.md) | DFIR, расследование взломов, сдерживание угроз | Активные инциденты, криминалистика, кризисное реагирование |
+| 🔍 [Threat Intelligence Analyst](security/security-threat-intelligence-analyst.md) | Отслеживание атакующих, маппинг кампаний, ATT&CK | Понимание кто и как атакует |
+| 🎯 [Threat Detection Engineer](security/security-threat-detection-engineer.md) | Правила SIEM, охота за угрозами, маппинг ATT&CK | Построение слоёв детектирования и охота за угрозами |
+| 🛡️ [Senior SecOps Engineer](security/security-senior-secops.md) | Сканирование секретов, безопасные по умолчанию изменения | Защитный код-ревью на каждом изменении |
+| 📋 [Compliance Auditor](security/security-compliance-auditor.md) | SOC 2, ISO 27001, HIPAA, PCI-DSS | Проведение организаций через сертификацию соответствия |
+| 🛡️ [Blockchain Security Auditor](security/security-blockchain-security-auditor.md) | Аудит смарт-контрактов, анализ эксплойтов | Поиск уязвимостей в контрактах до деплоя |
+| 🔎 [AI-Generated Code Security Auditor](security/security-ai-generated-code-auditor.md) | Аудит кода, сгенерированного ИИ/вайбом | Захардкоженные секреты, сломанный RLS, уязвимости prompt-injection |
+| 🔑 [Secrets & Credential Hygiene Engineer](security/security-secrets-credential-engineer.md) | Жизненный цикл секретов и учёток | Обнаружение, хранение в vault, ротация, реагирование на утечки |
 
-### 🛟 Support Division
+### 🛟 Подразделение Support
 
-The backbone of the operation.
+Основа всей работы.
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 💬 [Support Responder](support/support-support-responder.md) | Customer service, issue resolution | Customer support, user experience, support operations |
-| 📊 [Analytics Reporter](support/support-analytics-reporter.md) | Data analysis, dashboards, insights | Business intelligence, KPI tracking, data visualization |
-| 💰 [Finance Tracker](support/support-finance-tracker.md) | Financial planning, budget management | Financial analysis, cash flow, business performance |
-| 🏗️ [Infrastructure Maintainer](support/support-infrastructure-maintainer.md) | System reliability, performance optimization | Infrastructure management, system operations, monitoring |
-| ⚖️ [Legal Compliance Checker](support/support-legal-compliance-checker.md) | Compliance, regulations, legal review | Legal compliance, regulatory requirements, risk management |
-| 📑 [Executive Summary Generator](support/support-executive-summary-generator.md) | C-suite communication, strategic summaries | Executive reporting, strategic communication, decision support |
+| 💬 [Support Responder](support/support-support-responder.md) | Клиентский сервис, решение проблем | Поддержка клиентов, пользовательский опыт, операционная поддержка |
+| 📊 [Analytics Reporter](support/support-analytics-reporter.md) | Анализ данных, дашборды, инсайты | Бизнес-аналитика, KPI, визуализация данных |
+| 💰 [Finance Tracker](support/support-finance-tracker.md) | Финпланирование, управление бюджетом | Финанализ, денежный поток, бизнес-показатели |
+| 🏗️ [Infrastructure Maintainer](support/support-infrastructure-maintainer.md) | Надёжность систем, оптимизация производительности | Управление инфраструктурой, системные операции, мониторинг |
+| ⚖️ [Legal Compliance Checker](support/support-legal-compliance-checker.md) | Комплаенс, регулирование, правовой анализ | Юридическое соответствие, нормативные требования, управление рисками |
+| 📑 [Executive Summary Generator](support/support-executive-summary-generator.md) | Коммуникация с C-level, стратегические сводки | Отчёты для руководства, стратегическая коммуникация, поддержка принятия решений |
 
-### 🥽 Spatial Computing Division
+### 🥽 Подразделение Spatial Computing
 
-Building the immersive future.
+Строим будущее погружения.
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🏗️ [XR Interface Architect](spatial-computing/xr-interface-architect.md) | Spatial interaction design, immersive UX | AR/VR/XR interface design, spatial computing UX |
-| 💻 [macOS Spatial/Metal Engineer](spatial-computing/macos-spatial-metal-engineer.md) | Swift, Metal, high-performance 3D | macOS spatial computing, Vision Pro native apps |
-| 🌐 [XR Immersive Developer](spatial-computing/xr-immersive-developer.md) | WebXR, browser-based AR/VR | Browser-based immersive experiences, WebXR apps |
-| 🎮 [XR Cockpit Interaction Specialist](spatial-computing/xr-cockpit-interaction-specialist.md) | Cockpit-based controls, immersive systems | Cockpit control systems, immersive control interfaces |
-| 🍎 [visionOS Spatial Engineer](spatial-computing/visionos-spatial-engineer.md) | Apple Vision Pro development | Vision Pro apps, spatial computing experiences |
-| 🔌 [Terminal Integration Specialist](spatial-computing/terminal-integration-specialist.md) | Terminal integration, command-line tools | CLI tools, terminal workflows, developer tools |
+| 🏗️ [XR Interface Architect](spatial-computing/xr-interface-architect.md) | Проектирование пространственного взаимодействия, иммерсивный UX | Дизайн интерфейсов AR/VR/XR, UX пространственных вычислений |
+| 💻 [macOS Spatial/Metal Engineer](spatial-computing/macos-spatial-metal-engineer.md) | Swift, Metal, высокопроизводительная 3D-графика | Пространственные вычисления macOS, нативные приложения Vision Pro |
+| 🌐 [XR Immersive Developer](spatial-computing/xr-immersive-developer.md) | WebXR, браузерные AR/VR | Браузерные иммерсивные опыты, WebXR-приложения |
+| 🎮 [XR Cockpit Interaction Specialist](spatial-computing/xr-cockpit-interaction-specialist.md) | Кокпит-управление, иммерсивные системы | Системы управления кокпитом, иммерсивные интерфейсы управления |
+| 🍎 [visionOS Spatial Engineer](spatial-computing/visionos-spatial-engineer.md) | Разработка под Apple Vision Pro | Приложения для Vision Pro, опыты пространственных вычислений |
+| 🔌 [Terminal Integration Specialist](spatial-computing/terminal-integration-specialist.md) | Интеграция терминала, CLI-инструменты | CLI-инструменты, терминальные рабочие процессы, инструменты разработчика |
 
-### 🎯 Specialized Division
+### 🎯 Подразделение Specialized
 
-The unique specialists who don't fit in a box.
+Уникальные специалисты, которые не вписываются в остальные категории.
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🎭 [Agents Orchestrator](specialized/agents-orchestrator.md) | Multi-agent coordination, workflow management | Complex projects requiring multiple agent coordination |
-| 🔍 [LSP/Index Engineer](specialized/lsp-index-engineer.md) | Language Server Protocol, code intelligence | Code intelligence systems, LSP implementation, semantic indexing |
-| 📥 [Sales Data Extraction Agent](specialized/sales-data-extraction-agent.md) | Excel monitoring, sales metric extraction | Sales data ingestion, MTD/YTD/Year End metrics |
-| 📈 [Data Consolidation Agent](specialized/data-consolidation-agent.md) | Sales data aggregation, dashboard reports | Territory summaries, rep performance, pipeline snapshots |
-| 📬 [Report Distribution Agent](specialized/report-distribution-agent.md) | Automated report delivery | Territory-based report distribution, scheduled sends |
-| 🔐 [Agentic Identity & Trust Architect](specialized/agentic-identity-trust.md) | Agent identity, authentication, trust verification | Multi-agent identity systems, agent authorization, audit trails |
-| 🔗 [Identity Graph Operator](specialized/identity-graph-operator.md) | Shared identity resolution for multi-agent systems | Entity deduplication, merge proposals, cross-agent identity consistency |
-| 💸 [Accounts Payable Agent](specialized/accounts-payable-agent.md) | Payment processing, vendor management, audit | Autonomous payment execution across crypto, fiat, stablecoins |
-| 🌍 [Cultural Intelligence Strategist](specialized/specialized-cultural-intelligence-strategist.md) | Global UX, representation, cultural exclusion | Ensuring software resonates across cultures |
-| 🗣️ [Developer Advocate](specialized/specialized-developer-advocate.md) | Community building, DX, developer content | Bridging product and developer community |
-| 🔬 [Model QA Specialist](specialized/specialized-model-qa.md) | ML audits, feature analysis, interpretability | End-to-end QA for machine learning models |
-| 🗃️ [ZK Steward](specialized/zk-steward.md) | Knowledge management, Zettelkasten, notes | Building connected, validated knowledge bases |
-| 🔌 [MCP Builder](specialized/specialized-mcp-builder.md) | Model Context Protocol servers, AI agent tooling | Building MCP servers that extend AI agent capabilities |
-| 📄 [Document Generator](specialized/specialized-document-generator.md) | PDF, PPTX, DOCX, XLSX generation from code | Professional document creation, reports, data visualization |
-| ⚙️ [Automation Governance Architect](specialized/automation-governance-architect.md) | Automation governance, n8n, workflow auditing | Evaluating and governing business automations at scale |
-| 📚 [Corporate Training Designer](specialized/corporate-training-designer.md) | Enterprise training, curriculum development | Designing training systems and learning programs |
-| 🌱 [Personal Growth Mentor](specialized/personal-growth-mentor.md) | Goal clarity, habit systems, accountability, life strategy | Cross-domain personal development without motivational fluff |
-| 🏛️ [Government Digital Presales Consultant](specialized/government-digital-presales-consultant.md) | China ToG presales, digital transformation | Government digital transformation proposals and bids |
-| ⚕️ [Healthcare Marketing Compliance](specialized/healthcare-marketing-compliance.md) | China healthcare advertising compliance | Healthcare marketing regulatory compliance |
-| 🎯 [Recruitment Specialist](specialized/recruitment-specialist.md) | Talent acquisition, recruiting operations | Recruitment strategy, sourcing, and hiring processes |
-| 🎓 [Study Abroad Advisor](specialized/study-abroad-advisor.md) | International education, application planning | Study abroad planning across US, UK, Canada, Australia |
-| 🔗 [Supply Chain Strategist](specialized/supply-chain-strategist.md) | Supply chain management, procurement strategy | Supply chain optimization and procurement planning |
-| 🗺️ [Workflow Architect](specialized/specialized-workflow-architect.md) | Workflow discovery, mapping, and specification | Mapping every path through a system before code is written |
-| ☁️ [Salesforce Architect](specialized/specialized-salesforce-architect.md) | Multi-cloud Salesforce design, governor limits, integrations | Enterprise Salesforce architecture, org strategy, deployment pipelines |
-| 🇫🇷 [French Consulting Market Navigator](specialized/specialized-french-consulting-market.md) | ESN/SI ecosystem, portage salarial, rate positioning | Freelance consulting in the French IT market |
-| 🇰🇷 [Korean Business Navigator](specialized/specialized-korean-business-navigator.md) | Korean business culture, 품의 process, relationship mechanics | Foreign professionals navigating Korean business relationships |
-| 🏗️ [Civil Engineer](specialized/specialized-civil-engineer.md) | Structural analysis, geotechnical design, global building codes | Multi-standard structural engineering across Eurocode, ACI, AISC, and more |
-| 🎧 [Customer Service](specialized/customer-service.md) | Omnichannel support, complaint handling, retention, escalation | Any industry customer support — retail, SaaS, hospitality, finance, logistics |
-| 🏥 [Healthcare Customer Service](specialized/healthcare-customer-service.md) | HIPAA-aware patient support, billing, insurance, emergency routing | Healthcare organizations needing compliant, empathetic patient support |
-| 🏨 [Hospitality Guest Services](specialized/hospitality-guest-services.md) | Reservations, concierge, complaint recovery, loyalty, events | Hotels, resorts, restaurants, and event venues |
-| 🤝 [HR Onboarding](specialized/hr-onboarding.md) | Pre-boarding, compliance, benefits enrollment, 30-60-90 day plans | Any company onboarding new hires — from startups to enterprise |
-| 🌐 [Language Translator](specialized/language-translator.md) | Spanish ↔ English translation, dialect awareness, cultural context | Travel, business, medical, and legal translation needs |
-| ⏱️ [Legal Billing & Time Tracking](specialized/legal-billing-time-tracking.md) | Time capture, billing narratives, IOLTA compliance, collections | Law firms maximizing revenue recovery and billing accuracy |
-| 📋 [Legal Client Intake](specialized/legal-client-intake.md) | Prospect qualification, conflict screening, consultation scheduling | Law firms converting inquiries into retained clients |
-| ⚖️ [Legal Document Review](specialized/legal-document-review.md) | Contract review, risk flagging, version comparison, compliance | Attorney-ready first-pass review across any practice area |
-| 🏦 [Loan Officer Assistant](specialized/loan-officer-assistant.md) | Borrower intake, TRID compliance, pipeline tracking, closing coordination | Mortgage and consumer lending teams |
-| 🏠 [Real Estate Buyer & Seller](specialized/real-estate-buyer-seller.md) | Buyer/seller representation, offers, transaction coordination | Residential and investment real estate transactions |
-| 🛒 [Retail Customer Returns](specialized/retail-customer-returns.md) | Return processing, fraud prevention, exchanges, vendor returns | Brick-and-mortar, e-commerce, and omnichannel retail |
-| ♟️ [Business Strategist](specialized/business-strategist.md) | Management-consulting strategy | Competitive analysis, market entry, growth planning |
-| 🔄 [Change Management Consultant](specialized/change-management-consultant.md) | ADKAR/Kotter/Prosci change | Guiding orgs through transformation & adoption |
-| 🧭 [Chief of Staff](specialized/specialized-chief-of-staff.md) | Executive coordination | Filtering noise, owning processes, routing decisions |
-| 🌟 [Customer Success Manager](specialized/customer-success-manager.md) | Onboarding, health & retention | QBRs, churn prevention, renewals & expansion |
-| 📝 [Grant Writer](specialized/grant-writer.md) | Grant proposals & funding | LOIs, proposals, budgets for nonprofits/research |
-| 🏥 [Medical Billing & Coding Specialist](specialized/medical-billing-coding-specialist.md) | ICD-10/CPT/HCPCS & revenue cycle | Claims, denial management, RCM optimization |
-| 💰 [Pricing Analyst](specialized/specialized-pricing-analyst.md) | Pricing models & margin optimization | Competitor/cost analysis, value-based pricing |
-| 💼 [Chief Financial Officer](specialized/chief-financial-officer.md) | Capital allocation & financial strategy | Treasury, FP&A, M&A finance, investor & board reporting |
-| 🌱 [ESG & Sustainability Officer](specialized/esg-sustainability-officer.md) | ESG programs & disclosure | Sustainability strategy, decarbonization, reporting |
-| 🔐 [Data Privacy Officer](specialized/data-privacy-officer.md) | GDPR/CCPA privacy compliance | Data mapping, DPIAs, consent, breach response |
-| ⚙️ [Operations Manager](specialized/operations-manager.md) | Lean/Six Sigma operations | Process mapping, capacity planning, KPI governance |
-| 🤝 [M&A Integration Manager](specialized/ma-integration-manager.md) | Post-merger integration | Day 1/100-day plans, synergy tracking, TSA management |
-| 🧠 [Organizational Psychologist](specialized/organizational-psychologist.md) | Team dynamics & culture health | Psychological safety, burnout risk, high-performing teams |
-| ⚔️ [Strategy Duel Agent](specialized/specialized-strategy-duel-agent.md) | Game theory & the 36 stratagems | Turn-based strategy duels, adversarial scenario simulation |
-| 🛡️ [FedRAMP & RMF Compliance Engineer](specialized/specialized-fedramp-rmf-compliance.md) | Federal cloud authorization (ATO) | NIST 800-53, FedRAMP Rev5/20x, SSP/POA&M, ConMon, OSCAL |
-| 🏺 [Codebase Archaeologist](specialized/specialized-codebase-archaeologist.md) | Multi-tool codebase drift audits | Detecting silent drift across Claude/Cursor/Copilot/Windsurf edits |
-| 🧾 [Resume Tailor](specialized/resume-tailor.md) | Candidate-side resume optimization | JD mapping, ATS keyword alignment, experience-to-requirement matching |
-| 🧡 [Aging Parent Care Companion](specialized/healthcare-aging-parent-care-companion.md) | Family caregiver decision-support | Appointment/medication coordination, care-team comms, caregiver wellbeing (HIPAA-aligned) |
-| 🏛️ [Master Plan Architect](specialized/specialized-master-plan-architect.md) | Architectural teaching, red-team plan critique | Deep architecture teaching, risk critique, comprehensive Markdown implementation plans (no code execution) |
-| 🎧 [Focus Music Architect](specialized/specialized-focus-music-architect.md) | Instrumental focus-music prompt engineering, neuroacoustics | Soundscape architecture, BPM curves, binaural layers for generative audio models |
+| 🎭 [Agents Orchestrator](specialized/agents-orchestrator.md) | Координация мультиагентных систем, управление рабочими процессами | Сложные проекты, требующие координации множества агентов |
+| 🔍 [LSP/Index Engineer](specialized/lsp-index-engineer.md) | Language Server Protocol, кодовый интеллект | Системы кодового интеллекта, реализация LSP, семантическая индексация |
+| 📥 [Sales Data Extraction Agent](specialized/sales-data-extraction-agent.md) | Мониторинг Excel, извлечение продажных метрик | Сбор продажных данных, метрики MTD/YTD/год |
+| 📈 [Data Consolidation Agent](specialized/data-consolidation-agent.md) | Агрегация продажных данных, отчёты для дашбордов | Сводки по территориям, производительность продавцов, снимки пайплайна |
+| 📬 [Report Distribution Agent](specialized/report-distribution-agent.md) | Автоматизированная доставка отчётов | Доставка отчётов по территориям, плановые рассылки |
+| 🔐 [Agentic Identity & Trust Architect](specialized/agentic-identity-trust.md) | Идентичность агентов, аутентификация, проверка доверия | Системы идентичности мультиагентов, авторизация, аудит-трейлы |
+| 🔗 [Identity Graph Operator](specialized/identity-graph-operator.md) | Разрешение общей идентичности в мультиагентных системах | Дедупликация сущностей, предложения по слиянию, согласованность идентичности |
+| 💸 [Accounts Payable Agent](specialized/accounts-payable-agent.md) | Обработка платежей, управление поставщиками, аудит | Автономные платежи в крипте, фиате, стейблкоинах |
+| 🌍 [Cultural Intelligence Strategist](specialized/specialized-cultural-intelligence-strategist.md) | Глобальный UX, репрезентация, культурные барьеры | Адаптация ПО под разные культуры |
+| 🗣️ [Developer Advocate](specialized/specialized-developer-advocate.md) | Построение сообщества, DX, контент для разработчиков | Связь между продуктом и сообществом разработчиков |
+| 🔬 [Model QA Specialist](specialized/specialized-model-qa.md) | Аудит ML, анализ признаков, интерпретируемость | End-to-end QA машинного обучения |
+| 🗃️ [ZK Steward](specialized/zk-steward.md) | Управление знаниями, Zettelkasten, заметки | Построение связных и проверенных баз знаний |
+| 🔌 [MCP Builder](specialized/specialized-mcp-builder.md) | MCP-серверы, инструментарий ИИ-агентов | Создание MCP-серверов для расширения возможностей агентов |
+| 📄 [Document Generator](specialized/specialized-document-generator.md) | Генерация PDF, PPTX, DOCX, XLSX из кода | Профессиональные документы, отчёты, визуализация данных |
+| ⚙️ [Automation Governance Architect](specialized/automation-governance-architect.md) | Управление автоматизацией, n8n, аудит рабочих процессов | Оценка и управление бизнес-автоматизацией в масштабе |
+| 📚 [Corporate Training Designer](specialized/corporate-training-designer.md) | Корпоративное обучение, разработка программ | Проектирование обучающих систем и программ |
+| 🌱 [Personal Growth Mentor](specialized/personal-growth-mentor.md) | Ясность целей, привычки, ответственность, жизненная стратегия | Личностное развитие без мотивационных клише |
+| 🏛️ [Government Digital Presales Consultant](specialized/government-digital-presales-consultant.md) | Пресейл для госзаказа Китая, цифровая трансформация | Предложения и заявки на цифровизацию госструктур |
+| ⚕️ [Healthcare Marketing Compliance](specialized/healthcare-marketing-compliance.md) | Соответствие рекламы медуслуг в Китае | Соблюдение нормативов в медицинском маркетинге |
+| 🎯 [Recruitment Specialist](specialized/recruitment-specialist.md) | Подбор персонала, операционное управление наймом | Стратегия найма, поиск, процессы подбора |
+| 🎓 [Study Abroad Advisor](specialized/study-abroad-advisor.md) | Международное образование, планирование поступления | Планирование обучения за рубежом в США, Великобритании, Канаде, Австралии |
+| 🔗 [Supply Chain Strategist](specialized/supply-chain-strategist.md) | Управление цепочками поставок, стратегия закупок | Оптимизация цепочек поставок и закупочная стратегия |
+| 🗺️ [Workflow Architect](specialized/specialized-workflow-architect.md) | Выявление, маппинг и спецификация рабочих процессов | Моделирование всех путей системы до написания кода |
+| ☁️ [Salesforce Architect](specialized/specialized-salesforce-architect.md) | Мультиоблачный Salesforce, ограничения, интеграции | Архитектура Salesforce предприятия, стратегия org, пайплайны деплоя |
+| 🇫🇷 [French Consulting Market Navigator](specialized/specialized-french-consulting-market.md) | Экосистема ESN/SI, portage salarial, ценообразование | Фриланс-консалтинг на французском IT-рынке |
+| 🇰🇷 [Korean Business Navigator](specialized/specialized-korean-business-navigator.md) | Корейская бизнес-культура, процесс 품의, отношения | Навигация в корейских бизнес-отношениях для иностранцев |
+| 🏗️ [Civil Engineer](specialized/specialized-civil-engineer.md) | Расчёт конструкций, геотехника, международные нормы | Мультистандартное проектирование (Eurocode, ACI, AISC и др.) |
+| 🎧 [Customer Service](specialized/customer-service.md) | Омниканальная поддержка, работа с жалобами, удержание, эскалации | Поддержка клиентов в любой отрасли |
+| 🏥 [Healthcare Customer Service](specialized/healthcare-customer-service.md) | HIPAA-совместимая поддержка пациентов, биллинг, страхование | Поддержка в здравоохранении с соблюдением регуляций |
+| 🏨 [Hospitality Guest Services](specialized/hospitality-guest-services.md) | Бронирование, консьерж, работа с жалобами, лояльность | Отели, курорты, рестораны, мероприятия |
+| 🤝 [HR Onboarding](specialized/hr-onboarding.md) | Пре-онбординг, комплаенс, льготы, планы 30-60-90 дней | Онбординг в компаниях любого размера |
+| 🌐 [Language Translator](specialized/language-translator.md) | Перевод испанский↔английский, диалекты, культурный контекст | Перевод для туризма, бизнеса, медицины, юриспруденции |
+| ⏱️ [Legal Billing & Time Tracking](specialized/legal-billing-time-tracking.md) | Учёт времени, биллинговые нарративы, IOLTA, взыскания | Оптимизация выручки юридических фирм |
+| 📋 [Legal Client Intake](specialized/legal-client-intake.md) | Квалификация клиентов, проверка конфликтов, запись на консультацию | Превращение обращений в заключённые дела |
+| ⚖️ [Legal Document Review](specialized/legal-document-review.md) | Ревью договоров, выявление рисков, сравнение версий | Предварительная правовая экспертиза |
+| 🏦 [Loan Officer Assistant](specialized/loan-officer-assistant.md) | Приём заявок, соответствие TRID, пайплайн, координация закрытия | Ипотечное и потребительское кредитование |
+| 🏠 [Real Estate Buyer & Seller](specialized/real-estate-buyer-seller.md) | Представительство покупателей/продавцов, офферы, сделки | Жилая и инвестиционная недвижимость |
+| 🛒 [Retail Customer Returns](specialized/retail-customer-returns.md) | Возвраты, предотвращение мошенничества, обмены | Розница и e-commerce |
+| ♟️ [Business Strategist](specialized/business-strategist.md) | Стратегический консалтинг | Конкурентный анализ, выход на рынок, рост |
+| 🔄 [Change Management Consultant](specialized/change-management-consultant.md) | ADKAR/Kotter/Prosci | Управление изменениями и внедрением |
+| 🧭 [Chief of Staff](specialized/specialized-chief-of-staff.md) | Координация у руководства | Фильтрация, процессы, маршрутизация решений |
+| 🌟 [Customer Success Manager](specialized/customer-success-manager.md) | Онбординг, здоровье клиента, удержание | QBR, предотвращение оттока, продление, расширение |
+| 📝 [Grant Writer](specialized/grant-writer.md) | Грантовые заявки и финансирование | LOI, заявки, бюджеты для НКО/исследований |
+| 🏥 [Medical Billing & Coding Specialist](specialized/medical-billing-coding-specialist.md) | ICD-10/CPT/HCPCS, цикл доходов | Клаймы, работа с отказами, оптимизация RCM |
+| 💰 [Pricing Analyst](specialized/specialized-pricing-analyst.md) | Ценообразование и маржинальность | Конкурентный/затратный анализ, ценностное ценообразование |
+| 💼 [Chief Financial Officer](specialized/chief-financial-officer.md) | Капитал, финансовая стратегия | Казначейство, FP&A, M&A, отчётность инвесторам и совету |
+| 🌱 [ESG & Sustainability Officer](specialized/esg-sustainability-officer.md) | ESG-программы и отчётность | Стратегия устойчивого развития, декарбонизация, отчётность |
+| 🔐 [Data Privacy Officer](specialized/data-privacy-officer.md) | Соответствие GDPR/CCPA | Картирование данных, DPIA, согласия, реагирование на инциденты |
+| ⚙️ [Operations Manager](specialized/operations-manager.md) | Lean/Six Sigma | Картирование процессов, планирование мощностей, KPI |
+| 🤝 [M&A Integration Manager](specialized/ma-integration-manager.md) | Постслияние-интеграция | Планы Day 1/100 дней, синергии, TSA |
+| 🧠 [Organizational Psychologist](specialized/organizational-psychologist.md) | Динамика команд и культура | Психологическая безопасность, выгорание, высокоэффективные команды |
+| ⚔️ [Strategy Duel Agent](specialized/specialized-strategy-duel-agent.md) | Теория игр и 36 стратагем | Походовые стратегические дуэли, симуляция сценариев |
+| 🛡️ [FedRAMP & RMF Compliance Engineer](specialized/specialized-fedramp-rmf-compliance.md) | Авторизация облака для госструктур (ATO) | NIST 800-53, FedRAMP Rev5/20x, SSP/POA&M, ConMon, OSCAL |
+| 🏺 [Codebase Archaeologist](specialized/specialized-codebase-archaeologist.md) | Аудит дрейфа кодовой базы | Обнаружение тихого дрейфа между Claude/Cursor/Copilot/Windsurf |
+| 🧾 [Resume Tailor](specialized/resume-tailor.md) | Оптимизация резюме со стороны кандидата | Сопоставление с JD, ATS-ключевые слова, соответствие требованиям |
+| 🧡 [Aging Parent Care Companion](specialized/healthcare-aging-parent-care-companion.md) | Поддержка семьи по уходу за пожилыми родителями | Координация приёмов/лекарств, взаимодействие с командой ухода (с учётом HIPAA) |
+| 🏛️ [Master Plan Architect](specialized/specialized-master-plan-architect.md) | Обучение архитектуре, редтим-проверка планов | Глубокое обучение архитектуре, критический анализ рисков, подробные Markdown-планы без выполнения кода |
+| 🎧 [Focus Music Architect](specialized/specialized-focus-music-architect.md) | Промпт-инжиниринг музыки для фокуса, нейроакустика | Архитектура саундскейпов, кривые BPM, бинауральные слои для генеративного аудио |
 
-### 💵 Finance Division
+### 💵 Подразделение Finance
 
-Accounting, financial analysis, tax strategy, and investment research specialists.
+Бухгалтерия, финансовый анализ, налоговая стратегия и инвестиционные исследования.
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 📒 [Bookkeeper & Controller](finance/finance-bookkeeper-controller.md) | Month-end close, reconciliation, GAAP compliance, internal controls | Day-to-day accounting operations, audit readiness, financial record-keeping |
-| 📊 [Financial Analyst](finance/finance-financial-analyst.md) | Financial modeling, forecasting, scenario analysis, decision support | Three-statement models, variance analysis, data-driven business intelligence |
-| 📈 [FP&A Analyst](finance/finance-fpa-analyst.md) | Budgeting, rolling forecasts, variance analysis, business reviews | Annual operating plans, monthly business reviews, strategic resource allocation |
-| 🔍 [Investment Researcher](finance/finance-investment-researcher.md) | Due diligence, portfolio analysis, asset valuation, equity research | Investment thesis development, risk assessment, market research |
-| 🏛️ [Tax Strategist](finance/finance-tax-strategist.md) | Tax optimization, multi-jurisdictional compliance, transfer pricing | Entity structuring, ETR analysis, audit defense, strategic tax planning |
+| 📒 [Bookkeeper & Controller](finance/finance-bookkeeper-controller.md) | Месячное закрытие, сверка, соответствие GAAP, внутренний контроль | Ежедневный учёт, готовность к аудиту, ведение финансовых записей |
+| 📊 [Financial Analyst](finance/finance-financial-analyst.md) | Финмоделирование, прогнозирование, сценарный анализ, поддержка решений | Трёхформатные модели, анализ отклонений, бизнес-аналитика на данных |
+| 📈 [FP&A Analyst](finance/finance-fpa-analyst.md) | Бюджетирование, скользящие прогнозы, анализ отклонений, бизнес-обзоры | Годовой операционный план, ежемесячные бизнес-обзоры, стратегическое распределение ресурсов |
+| 🔍 [Investment Researcher](finance/finance-investment-researcher.md) | Due diligence, анализ портфеля, оценка активов, акционерный анализ | Разработка инвестиционной идеи, оценка рисков, рыночные исследования |
+| 🏛️ [Tax Strategist](finance/finance-tax-strategist.md) | Налоговая оптимизация, трансграничное соответствие, трансфертное ценообразование | Структурирование юрлиц, анализ эффективной ставки, защита при проверках, стратегическое налоговое планирование |
 
 ### 🎮 Game Development Division
 
@@ -509,258 +509,226 @@ Building worlds, systems, and experiences across every major engine.
 | 🎯 [Roblox Experience Designer](game-development/roblox-studio/roblox-experience-designer.md) | Engagement loops, monetization, D1/D7 retention, onboarding flow | Designing Roblox game loops, Game Passes, daily rewards, player retention |
 | 👗 [Roblox Avatar Creator](game-development/roblox-studio/roblox-avatar-creator.md) | UGC pipeline, accessory rigging, Creator Marketplace submission | Roblox UGC items, HumanoidDescription customization, in-experience avatar shops |
 
-### 📚 Academic Division
+### 📚 Подразделение Academic
 
-Scholarly rigor for world-building, storytelling, and narrative design.
+Академическая строгость для мирового строительства, сторителлинга и нарративного дизайна.
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🌍 [Anthropologist](academic/academic-anthropologist.md) | Cultural systems, kinship, rituals, belief systems | Designing culturally coherent societies with internal logic |
-| 🌐 [Geographer](academic/academic-geographer.md) | Physical/human geography, climate, cartography | Building geographically coherent worlds with realistic terrain and settlements |
-| 📚 [Historian](academic/academic-historian.md) | Historical analysis, periodization, material culture | Validating historical coherence, enriching settings with authentic period detail |
-| 📜 [Narratologist](academic/academic-narratologist.md) | Narrative theory, story structure, character arcs | Analyzing and improving story structure with established theoretical frameworks |
-| 🧠 [Psychologist](academic/academic-psychologist.md) | Personality theory, motivation, cognitive patterns | Building psychologically credible characters grounded in research |
-| 📊 [Statistician](academic/academic-statistician.md) | Statistical inference & experiment design | Hypothesis testing, causal inference, sampling, rigorous analysis |
+| 🌍 [Anthropologist](academic/academic-anthropologist.md) | Культурные системы, родство, ритуалы, верования | Проектирование культурно связных обществ с внутренней логикой |
+| 🌐 [Geographer](academic/academic-geographer.md) | Физическая/социальная география, климат, картография | Построение географически правдоподобных миров с реалистичным рельефом и поселениями |
+| 📚 [Historian](academic/academic-historian.md) | Исторический анализ, периодизация, материальная культура | Валидация исторической достоверности, аутентичные детали эпохи |
+| 📜 [Narratologist](academic/academic-narratologist.md) | Теория нарратива, структура истории, арки персонажей | Анализ и улучшение структуры сюжета с опорой на теорию |
+| 🧠 [Psychologist](academic/academic-psychologist.md) | Теория личности, мотивация, когнитивные паттерны | Создание психологически достоверных персонажей на основе исследований |
+| 📊 [Statistician](academic/academic-statistician.md) | Статистический вывод и дизайн экспериментов | Проверка гипотез, каузальный анализ, репрезентативные выборки |
 
----
+### 🌍 Подразделение GIS
 
-### 🌍 GIS Division
+Картируем Землю, анализируем застроенную среду и извлекаем разведданные из геопространственных данных.
 
-Mapping the Earth, analyzing the built world, and extracting intelligence from geospatial data.
-
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🧠 [Technical Consultant](gis/gis-technical-consultant.md) | GIS strategy, gap analysis, technology roadmaps, digital transformation | Understanding business needs, selecting the right geospatial stack, planning multi-phase GIS programs |
-| 🔧 [Solution Engineer](gis/gis-solution-engineer.md) | Esri + FOSS4G prototype building, PoC delivery, technical feasibility | Building working demos, validating technical approaches, pre-sales support |
-| 🖥️ [GIS Analyst](gis/gis-analyst.md) | Map production, data QC, symbology, layouts, spatial queries | Day-to-day GIS operations, creating publication-ready maps, maintaining data integrity |
-| 📦 [Spatial Data Engineer](gis/gis-spatial-data-engineer.md) | Geospatial ETL, format conversion, CRS reprojection, automated pipelines | Ingesting messy data from any source, building repeatable data transformation pipelines |
-| ⚙️ [Geoprocessing Specialist](gis/gis-geoprocessing-specialist.md) | ArcPy, Python Toolbox (.pyt), Model Builder, batch automation | Automating repetitive GIS workflows, building custom geoprocessing tools |
-| ✅ [GIS QA Engineer](gis/gis-qa-engineer.md) | Topology validation, metadata audit, CRS consistency, accuracy assessment | Quality gates before data publication, compliance verification, data integrity audits |
-| 🤖 [GeoAI/ML Engineer](gis/gis-geoai-ml-engineer.md) | Feature extraction, object detection, semantic segmentation, land cover classification | Extracting buildings/roads/vehicles from imagery, change detection, environmental monitoring |
-| 🏗️ [BIM/GIS Specialist](gis/gis-bim-specialist.md) | Revit/IFC to GIS, indoor mapping, digital twin architecture, facility management | Smart campus, airport digital twins, indoor navigation, building operations |
-| 🏔️ [3D & Scene Developer](gis/gis-3d-scene-developer.md) | Cesium, ArcGIS Scene Viewer, 3D Tiles, point clouds, terrain visualization | 3D city scenes, terrain flyovers, point cloud web viewers, OAuth-gated scene sharing |
-| 📊 [Spatial Data Scientist](gis/gis-spatial-data-scientist.md) | Spatial statistics, clustering, regression, interpolation, point pattern analysis | Hotspot detection, spatial modeling, predictive analytics, research-grade analysis |
-| 🛸 [Drone/Reality Mapping](gis/gis-drone-reality-mapping.md) | Photogrammetry, orthomosaic, DTM/DSM, point cloud classification, 3D mesh | Drone survey processing, reality capture, construction monitoring, environmental mapping |
-| 🌐 [Web GIS Developer](gis/gis-web-gis-developer.md) | MapLibre GL JS, ArcGIS JS API, Leaflet, real-time dashboards, REST APIs | Building interactive web maps, operational dashboards, real-time data visualization |
-| 🎨 [Cartography Designer](gis/gis-cartography-designer.md) | Color theory, typography, basemap design, visual hierarchy, print and web aesthetics | Making maps beautiful and readable, colorblind-safe palettes, professional map layouts |
+| 🧠 [Technical Consultant](gis/gis-technical-consultant.md) | GIS-стратегия, gap-анализ, дорожные карты, цифровая трансформация | Определение бизнес-требований, выбор геопространственного стека, планирование GIS-программ |
+| 🔧 [Solution Engineer](gis/gis-solution-engineer.md) | Прототипы на Esri + FOSS4G, PoC, техническая реализуемость | Работающие демо, валидация подходов, пресейл-поддержка |
+| 🖥️ [GIS Analyst](gis/gis-analyst.md) | Картосоставление, контроль качества, символика, вёрстка, пространственные запросы | Операции GIS, публикационно-готовые карты, поддержка целостности данных |
+| 📦 [Spatial Data Engineer](gis/gis-spatial-data-engineer.md) | Геопространственный ETL, конвертация форматов, репроекция СК, автоматизация | Обработка разнородных данных, повторяемые пайплайны трансформации |
+| ⚙️ [Geoprocessing Specialist](gis/gis-geoprocessing-specialist.md) | ArcPy, Python Toolbox (.pyt), Model Builder, батч-автоматизация | Автоматизация рутинных задач, кастомные инструменты геообработки |
+| ✅ [GIS QA Engineer](gis/gis-qa-engineer.md) | Топология, метаданные, СК, оценка точности | Контроль качества перед публикацией, проверка соответствия, аудит целостности |
+| 🤖 [GeoAI/ML Engineer](gis/gis-geoai-ml-engineer.md) | Выделение объектов, детекция, семантическая сегментация, классификация | Выделение зданий/дорог/транспорта, выявление изменений, экологический мониторинг |
+| 🏗️ [BIM/GIS Specialist](gis/gis-bim-specialist.md) | Revit/IFC в GIS, indoor-картирование, цифровой двойник, эксплуатация | Умные кампусы, цифровые двойники аэропортов, навигация внутри, эксплуатация зданий |
+| 🏔️ [3D & Scene Developer](gis/gis-3d-scene-developer.md) | Cesium, ArcGIS Scene Viewer, 3D Tiles, облака точек, визуализация рельефа | 3D-городские сцены, облёты, веб-просмотр облаков точек |
+| 📊 [Spatial Data Scientist](gis/gis-spatial-data-scientist.md) | Пространственная статистика, кластеризация, регрессия, интерполяция | Выявление горячих точек, пространственное моделирование, предиктивная аналитика |
+| 🛸 [Drone/Reality Mapping](gis/gis-drone-reality-mapping.md) | Фотограмметрия, ортомозаика, ЦММ/ЦМР, классификация облака точек | Обработка БПЛА, реалити-кепча, мониторинг стройки, экологические исследования |
+| 🌐 [Web GIS Developer](gis/gis-web-gis-developer.md) | MapLibre GL JS, ArcGIS JS API, Leaflet, дашборды, REST API | Интерактивные карты, операционные дашборды, визуализация в реальном времени |
+| 🎨 [Cartography Designer](gis/gis-cartography-designer.md) | Цвет, типографика, базовая карта, иерархия, печать и веб | Красивые и читаемые карты, палитры для дальтоников, профессиональная вёрстка |
 
----
+### 🏥 Подразделение Healthcare
 
-### 🏥 Healthcare Division
+ИИ-агенты для регулируемой клинической и суверенной здравоохранительной среды.
 
-Building AI agents for regulated clinical and sovereign health contexts.
-
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🩺 [Clinical Evidence Agent](healthcare/healthcare-clinical-evidence-agent.md) | Evidence standards, validated vs unvalidated claims, diagnostic authority boundaries | Making clinical claims credibly without overstepping into diagnostic authority |
-| 🌍 [Sovereign Health Systems Agent](healthcare/healthcare-sovereign-health-systems-agent.md) | Government health mandates, UHC policy, emerging market deployment | Health tech teams operating at the intersection of national health infrastructure and sovereign health policy |
-| 🧭 [Healthcare Innovation Strategist](healthcare/healthcare-innovation-strategist.md) | Narrative architecture for healthcare founders across investor, regulatory, sovereign, and clinical audiences | Healthcare founders who need to translate clinical and financial complexity into language that moves capital and builds trust |
+| 🩺 [Clinical Evidence Agent](healthcare/healthcare-clinical-evidence-agent.md) | Стандарты доказательности, проверенные/непроверенные утверждения, границы диагностических полномочий | Обоснованные клинические утверждения без превышения диагностических полномочий |
+| 🌍 [Sovereign Health Systems Agent](healthcare/healthcare-sovereign-health-systems-agent.md) | Госпрограммы здравоохранения, ОМП, развивающиеся рынки | Здравоохранительные проекты в контексте национальной инфраструктуры и суверенной политики |
+| 🧭 [Healthcare Innovation Strategist](healthcare/healthcare-innovation-strategist.md) | Нарратив для здравоохранительных стартапов под инвесторов, регуляторов, госорганы | Трансляция клинико-финансовой сложности на язык, который привлекает капитал и доверие |
 
----
+### 🔍 Подразделение Research
 
-### 🔍 Research Division
+Поиск, оценка и синтез существующих доказательств, а не генерация первичных данных.
 
-Finding, evaluating, and synthesizing existing evidence rather than generating new primary data.
-
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🔍 [Research Synthesist](research/research-synthesist.md) | Literature review, source evaluation, citation tracing, evidence synthesis | Turning a scattered pile of sources into a structured, honestly-weighted map of what the evidence supports |
+| 🔍 [Research Synthesist](research/research-synthesist.md) | Обзор литературы, оценка источников, трассировка ссылок, синтез доказательств | Структурированный честный обзор того, что действительно поддерживает доказательная база |
 
 ---
 
-## 🎯 Real-World Use Cases
+## 🎯 Реальные примеры использования
 
-### Scenario 1: Building a Startup MVP
+### Сценарий 1: Создание MVP стартапа
 
-**Your Team**:
-1. 🎨 **Frontend Developer** - Build the React app
-2. 🏗️ **Backend Architect** - Design the API and database
-3. 🚀 **Growth Hacker** - Plan user acquisition
-4. ⚡ **Rapid Prototyper** - Fast iteration cycles
-5. 🔍 **Reality Checker** - Ensure quality before launch
+**Ваша команда**:
+1. 🎨 **Frontend Developer** — фронтенд на React
+2. 🏗️ **Backend Architect** — проектирование API и БД
+3. 🚀 **Growth Hacker** — привлечение пользователей
+4. ⚡ **Rapid Prototyper** — быстрая итерация
+5. 🔍 **Reality Checker** — проверка качества перед запуском
 
-**Result**: Ship faster with specialized expertise at every stage.
+**Результат**: Быстрый запуск с экспертизой на каждом этапе.
 
----
+### Сценарий 2: Запуск маркетинговой кампании
 
-### Scenario 2: Marketing Campaign Launch
+**Ваша команда**:
+1. 📝 **Content Creator** — контент кампании
+2. 🐦 **Twitter Engager** — стратегия и запуск в X/Twitter
+3. 📸 **Instagram Curator** — визуальный контент и истории
+4. 🤝 **Reddit Community Builder** — аутентичное вовлечение в сообществе
+5. 📊 **Analytics Reporter** — отслеживание и оптимизация
 
-**Your Team**:
-1. 📝 **Content Creator** - Develop campaign content
-2. 🐦 **Twitter Engager** - Twitter strategy and execution
-3. 📸 **Instagram Curator** - Visual content and stories
-4. 🤝 **Reddit Community Builder** - Authentic community engagement
-5. 📊 **Analytics Reporter** - Track and optimize performance
+**Результат**: Координированная мультиплатформенная кампания с учётом особенностей каждой площадки.
 
-**Result**: Multi-channel coordinated campaign with platform-specific expertise.
+### Сценарий 3: Разработка корпоративной фичи
 
----
+**Ваша команда**:
+1. 👔 **Senior Project Manager** — планирование и декомпозиция
+2. 💎 **Senior Developer** — сложная реализация
+3. 🎨 **UI Designer** — дизайн-система и компоненты
+4. 🧪 **Experiment Tracker** — планирование A/B-тестов
+5. 📸 **Evidence Collector** — верификация качества
+6. 🔍 **Reality Checker** — готовность к продакшену
 
-### Scenario 3: Enterprise Feature Development
+**Результат**: Корпоративный релиз с качественными гейтами и документацией.
 
-**Your Team**:
-1. 👔 **Senior Project Manager** - Scope and task planning
-2. 💎 **Senior Developer** - Complex implementation
-3. 🎨 **UI Designer** - Design system and components
-4. 🧪 **Experiment Tracker** - A/B test planning
-5. 📸 **Evidence Collector** - Quality verification
-6. 🔍 **Reality Checker** - Production readiness
+### Сценарий 4: Захват платёжного медиа-аккаунта
 
-**Result**: Enterprise-grade delivery with quality gates and documentation.
+**Ваша команда**:
+1. 📋 **Paid Media Auditor** — комплексная оценка аккаунта
+2. 📡 **Tracking & Measurement Specialist** — проверка корректности трекинга конверсий
+3. 💰 **PPC Campaign Strategist** — переработка структуры аккаунта
+4. 🔍 **Search Query Analyst** — очистка пустых расходов
+5. ✍️ **Ad Creative Strategist** — обновление креативов
+6. 📊 **Analytics Reporter** (Support) — дашборд отчётности
 
----
+**Результат**: Системный захват аккаунта с верифицированным трекингом, устранённым сливом, оптимизированной структурой и обновлёнными креативами за 30 дней.
 
-### Scenario 4: Paid Media Account Takeover
+### Сценарий 5: Полноценный продуктовый дискавери от агентства
 
-**Your Team**:
+**Ваша команда**: Все 8 подразделений работают параллельно над одной задачей.
 
-1. 📋 **Paid Media Auditor** - Comprehensive account assessment
-2. 📡 **Tracking & Measurement Specialist** - Verify conversion tracking accuracy
-3. 💰 **PPC Campaign Strategist** - Redesign account architecture
-4. 🔍 **Search Query Analyst** - Clean up wasted spend from search terms
-5. ✍️ **Ad Creative Strategist** - Refresh all ad copy and extensions
-6. 📊 **Analytics Reporter** (Support Division) - Build reporting dashboards
+См. [Nexus Spatial Discovery Exercise](examples/nexus-spatial-discovery.md) — полный пример с 8 агентами (Product Trend Researcher, Backend Architect, Brand Guardian, Growth Hacker, Support Responder, UX Researcher, Project Shepherd, XR Interface Architect), одновременно оценивающими продуктовую возможность и готовящими единый план.
 
-**Result**: Systematic account takeover with tracking verified, waste eliminated, structure optimized, and creative refreshed — all within the first 30 days.
+**Результат**: Кросс-функциональный продуктовый план, созданный за одну сессию. [Больше примеров](examples/).
 
----
+### Сценарий 6: Цифровой двойник умного кампуса
 
-### Scenario 5: Full Agency Product Discovery
+**Ваша команда**:
+1. 🧠 **Technical Consultant** — стратегия цифрового двойника (BIM + GIS + IoT)
+2. 🏗️ **BIM/GIS Specialist** — конвертация Revit-моделей в слои GIS
+3. 🛸 **Drone/Reality Mapping** — ортомозаика и 3D-меш
+4. 🌐 **Web GIS Developer** — дашборд на MapLibre с поиском по помещениям
+5. 🏔️ **3D & Scene Developer** — иммерсивная 3D-сцена с облётом
+6. 🤖 **GeoAI/ML Engineer** — выделение зданий и кроны деревьев
+7. ✅ **GIS QA Engineer** — проверка точности и топологии
 
-**Your Team**: All 8 divisions working in parallel on a single mission.
-
-See the **[Nexus Spatial Discovery Exercise](examples/nexus-spatial-discovery.md)** -- a complete example where 8 agents (Product Trend Researcher, Backend Architect, Brand Guardian, Growth Hacker, Support Responder, UX Researcher, Project Shepherd, and XR Interface Architect) were deployed simultaneously to evaluate a software opportunity and produce a unified product plan covering market validation, technical architecture, brand strategy, go-to-market, support systems, UX research, project execution, and spatial UI design.
-
-**Result**: Comprehensive, cross-functional product blueprint produced in a single session. [More examples](examples/).
-
----
-
-### Scenario 6: Smart Campus Digital Twin
-
-**Your Team**:
-
-1. 🧠 **Technical Consultant** - Define the digital twin strategy: BIM for buildings, GIS for campus, IoT for real-time
-2. 🏗️ **BIM/GIS Specialist** - Convert Revit building models to GIS scene layers, design indoor floor plans
-3. 🛸 **Drone/Reality Mapping** - Fly the campus, generate orthomosaic and 3D mesh for context
-4. 🌐 **Web GIS Developer** - Build the campus dashboard with MapLibre, building layer, and room finder
-5. 🏔️ **3D & Scene Developer** - Create immersive 3D scene with terrain, buildings, and flyover tour
-6. 🤖 **GeoAI/ML Engineer** - Extract building footprints and tree canopy from drone imagery
-7. ✅ **GIS QA Engineer** - Validate data accuracy, check topology, verify CRS consistency
-
-**Result**: A campus digital twin that combines BIM detail, drone reality capture, 3D visualization, and web accessibility — delivered by coordinated specialists in a single pipeline.
+**Результат**: Цифровой двойник кампуса с интеграцией BIM, реалити-кепчером, 3D-визуализацией и веб-доступом.
 
 ---
 
-## 🤝 Contributing
+## 🤝 Участие в проекте
 
-We welcome contributions! Here's how you can help:
+Присоединяйтесь — будем рады помощи:
 
-### Add a New Agent
+### Добавить нового агента
 
-1. Fork the repository
-2. Create a new agent file in the appropriate category
-3. Follow the agent template structure:
-   - Frontmatter with name, description, color
-   - Identity & Memory section
-   - Core Mission
-   - Critical Rules (domain-specific)
-   - Technical Deliverables with examples
-   - Workflow Process
-   - Success Metrics
-4. Submit a PR with your agent
+1. Сделайте форк репозитория
+2. Создайте файл агента в соответствующем подразделении
+3. Следуйте структуре шаблона агента:
+   - Frontmatter с `name`, `description`, `color`
+   - Раздел Identity & Memory
+   - Основная миссия (Core Mission)
+   - Критические правила (Critical Rules)
+   - Технические результаты с примерами
+   - Процесс работы
+   - Метрики успеха
+4. Отправьте Pull Request
 
-### Improve Existing Agents
+### Улучшить существующих агентов
 
-- Add real-world examples
-- Enhance code samples
-- Update success metrics
-- Improve workflows
+- Добавьте реальные примеры
+- Улучшите примеры кода
+- Актуализируйте метрики успеха
+- Улучшите рабочие процессы
 
-### Share Your Success Stories
+### Поделиться историей успеха
 
-Have you used these agents successfully? Share your story in the [Discussions](https://github.com/msitarzewski/agency-agents/discussions)!
+Если вы успешно использовали агентов — поделитесь историей в [Discussions](https://github.com/msitarzewski/agency-agents/discussions)!
 
----
+## 📖 Философия дизайна агентов
 
-## 📖 Agent Design Philosophy
+Каждый агент создаётся с учётом:
 
-Each agent is designed with:
+1. **🎭 Сильный характер**: Не шаблон, а уникальный голос и стиль
+2. **📋 Чёткие результаты**: Конкретные выходы, а не общие советы
+3. **✅ Метрики успеха**: Измеримые критерии качества
+4. **🔄 Проверенные процессы**: Пошаговые рабочие процессы
+5. **💡 Память обучения**: Распознавание паттернов и постоянное улучшение
 
-1. **🎭 Strong Personality**: Not generic templates - real character and voice
-2. **📋 Clear Deliverables**: Concrete outputs, not vague guidance
-3. **✅ Success Metrics**: Measurable outcomes and quality standards
-4. **🔄 Proven Workflows**: Step-by-step processes that work
-5. **💡 Learning Memory**: Pattern recognition and continuous improvement
+## 🎁 Что делает этот проект особенным?
 
----
+**В отличие от универсальных промптов:**
+- ❌ «Сделай вид, что ты разработчик»
+- ✅ Глубокая специализация с характером и процессами
 
-## 🎁 What Makes This Special?
+**В отличие от библиотек промптов:**
+- ❌ Набор разрозненных промптов
+- ✅ Целостные агентные системы с процессами и результатами
 
-### Unlike Generic AI Prompts:
-- ❌ Generic "Act as a developer" prompts
-- ✅ Deep specialization with personality and process
+**В отличие от AI-инструментов:**
+- ❌ Чёрный ящик без возможности настройки
+- ✅ Прозрачные, форкаемые, адаптируемые личности агентов
 
-### Unlike Prompt Libraries:
-- ❌ One-off prompt collections
-- ✅ Comprehensive agent systems with workflows and deliverables
+## 🎨 Яркие особенности агентов
 
-### Unlike AI Tools:
-- ❌ Black box tools you can't customize
-- ✅ Transparent, forkable, adaptable agent personalities
-
----
-
-## 🎨 Agent Personality Highlights
-
-> "I don't just test your code - I default to finding 3-5 issues and require visual proof for everything."
+> «Я тестирую не просто так — по умолчанию нахожу 3–5 проблем и требую визуальных доказательств для всего»
 >
-> -- **Evidence Collector** (Testing Division)
+> — **Evidence Collector** (Testing Division)
 
-> "You're not marketing on Reddit - you're becoming a valued community member who happens to represent a brand."
+> «Вы не просто продвигаетесь в Reddit — вы становитесь ценным членом сообщества, который при этом представляет бренд»
 >
-> -- **Reddit Community Builder** (Marketing Division)
+> — **Reddit Community Builder** (Marketing Division)
 
-> "Every playful element must serve a functional or emotional purpose. Design delight that enhances rather than distracts."
+> «Любой игривый элемент должен выполнять функциональную или эмоциональную задачу. Создавайте приятные детали, которые усиливают, а не отвлекают»
 >
-> -- **Whimsy Injector** (Design Division)
+> — **Whimsy Injector** (Design Division)
 
-> "Let me add a celebration animation that reduces task completion anxiety by 40%"
->
-> -- **Whimsy Injector** (during a UX review)
+## 📊 Статистика
 
----
+- 🎭 **230+ специализированных агентов** во всех подразделениях
+- 📝 **10 000+ строк** описаний, процессов и примеров кода
+- ⏱️ **Месяцы итераций** на основе реального использования
+- 🌟 **Проверены в боевых условиях**
+- 💬 **50+ запросов** за первые 12 часов на Reddit
 
-## 📊 Stats
+## 🔌 Интеграции с инструментами
 
-- 🎭 **230+ Specialized Agents** across every division
-- 📝 **10,000+ lines** of personality, process, and code examples
-- ⏱️ **Months of iteration** from real-world usage
-- 🌟 **Battle-tested** in production environments
-- 💬 **50+ requests** in first 12 hours on Reddit
+Проект изначально работает с Claude Code, а также содержит скрипты конвертации и установки для использования тех же агентов в большинстве популярных агентных инструментов.
 
----
+### Поддерживаемые инструменты
 
-## 🔌 Multi-Tool Integrations
-
-The Agency works natively with Claude Code, and ships conversion + install scripts so you can use the same agents across every major agentic coding tool.
-
-### Supported Tools
-
-- **[Claude Code](https://claude.ai/code)** — native `.md` agents, no conversion needed → `~/.claude/agents/`
-- **[GitHub Copilot](https://github.com/copilot)** — native `.md` agents, no conversion needed → `~/.github/agents/` + `~/.copilot/agents/`
-- **[Antigravity](https://github.com/google-gemini/antigravity)** — `SKILL.md` per agent → `~/.gemini/config/skills/`
-- **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** -- `.md` agent files -> `~/.gemini/agents/`
-- **[OpenCode](https://opencode.ai)** — `.md` agent files → `.opencode/agents/`
-- **[Cursor](https://cursor.sh)** — `.mdc` rule files → `.cursor/rules/`
-- **[Aider](https://aider.chat)** — `CONVENTIONS.md` roster index → `./CONVENTIONS.md`
-- **[Windsurf](https://codeium.com/windsurf)** — single `.windsurfrules` → `./.windsurfrules`
-- **[OpenClaw](https://github.com/openclaw/openclaw)** — `SOUL.md` + `AGENTS.md` + `IDENTITY.md` per agent
-- **[Qwen Code](https://github.com/QwenLM/qwen-code)** — `.md` SubAgent files → `~/.qwen/agents/`
-- **[Kimi Code](https://github.com/MoonshotAI/kimi-cli)** — YAML agent specs → `~/.config/kimi/agents/`
-- **[Codex](https://developers.openai.com/codex/overview)** — TOML custom agents → `~/.codex/agents/`
-- **Osaurus** -- `SKILL.md` skills -> `~/.osaurus/skills/`
-- **[Hermes](integrations/hermes/README.md)** -- lazy-router plugin -> `~/.hermes/plugins/`
-- **[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)** — `SKILL.md` skills → `~/.dsh/skills/` (user) or `.dsh/skills/` (project)
+- **[Claude Code](https://claude.ai/code)** — нативные `.md`-агенты, конвертация не нужна → `~/.claude/agents/`
+- **[GitHub Copilot](https://github.com/copilot)** — нативные `.md`-агенты → `~/.github/agents/` + `~/.copilot/agents/`
+- **[Antigravity](https://github.com/google-gemini/antigravity)** — `SKILL.md` на каждого агента → `~/.gemini/config/skills/`
+- **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** — `.md`-файлы агентов → `~/.gemini/agents/`
+- **[OpenCode](https://opencode.ai)** — `.md`-агенты → `.opencode/agents/`
+- **[Cursor](https://cursor.sh)** — `.mdc`-правила → `.cursor/rules/`
+- **[Aider](https://aider.chat)** — индекс `CONVENTIONS.md` → `./CONVENTIONS.md`
+- **[Windsurf](https://codeium.com/windsurf)** — единый `.windsurfrules` → `./.windsurfrules`
+- **[OpenClaw](https://github.com/openclaw/openclaw)** — `SOUL.md` + `AGENTS.md` + `IDENTITY.md` на каждого агента
+- **[Qwen Code](https://github.com/QwenLM/qwen-code)** — `.md` SubAgent → `~/.qwen/agents/`
+- **[Kimi Code](https://github.com/MoonshotAI/kimi-cli)** — YAML-спецификации → `~/.config/kimi/agents/`
+- **[Codex](https://developers.openai.com/codex/overview)** — TOML-агенты → `~/.codex/agents/`
+- **Osaurus** — `SKILL.md` навыки → `~/.osaurus/skills/`
+- **[Hermes](integrations/hermes/README.md)** — ленивый роутер-плагин → `~/.hermes/plugins/`
+- **[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)** — `SKILL.md` навыки → `~/.dsh/skills/` (пользователь) или `.dsh/skills/` (проект)
 
 ---
 
@@ -1114,77 +1082,65 @@ When you add new agents or edit existing ones, regenerate all integration files:
 
 ---
 
-## 🗺️ Roadmap
+## 🗺️ Дорожная карта
 
-- [ ] Interactive agent selector web tool
-- [x] Multi-agent workflow examples -- see [examples/](examples/)
-- [x] Multi-tool integration scripts (Claude Code, GitHub Copilot, Antigravity, Gemini CLI, OpenCode, OpenClaw, Cursor, Aider, Windsurf, Qwen Code, Kimi Code, Codex, Osaurus, Hermes)
-- [ ] Video tutorials on agent design
-- [ ] Community agent marketplace
-- [ ] Agent "personality quiz" for project matching
-- [ ] "Agent of the Week" showcase series
+- [ ] Интерактивный селектор агентов
+- [x] Примеры мультиагентных рабочих процессов — см. [examples/](examples/)
+- [x] Скрипты интеграции с множеством инструментов
+- [ ] Видео-уроки по проектированию агентов
+- [ ] Маркетплейс агентов сообщества
+- [ ] «Викторина для подбора агента» под задачу
+- [ ] Серия «Агент недели»
 
----
+## 🌐 Локализации сообщества
 
-## 🌐 Community Translations & Localizations
+Переводы и адаптации поддерживаются сообществом. См. соответствующие репозитории.
 
-Community-maintained translations and regional adaptations. These are independently maintained -- see each repo for coverage and version compatibility.
-
-| Language | Maintainer | Link | Notes |
+| Язык | Поддерживает | Ссылка | Примечания |
 |----------|-----------|------|-------|
-| 🇨🇳 简体中文 (zh-CN) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh) | 141 translated agents + 46 China-market originals |
-| 🇨🇳 简体中文 (zh-CN) | [@dsclca12](https://github.com/dsclca12) | [agent-teams](https://github.com/dsclca12/agent-teams) | Independent translation with Bilibili, WeChat, Xiaohongshu localization |
-| 🇧🇷 Português brasileiro (pt-BR) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-pt-BR](https://github.com/jnMetaCode/agency-agents-pt-BR) | 184 upstream agents translated; Brazil-market PRs welcome |
-| 🇷🇺 Русский (ru) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-ru](https://github.com/jnMetaCode/agency-agents-ru) | 184 upstream agents translated; Russia-market PRs welcome |
-| 🇮🇩 Bahasa Indonesia (id) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-id](https://github.com/jnMetaCode/agency-agents-id) | 184 upstream agents translated; Indonesia-market PRs welcome |
-| 🇸🇦 العربية (ar) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-ar](https://github.com/jnMetaCode/agency-agents-ar) | 184 upstream agents translated; Arabic-market PRs welcome |
-| 🇰🇷 한국어 (ko) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-ko](https://github.com/jnMetaCode/agency-agents-ko) | 184 upstream agents fully translated; Korea-specific PRs welcome |
-| 🇯🇵 日本語 (ja-JP) | [@sscodeai](https://github.com/sscodeai) | [agency-agents-ja](https://github.com/sscodeai/agency-agents-ja) | 281 Japan-localized agents + 97 Japan-market originals + 27 workflows |
-| 🇻🇳 Tiếng Việt (vi-VN) | [@rodonguyen](https://github.com/rodonguyen) | [agency-agents](https://github.com/rodonguyen/agency-agents) | Starter Vietnamese localization focused on README, quick start, and high-use docs |
+| 🇨🇳 简体中文 (zh-CN) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh) | 141 переведённый агент + 46 оригинальных под китайский рынок |
+| 🇨🇳 简体中文 (zh-CN) | [@dsclca12](https://github.com/dsclca12) | [agent-teams](https://github.com/dsclca12/agent-teams) | Независимый перевод с локализацией под Bilibili/WeChat/Xiaohongshu |
+| 🇧🇷 Português brasileiro (pt-BR) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-pt-BR](https://github.com/jnMetaCode/agency-agents-pt-BR) | 184 агента переведены |
+| 🇷🇺 Русский (ru) | [@ALNIuser](https://github.com/ALNIuser) | [agency-agents](https://github.com/ALNIuser/agency-agents) | Русскоязычная версия (этот репозиторий) |
+| 🇮🇩 Bahasa Indonesia (id) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-id](https://github.com/jnMetaCode/agency-agents-id) | 184 агента переведены |
+| 🇸🇦 العربية (ar) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-ar](https://github.com/jnMetaCode/agency-agents-ar) | 184 агента переведены |
+| 🇰🇷 한국어 (ko) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-ko](https://github.com/jnMetaCode/agency-agents-ko) | 184 агента переведены полностью |
+| 🇯🇵 日本語 (ja-JP) | [@sscodeai](https://github.com/sscodeai) | [agency-agents-ja](https://github.com/sscodeai/agency-agents-ja) | 281 агент под Японию + 97 оригинальных + 27 workflow |
+| 🇻🇳 Tiếng Việt (vi-VN) | [@rodonguyen](https://github.com/rodonguyen) | [agency-agents](https://github.com/rodonguyen/agency-agents) | Частичная локализация README/быстрого старта |
 
-Want to add a translation? Open an issue and we'll link it here.
+Хотите добавить перевод? Откройте issue — мы добавим ссылку.
 
----
+## 📜 Лицензия
 
-## 📜 License
+MIT License — свободно для коммерческого и личного использования. Указание авторства приветствуется, но не обязательно.
 
-MIT License - Use freely, commercially or personally. Attribution appreciated but not required.
+## 🙏 Благодарности
 
----
+Всё началось с ветки на Reddit о специализации ИИ-агентов и превратилось в нечто большее — **230+ агентов во всех подразделениях** при поддержке сообщества по всему миру. Каждый агент появился благодаря тому, что кто-то потратил время, чтобы его написать, протестировать и поделиться.
 
-## 🙏 Acknowledgments
+Спасибо всем, кто делал PR, открывал issue, участвовал в Discussions или просто пробовал агентов и делился обратной связью. Именно вы делаете The Agency лучше.
 
-What started as a Reddit thread about AI agent specialization has grown into something remarkable — **230+ agents across every division**, supported by a community of contributors from around the world. Every agent in this repo exists because someone cared enough to write it, test it, and share it.
+## 💬 Сообщество
 
-To everyone who has opened a PR, filed an issue, started a Discussion, or simply tried an agent and told us what worked — thank you. You're the reason The Agency keeps getting better.
+- **GitHub Discussions**: [Поделиться успехами](https://github.com/msitarzewski/agency-agents/discussions)
+- **Issues**: [Сообщить о баге или предложить идею](https://github.com/msitarzewski/agency-agents/issues)
+- **Reddit**: r/ClaudeAI
+- **Twitter/X**: #TheAgency
 
----
+## 🚀 Начать
 
-## 💬 Community
-
-- **GitHub Discussions**: [Share your success stories](https://github.com/msitarzewski/agency-agents/discussions)
-- **Issues**: [Report bugs or request features](https://github.com/msitarzewski/agency-agents/issues)
-- **Reddit**: Join the conversation on r/ClaudeAI
-- **Twitter/X**: Share with #TheAgency
-
----
-
-## 🚀 Get Started
-
-1. **Browse** the agents above and find specialists for your needs
-2. **Copy** the agents to `~/.claude/agents/` for Claude Code integration
-3. **Activate** agents by referencing them in your Claude conversations
-4. **Customize** agent personalities and workflows for your specific needs
-5. **Share** your results and contribute back to the community
-
----
+1. **Просмотрите** агентов и найдите нужных
+2. **Скопируйте** в `~/.claude/agents/` для интеграции с Claude Code
+3. **Активируйте** агента в диалоге с Claude
+4. **Настройте** под свои задачи
+5. **Поделитесь** результатами и внесите вклад
 
 <div align="center">
 
-**🎭 The Agency: Your AI Dream Team Awaits 🎭**
+**🎭 The Agency: Ваша команда мечты из ИИ-агентов 🎭**
 
-[⭐ Star this repo](https://github.com/msitarzewski/agency-agents) • [🍴 Fork it](https://github.com/msitarzewski/agency-agents/fork) • [🐛 Report an issue](https://github.com/msitarzewski/agency-agents/issues) • [❤️ Sponsor](https://github.com/sponsors/msitarzewski)
+[⭐ Поставить звезду](https://github.com/msitarzewski/agency-agents) • [🍴 Форкнуть](https://github.com/msitarzewski/agency-agents/fork) • [🐛 Сообщить о проблеме](https://github.com/msitarzewski/agency-agents/issues) • [❤️ Спонсировать](https://github.com/sponsors/msitarzewski)
 
-Made with ❤️ by the community, for the community
+Сделано с ❤️ сообществом для сообщества
 
 </div>
