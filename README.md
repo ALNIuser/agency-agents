@@ -454,7 +454,7 @@ for r in json.load(open("strategy/runbooks.json"))["runbooks"]:
 | 🔍 [Investment Researcher](finance/finance-investment-researcher.md) | Due diligence, анализ портфеля, оценка активов, акционерный анализ | Разработка инвестиционной идеи, оценка рисков, рыночные исследования |
 | 🏛️ [Tax Strategist](finance/finance-tax-strategist.md) | Налоговая оптимизация, трансграничное соответствие, трансфертное ценообразование | Структурирование юрлиц, анализ эффективной ставки, защита при проверках, стратегическое налоговое планирование |
 
-### 🎮 Game Development Division
+### 🎮 Подразделение разработки игр
 
 Building worlds, systems, and experiences across every major engine.
 
