@@ -1,30 +1,30 @@
-# Security Policy
+# Политика безопасности
 
-## Reporting a Vulnerability
+## Сообщение об уязвимости
 
-If you discover a security vulnerability in this project, please report it responsibly. Do NOT open a public GitHub issue for security vulnerabilities. Open a private security advisory via GitHub Security tab.
+Если вы обнаружили уязвимость в безопасности этого проекта, пожалуйста, сообщите о ней конфиденциально и ответственным образом. **Не** создавайте публичный issue в GitHub для сообщения об уязвимостях безопасности. Вместо этого откройте частное уведомление о безопасности (Security Advisory) через вкладку «Security» на GitHub.
 
-## Response Timeline
+## Сроки реагирования
 
-- Acknowledgment: within 48 hours
-- Initial assessment: within 7 days
-- Fix or mitigation: depends on severity
+- Подтверждение получения сообщения — в течение 48 часов
+- Первичная оценка — в течение 7 дней
+- Исправление или снижение риска — в зависимости от степени серьёзности
 
-## Scope
+## Область действия
 
-This repository contains Markdown-based agent definitions and shell scripts for installation and conversion.
+Данный репозиторий содержит описания агентов в формате Markdown, а также shell-скрипты для установки и конвертации.
 
-### Agent files (.md)
-- Non-executable prompt definitions
-- No API keys, secrets, or credentials should be stored in agent files
+### Файлы агентов (.md)
+- Описания агентов не являются исполняемым кодом
+- В файлах агентов не следует хранить API-ключи, секреты или учётные данные
 
-### Shell scripts (scripts/)
-- install.sh, convert.sh, and lint-agents.sh are executable
-- Contributors should review scripts for unintended behavior before running
+### Shell-скрипты (scripts/)
+- Скрипты `install.sh`, `convert.sh` и `lint-agents.sh` являются исполняемыми
+- Перед запуском скриптов рекомендуется ознакомиться с их содержимым и убедиться в отсутствии нежелательных действий
 
-## Best Practices for Contributors
+## Рекомендации участникам проекта
 
-- Never commit API keys, tokens, or credentials
-- Never add executable code inside agent Markdown files
-- Shell scripts must be reviewed before merging
-- Report suspicious agent definitions that attempt prompt injection
+- Никогда не коммитьте API-ключи, токены или учётные данные
+- Никогда не добавляйте исполняемый код в файлы агентов в формате Markdown
+- Перед слиянием изменений обязательно проверяйте shell-скрипты
+- Сообщайте о подозрительных определениях агентов, которые могут содержать попытки инъекции промпта (prompt injection)

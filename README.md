@@ -265,11 +265,11 @@ for r in json.load(open("strategy/runbooks.json"))["runbooks"]:
 | 💬 [WeChat Official Account Manager](marketing/marketing-wechat-official-account.md) | Вовлечение подписчиков, контент-маркетинг | Стратегия WeChat OA, построение сообщества, оптимизация конверсии |
 | 🧠 [Zhihu Strategist](marketing/marketing-zhihu-strategist.md) | Лидерство мнений, вовлечение на основе знаний | Построение авторитета в Zhihu, стратегия Q&A, генерация лидов |
 | 🇨🇳 [Baidu SEO Specialist](marketing/marketing-baidu-seo-specialist.md) | Оптимизация под Baidu, SEO для Китая, соответствие ICP | Ранжирование в Baidu и выход на поисковый рынок Китая |
-| 🎬 [Bilibili Content Strategist](marketing/marketing-bilibili-content-strategist.md) | Алгоритмы B站, культура дамму, рост UP主 | Построение аудитории на Bilibili контентом, ориентированным на сообщество |
+| 🎬 [Bilibili Content Strategist](marketing/marketing-bilibili-content-strategist.md) | Алгоритмы Bilibili, культура комментариев, рост авторского контента | Построение аудитории на Bilibili с помощью контента, ориентированного на сообщество |
 | 🎠 [Carousel Growth Engine](marketing/marketing-carousel-growth-engine.md) | Карусели TikTok/Instagram, автономная публикация | Генерация и публикация вирусного карусельного контента |
 | 💼 [LinkedIn Content Creator](marketing/marketing-linkedin-content-creator.md) | Персональный бренд, лидерство мнений, профессиональный контент | Рост в LinkedIn, построение профессиональной аудитории, B2B-контент |
 | 🛒 [China E-Commerce Operator](marketing/marketing-china-ecommerce-operator.md) | Taobao, Tmall, Pinduoduo, лайв-коммерция | Ведение мультиплатформенной электронной коммерции в Китае |
-| 🎥 [Kuaishou Strategist](marketing/marketing-kuaishou-strategist.md) | Kuaishou, сообщество 老铁, grassroots-рост | Построение аутентичной аудитории в рынках нижнего уровня |
+| 🎥 [Kuaishou Strategist](marketing/marketing-kuaishou-strategist.md) | Kuaishou, сообщество, органический рост | Построение аутентичной аудитории в небольших городах и регионах |
 | 🔍 [SEO Specialist](marketing/marketing-seo-specialist.md) | Техническое SEO, контент-стратегия, линкбилдинг | Устойчивый рост органического поиска |
 | 📘 [Book Co-Author](marketing/marketing-book-co-author.md) | Книги по лидерству мнений, гострайтинг, публикация | Стратегическое соавторство книг для основателей и экспертов |
 | 🌏 [Cross-Border E-Commerce Specialist](marketing/marketing-cross-border-ecommerce.md) | Amazon, Shopee, Lazada, трансграничная логистика | Стратегия трансграничной электронной коммерции полного цикла |
@@ -286,7 +286,7 @@ for r in json.load(open("strategy/runbooks.json"))["runbooks"]:
 | 🏗️ [AEO Foundations Architect](marketing/marketing-aeo-foundations.md) | Инфраструктура AI Engine Optimization | llms.txt, robots.txt с учётом ИИ, файлы обнаружения агентов |
 | 🤖 [Agentic Search Optimizer](marketing/marketing-agentic-search-optimizer.md) | WebMCP и агентное выполнение задач | Делаем сайты пригодными для ИИ-агентов браузинга |
 | 📧 [Email Marketing Strategist](marketing/marketing-email-strategist.md) | Жизненный цикл писем и доставляемость | CRM-кампании, автоматизация, сегментация |
-| 📡 [Multi-Platform Publisher](marketing/marketing-multi-platform-publisher.md) | Публикация в один клик на китайских платформах | Маршрутизация одной статьи в 知乎/小红书/CSDN/B站/公众号/掘金 |
+| 📡 [Multi-Platform Publisher](marketing/marketing-multi-platform-publisher.md) | Публикация в один клик на китайских платформах | Маршрутизация одной статьи в Zhihu/Xiaohongshu/CSDN/Bilibili/WeChat Official Accounts/Juejin |
 | 📣 [PR & Communications Manager](marketing/marketing-pr-communications-manager.md) | PR, отношения со СМИ и кризисные коммуникации | Пресс-релизы, лидерство мнений, репутация |
 
 ### 📊 Подразделение Product
@@ -456,58 +456,58 @@ for r in json.load(open("strategy/runbooks.json"))["runbooks"]:
 
 ### 🎮 Подразделение разработки игр
 
-Building worlds, systems, and experiences across every major engine.
+Создаём миры, системы и игровые впечатления для всех основных игровых движков.
 
-#### Cross-Engine Agents (Engine-Agnostic)
+#### Агенты для разных игровых движков
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🎯 [Game Designer](game-development/game-designer.md) | Systems design, GDD authorship, economy balancing, gameplay loops | Designing game mechanics, progression systems, writing design documents |
-| 🗺️ [Level Designer](game-development/level-designer.md) | Layout theory, pacing, encounter design, environmental storytelling | Building levels, designing encounter flow, spatial narrative |
-| 🎨 [Technical Artist](game-development/technical-artist.md) | Shaders, VFX, LOD pipeline, art-to-engine optimization | Bridging art and engineering, shader authoring, performance-safe asset pipelines |
-| 🔊 [Game Audio Engineer](game-development/game-audio-engineer.md) | FMOD/Wwise, adaptive music, spatial audio, audio budgets | Interactive audio systems, dynamic music, audio performance |
-| 📖 [Narrative Designer](game-development/narrative-designer.md) | Story systems, branching dialogue, lore architecture | Writing branching narratives, implementing dialogue systems, world lore |
-| 💰 [Economy Designer](game-development/economy-designer.md) | Virtual currencies, sources/sinks, monetization modeling, inflation control | Designing in-game economies, balancing F2P monetization, live economy tuning |
+| 🎯 [Game Designer](game-development/game-designer.md) | Проектирование систем, Game Design Document (GDD), балансировка экономики, игровые циклы | Проектирование механик, систем прогрессии, написание дизайн-документов |
+| 🗺️ [Level Designer](game-development/level-designer.md) | Планировка уровней, темп геймплея, проектирование игровых столкновений и боевых сценариев, нарратив через окружение | Создание уровней, проектирование игровых столкновений и боевых сценариев, развитие повествования через окружение |
+| 🎨 [Technical Artist](game-development/technical-artist.md) | Шейдеры, VFX, LOD, оптимизация ассетов под игровой движок | Объединение художественной разработки и технической реализации: создание шейдеров, настройка пайплайна и оптимизация ассетов |
+| 🔊 [Game Audio Engineer](game-development/game-audio-engineer.md) | FMOD/Wwise, адаптивная музыка, пространственный звук, бюджеты аудио | Проектирование интерактивных аудиосистем, динамической музыки, оптимизация звука |
+| 📖 [Narrative Designer](game-development/narrative-designer.md) | Системы повествования, ветвящиеся диалоги, архитектура лора | Проектирование ветвящихся диалогов и сюжетных систем, разработка связного мира |
+| 💰 [Economy Designer](game-development/economy-designer.md) | Виртуальные валюты, источники поступления и механизмы расходования ресурсов, монетизация, контроль инфляции | Проектирование и балансировка внутриигровой экономики, настройка F2P-монетизации, балансировка экономики игры после запуска |
 
 #### Unity
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🏗️ [Unity Architect](game-development/unity/unity-architect.md) | ScriptableObjects, data-driven modularity, DOTS/ECS | Large-scale Unity projects, data-driven system design, ECS performance work |
-| ✨ [Unity Shader Graph Artist](game-development/unity/unity-shader-graph-artist.md) | Shader Graph, HLSL, URP/HDRP, Renderer Features | Custom Unity materials, VFX shaders, post-processing passes |
-| 🌐 [Unity Multiplayer Engineer](game-development/unity/unity-multiplayer-engineer.md) | Netcode for GameObjects, Unity Relay/Lobby, server authority, prediction | Online Unity games, client prediction, Unity Gaming Services integration |
-| 🛠️ [Unity Editor Tool Developer](game-development/unity/unity-editor-tool-developer.md) | EditorWindows, AssetPostprocessors, PropertyDrawers, build validation | Custom Unity Editor tooling, pipeline automation, content validation |
+| 🏗️ [Unity Architect](game-development/unity/unity-architect.md) | ScriptableObjects, архитектура на основе данных, DOTS/ECS | Крупные проекты на Unity, проектирование систем на основе данных, оптимизация с помощью ECS |
+| ✨ [Unity Shader Graph Artist](game-development/unity/unity-shader-graph-artist.md) | Shader Graph, HLSL, URP/HDRP, Renderer Features | Создание собственных материалов и шейдеров в Unity, шейдеры для VFX, постобработка |
+| 🌐 [Unity Multiplayer Engineer](game-development/unity/unity-multiplayer-engineer.md) | Netcode for GameObjects, Unity Relay/Lobby, авторитетная серверная модель, предсказание на клиенте | Сетевые игры на Unity, клиентское предсказание, интеграция с Unity Gaming Services |
+| 🛠️ [Unity Editor Tool Developer](game-development/unity/unity-editor-tool-developer.md) | EditorWindows, AssetPostprocessors, PropertyDrawers, валидация сборки | Инструменты для редактора Unity, автоматизация конвейера разработки, валидация контента |
 
 #### Unreal Engine
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| ⚙️ [Unreal Systems Engineer](game-development/unreal-engine/unreal-systems-engineer.md) | C++/Blueprint hybrid, GAS, Nanite constraints, memory management | Complex Unreal gameplay systems, Gameplay Ability System, engine-level C++ |
-| 🎨 [Unreal Technical Artist](game-development/unreal-engine/unreal-technical-artist.md) | Material Editor, Niagara, PCG, Substrate | Unreal materials, Niagara VFX, procedural content generation |
-| 🌐 [Unreal Multiplayer Architect](game-development/unreal-engine/unreal-multiplayer-architect.md) | Actor replication, GameMode/GameState hierarchy, dedicated server | Unreal online games, replication graphs, server authoritative Unreal |
-| 🗺️ [Unreal World Builder](game-development/unreal-engine/unreal-world-builder.md) | World Partition, Landscape, HLOD, LWC | Large open-world Unreal levels, streaming systems, terrain at scale |
+| ⚙️ [Unreal Systems Engineer](game-development/unreal-engine/unreal-systems-engineer.md) | C++/Blueprint, Gameplay Ability System (GAS), ограничения Nanite, управление памятью | Сложные игровые системы в Unreal Engine, GAS, разработка на C++ на уровне движка |
+| 🎨 [Unreal Technical Artist](game-development/unreal-engine/unreal-technical-artist.md) | Material Editor, Niagara, PCG, Substrate | Материалы в Unreal Engine, VFX на Niagara, процедурная генерация контента |
+| 🌐 [Unreal Multiplayer Architect](game-development/unreal-engine/unreal-multiplayer-architect.md) | Репликация акторов, GameMode/GameState, выделенный сервер | Сетевые игры в Unreal Engine, графы репликации, серверно-авторитетная архитектура |
+| 🗺️ [Unreal World Builder](game-development/unreal-engine/unreal-world-builder.md) | World Partition, Landscape, HLOD, LWC | Большие открытые миры в Unreal Engine, системы стриминга, работа с ландшафтом |
 
 #### Godot
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 📜 [Godot Gameplay Scripter](game-development/godot/godot-gameplay-scripter.md) | GDScript 2.0, signals, composition, static typing | Godot gameplay systems, scene composition, performance-conscious GDScript |
-| 🌐 [Godot Multiplayer Engineer](game-development/godot/godot-multiplayer-engineer.md) | MultiplayerAPI, ENet/WebRTC, RPCs, authority model | Online Godot games, scene replication, server-authoritative Godot |
-| ✨ [Godot Shader Developer](game-development/godot/godot-shader-developer.md) | Godot shading language, VisualShader, RenderingDevice | Custom Godot materials, 2D/3D effects, post-processing, compute shaders |
+| 📜 [Godot Gameplay Scripter](game-development/godot/godot-gameplay-scripter.md) | GDScript 2.0, сигналы, композиция, строгая типизация | Игровые системы в Godot, композиция сцен, производительный GDScript |
+| 🌐 [Godot Multiplayer Engineer](game-development/godot/godot-multiplayer-engineer.md) | MultiplayerAPI, ENet/WebRTC, RPC, серверно-авторитетная модель | Сетевые игры в Godot, репликация сцен, серверно-авторитетная архитектура |
+| ✨ [Godot Shader Developer](game-development/godot/godot-shader-developer.md) | Язык шейдеров Godot, VisualShader, RenderingDevice | Создание материалов в Godot, 2D/3D-эффекты, постобработка, compute-шейдеры |
 
 #### Blender
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| 🧩 [Blender Addon Engineer](game-development/blender/blender-addon-engineer.md) | Blender Python (`bpy`), custom operators/panels, asset validators, exporters, pipeline automation | Building Blender add-ons, asset prep tools, export workflows, and DCC pipeline automation |
+| 🧩 [Blender Addon Engineer](game-development/blender/blender-addon-engineer.md) | Blender Python (`bpy`), пользовательские операторы и панели, валидация ассетов, экспорт, автоматизация конвейера | Разработка аддонов для Blender, подготовка ассетов, экспорт, автоматизация конвейера разработки |
 
 #### Roblox Studio
 
-| Agent | Specialty | When to Use |
+| Агент | Специализация | Когда использовать |
 |-------|-----------|-------------|
-| ⚙️ [Roblox Systems Scripter](game-development/roblox-studio/roblox-systems-scripter.md) | Luau, RemoteEvents/Functions, DataStore, server-authoritative module architecture | Building secure Roblox game systems, client-server communication, data persistence |
-| 🎯 [Roblox Experience Designer](game-development/roblox-studio/roblox-experience-designer.md) | Engagement loops, monetization, D1/D7 retention, onboarding flow | Designing Roblox game loops, Game Passes, daily rewards, player retention |
-| 👗 [Roblox Avatar Creator](game-development/roblox-studio/roblox-avatar-creator.md) | UGC pipeline, accessory rigging, Creator Marketplace submission | Roblox UGC items, HumanoidDescription customization, in-experience avatar shops |
+| ⚙️ [Roblox Systems Scripter](game-development/roblox-studio/roblox-systems-scripter.md) | Luau, RemoteEvents/Functions, DataStore, серверно-авторитетная модульная архитектура | Безопасные игровые системы в Roblox Studio, клиент-серверное взаимодействие, сохранение данных |
+| 🎯 [Roblox Experience Designer](game-development/roblox-studio/roblox-experience-designer.md) | Игровые циклы, монетизация, удержание D1/D7, онбординг | Проектирование игрового опыта в Roblox Studio, Game Passes, ежедневные награды, удержание игроков |
+| 👗 [Roblox Avatar Creator](game-development/roblox-studio/roblox-avatar-creator.md) | UGC-пайплайн, риггинг аксессуаров, публикация в Creator Marketplace | Предметы UGC для Roblox, настройка HumanoidDescription, магазины аватаров |
 
 ### 📚 Подразделение Academic
 
@@ -1098,8 +1098,8 @@ When you add new agents or edit existing ones, regenerate all integration files:
 
 | Язык | Поддерживает | Ссылка | Примечания |
 |----------|-----------|------|-------|
-| 🇨🇳 简体中文 (zh-CN) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh) | 141 переведённый агент + 46 оригинальных под китайский рынок |
-| 🇨🇳 简体中文 (zh-CN) | [@dsclca12](https://github.com/dsclca12) | [agent-teams](https://github.com/dsclca12/agent-teams) | Независимый перевод с локализацией под Bilibili/WeChat/Xiaohongshu |
+| 🇨🇳 Упрощённый китайский (zh-CN) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-zh](https://github.com/jnMetaCode/agency-agents-zh) | 141 переведённый агент и 46 оригинальных агентов для китайского рынка |
+| 🇨🇳 Упрощённый китайский (zh-CN) | [@dsclca12](https://github.com/dsclca12) | [agent-teams](https://github.com/dsclca12/agent-teams) | Независимый перевод с локализацией под Bilibili/WeChat/Xiaohongshu |
 | 🇧🇷 Português brasileiro (pt-BR) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-pt-BR](https://github.com/jnMetaCode/agency-agents-pt-BR) | 184 агента переведены |
 | 🇷🇺 Русский (ru) | [@ALNIuser](https://github.com/ALNIuser) | [agency-agents](https://github.com/ALNIuser/agency-agents) | Русскоязычная версия (этот репозиторий) |
 | 🇮🇩 Bahasa Indonesia (id) | [@jnMetaCode](https://github.com/jnMetaCode) | [agency-agents-id](https://github.com/jnMetaCode/agency-agents-id) | 184 агента переведены |
