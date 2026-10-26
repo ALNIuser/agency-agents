@@ -1,115 +1,111 @@
-# Mistral Vibe Integration
+# Интеграция с Mistral Vibe
 
-Mistral Vibe uses two files per agent:
-- A TOML configuration file (`~/.vibe/agents/<slug>.toml`)
-- A Markdown prompt file (`~/.vibe/prompts/<slug>.md`)
+В Mistral Vibe для каждого агента используются два файла:
+- Файл конфигурации TOML (`~/.vibe/agents/<slug>.toml`)
+- Файл промпта Markdown (`~/.vibe/prompts/<slug>.md`)
 
-The generated files come from `scripts/convert.sh --tool vibe`, which writes
-one TOML agent configuration and one Markdown prompt file per agency agent
-into `integrations/vibe/agents/` and `integrations/vibe/prompts/` respectively.
+Сгенерированные файлы создаются командой `scripts/convert.sh --tool vibe` — для каждого агента The Agency создаётся пара: TOML-конфигурация в `integrations/vibe/agents/` и Markdown-промпт в `integrations/vibe/prompts/`.
 
-## Generate
+## Генерация
 
-From the repository root:
+Из корня репозитория:
 
 ```bash
 ./scripts/convert.sh --tool vibe
 ```
 
-## Install
+## Установка
 
-Run the installer from your target directory:
+Запустите установщик из целевого каталога:
 
 ```bash
 cd /your/project && /path/to/agency-agents/scripts/install.sh --tool vibe
 ```
 
-This copies the generated files into:
+Файлы будут скопированы в:
 
 ```text
 ~/.vibe/agents/<slug>.toml
 ~/.vibe/prompts/<slug>.md
 ```
 
-You can override the destination using the `VIBE_HOME` environment variable:
+Место назначения можно изменить с помощью переменной окружения `VIBE_HOME`:
 
 ```bash
 VIBE_HOME=~/.config/vibe ./scripts/install.sh --tool vibe
 ```
 
-## Generated Format
+## Формат сгенерированных файлов
 
-Each generated agent pair lives in:
+Каждая пара файлов агента находится по путям:
 
 ```text
 integrations/vibe/agents/<slug>.toml
 integrations/vibe/prompts/<slug>.md
 ```
 
-### Agent TOML File
+### Файл конфигурации TOML
 
-The minimal Vibe agent configuration:
+Минимальная конфигурация агента:
 
 ```toml
 agent_type = "agent"
 system_prompt_id = "<slug>"
 ```
 
-Users can specify `active_model` in their agent TOML files or rely on their
-Vibe configuration default model.
+В файле агента можно указать `active_model`, либо использовать модель по умолчанию из конфигурации Vibe.
 
-### Prompt Markdown File
+### Файл промпта Markdown
 
-The prompt file contains:
-- A title header with the agent name
-- The agent description
-- The full Markdown body from the source agent
+Файл промпта содержит:
+- Заголовок с именем агента
+- Описание агента
+- Полное Markdown-тело исходного агента
 
-## Usage
+## Использование
 
-After installation, reference agents in Mistral Vibe by their system prompt ID
-(which matches the filename slug).
+После установки на агенты можно ссылаться в Mistral Vibe по их `system_prompt_id` (совпадает со slug'ом файла).
 
-Example:
+Пример:
 ```text
 Use the Code Reviewer agent to analyze this pull request.
 ```
 
-## Filtering
+## Фильтрация
 
-Install only specific divisions or agents:
+Можно установить только определённые подразделения или отдельных агентов:
 
 ```bash
-# Install only agents from Division 1
+# Установить только агентов из подразделения 1
 ./scripts/install.sh --tool vibe --division 1
 
-# Install only the code-reviewer agent
+# Установить только агента code-reviewer
 ./scripts/install.sh --tool vibe --agent code-reviewer
 ```
 
-## Regenerate
+## Повторная генерация
 
-After modifying source agents:
+После изменения исходных агентов:
 
 ```bash
 ./scripts/convert.sh --tool vibe
 ./scripts/install.sh --tool vibe
 ```
 
-## Troubleshooting
+## Устранение неполадок
 
-### Mistral Vibe not detected
+### Mistral Vibe не обнаружен
 
-Make sure `vibe` is in your PATH, or that `~/.vibe/` already exists:
+Убедитесь, что `vibe` доступен в PATH или что каталог `~/.vibe/` уже существует:
 
 ```bash
 which vibe
 vibe --version
 ```
 
-### Integration files not generated
+### Файлы интеграции не сгенерированы
 
-Generate the Vibe artifacts before installing:
+Сначала сгенерируйте артефакты для Vibe, затем установите их:
 
 ```bash
 ./scripts/convert.sh --tool vibe

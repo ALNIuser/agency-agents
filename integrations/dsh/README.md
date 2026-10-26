@@ -1,78 +1,67 @@
-# DeepSeek Harness Integration
+# Интеграция с DeepSeek Harness (DSH)
 
-Installs the full Agency roster as DeepSeek Harness (DSH) skills. Each agent
-is prefixed with `agency-` to avoid conflicts with built-in skills.
+Устанавливает весь список агентов The Agency в виде навыков DeepSeek Harness. Каждый агент получает префикс `agency-` во избежание конфликтов со встроенными навыками.
 
-## Install
+## Установка
 
 ```bash
 ./scripts/install.sh --tool dsh
 ```
 
-This copies files from `integrations/dsh/` to `${DSH_HOME:-$HOME/.dsh}/skills/`
-(user-wide). Set `DSH_HOME` if your Harness config lives elsewhere. For
-project-scoped skills, run the installer with `DSH_SKILLS_DIR=.dsh/skills`
-from your project root — this specific override takes precedence over
-`DSH_HOME`, and DSH reads `<project>/.dsh/skills/` automatically.
+Файлы копируются из `integrations/dsh/` в `${DSH_HOME:-$HOME/.dsh}/skills/` (пользовательский уровень). Если конфигурация Harness находится в другом месте, задайте переменную `DSH_HOME`. Для установки навыков в рамках проекта запустите установщик с `DSH_SKILLS_DIR=.dsh/skills` из корня проекта — этот параметр имеет приоритет над `DSH_HOME`, и DSH автоматически будет читать `<project>/.dsh/skills/`.
 
-> DSH discovers skills live (watched roots): new, renamed, or deleted skills
-> reach the next catalog without a restart. No config file to edit.
+> DSH обнаруживает навыки динамически (отслеживает каталоги): новые, переименованные или удалённые навыки попадут в каталог при следующем обновлении без перезапуска. Редактировать конфигурационный файл не требуется.
 
-## Activate a Skill
+## Активация навыка
 
-In DSH, skills are user- and model-invocable by default. Activate an agent
-by its slash command or by name in conversation:
+В DSH навыки доступны пользователю и модели по умолчанию. Активируйте агента командой слэш или просто упомянув его в диалоге:
 
 ```
 /agency-frontend-developer review this React component
 ```
 
-or:
+или:
 
 ```
 Use the agency-frontend-developer skill to review this component.
 ```
 
-Available slugs follow the pattern `agency-<agent-name>`, e.g.:
+Доступные slug'и соответствуют шаблону `agency-<имя-агента>`, например:
 - `agency-frontend-developer`
 - `agency-backend-architect`
 - `agency-reality-checker`
 - `agency-growth-hacker`
 
-## Regenerate
+## Повторная генерация
 
-After modifying agents, regenerate the skill files:
+После изменения исходных агентов повторно сгенерируйте файлы навыков:
 
 ```bash
 ./scripts/convert.sh --tool dsh
 ```
 
-## File Format
+## Формат файла
 
-Each skill is a `SKILL.md` file with the standard Agent-Skills frontmatter
-(required `name` and `description`, strict kebab-case name) and the agent
-persona as the body:
+Каждый навык — это файл `SKILL.md` со стандартным frontmatter формата Agent-Skills (обязательные поля `name` и `description`, имя строго в kebab-case) и телом агента:
 
 ```markdown
 ---
 name: 'agency-frontend-developer'
 description: 'Expert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and performance optimization'
 ---
-...agent body...
+...тело агента...
 ```
 
-This is byte-identical to the Antigravity and Osaurus skill output
-(`skill-md` format), so the Agency Agents app renders it natively.
+Формат идентичен выводу Antigravity и Osaurus (`skill-md`), поэтому приложение Agency Agents отображает его нативно.
 
-## Skill Roots Scanned by DSH
+## Каталоги с навыками, сканируемые DSH
 
-| Priority | Source | Path |
+| Приоритет | Источник | Путь |
 |---|---|---|
-| 100 | project | `<project>/.dsh/skills` |
-| 200 | project | `<project>/.agents/skills` |
-| 300 | custom | `customSkillDirs` config |
-| 400 | user | `${DSH_HOME:-$HOME/.dsh}/skills` (default install) |
-| 500 | user | `~/.agents/skills` |
+| 100 | проект | `<project>/.dsh/skills` |
+| 200 | проект | `<project>/.agents/skills` |
+| 300 | пользовательский (настраиваемый) | `customSkillDirs` в конфигурации |
+| 400 | пользователь | `${DSH_HOME:-$HOME/.dsh}/skills` (установка по умолчанию) |
+| 500 | пользователь | `~/.agents/skills` |
 
-Project skills (rank 100/200) shadow user skills (rank 400/500) of the same
-name, so a project install overrides the user-wide one for that project.
+Навыки проекта (приоритет 100/200) перекрывают пользовательские (приоритет 400/500) с тем же именем, поэтому установка в проекте имеет приоритет для данного проекта.

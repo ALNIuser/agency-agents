@@ -1,56 +1,45 @@
-# Qwen Code Integration
+# Интеграция с Qwen Code
 
-Qwen Code uses project-scoped `.md` SubAgent files in `.qwen/agents/`.
+Qwen Code использует субагенты проекта в формате `.md`, размещённые в `.qwen/agents/`.
 
-The generated files come from `scripts/convert.sh --tool qwen`, which writes one
-SubAgent Markdown file per agency agent into `integrations/qwen/agents/`.
+Сгенерированные файлы создаются командой `scripts/convert.sh --tool qwen` — для каждого агента The Agency создаётся отдельный файл SubAgent в `integrations/qwen/agents/`.
 
-## Requirements
+## Требования
 
-Qwen Code **0.25.1 or later**. Earlier releases treat every `${name}` in a
-SubAgent's prompt as a value to fill and refuse to launch the agent when they
-have none ("Missing context values for the following keys: …"). Several agents
-show `${name}` in their code examples, so on those releases they can't be
-launched. From 0.25.1, Qwen leaves any `${name}` it doesn't fill as written
-([#1081](https://github.com/msitarzewski/agency-agents/issues/1081)).
+Требуется **Qwen Code 0.25.1 или новее**. В более ранних версиях любой шаблон `${name}` в промпте субагента воспринимался как обязательный для заполнения, и агент не запускался при его отсутствии ("Missing context values for the following keys: …"). Многие агенты содержат `${name}` в примерах кода, поэтому в старых версиях их невозможно было использовать. Начиная с 0.25.1 Qwen оставляет `${name}`, не подлежащие заполнению, без изменений ([#1081](https://github.com/msitarzewski/agency-agents/issues/1081)).
 
-Qwen does fill three names: `${task_prompt}`, `${hook_context}` and
-`${external_inputs_override}`. `scripts/lint-agents.sh` rejects them in agent
-bodies, so no agent text is replaced at launch.
+Qwen Code автоматически заполняет только три переменные: `${task_prompt}`, `${hook_context}` и `${external_inputs_override}`. Скрипт `scripts/lint-agents.sh` запрещает их использование в телах агентов, поэтому замена текста при запуске не происходит.
 
-## Generate
+## Генерация
 
-From the repository root:
+Из корня репозитория:
 
 ```bash
 ./scripts/convert.sh --tool qwen
 ```
 
-## Install
+## Установка
 
-Run the installer from your target project root:
+Запустите установщик из корня целевого проекта:
 
 ```bash
 cd /your/project && /path/to/agency-agents/scripts/install.sh --tool qwen
 ```
 
-This copies the generated SubAgent files into:
+Сгенерированные файлы субагентов будут скопированы в:
 
 ```text
 .qwen/agents/
 ```
 
-## Refresh in Qwen Code
+## Обновление списка в Qwen Code
 
-After installation:
+После установки выполните одно из действий:
+- команду `/agents manage` в Qwen Code для обновления списка агентов, или
+- перезапустите текущую сессию Qwen Code
 
-- run `/agents manage` in Qwen Code to refresh the agent list, or
-- restart the current Qwen Code session
+## Примечания
 
-## Notes
-
-- Qwen Code is project-scoped, not home-scoped
-- The generated Qwen files use minimal frontmatter: `name`, `description`, and
-  optional `tools`
-- If you update agents in this repo, regenerate the Qwen output before
-  reinstalling
+- Qwen Code работает в рамках проекта, а не на уровне домашнего каталога
+- Сгенерированные файлы Qwen используют минимальный frontmatter: `name`, `description` и опционально `tools`
+- При изменении исходных агентов в этом репозитории перед переустановкой необходимо повторно сгенерировать файлы Qwen

@@ -1,27 +1,26 @@
-# Cursor Integration
+# Интеграция с Cursor
 
-Converts the full Agency roster into Cursor `.mdc` rule files. Rules are
-**project-scoped** — install them from your project root.
+Преобразует весь список агентов The Agency в файлы правил Cursor формата `.mdc`. Правила работают **только в рамках проекта** — установщик нужно запускать из корня целевого проекта.
 
-## Install
+## Установка
 
 ```bash
-# Run from your project root
+# Запустите из корня вашего проекта
 cd /your/project
 /path/to/agency-agents/scripts/install.sh --tool cursor
 ```
 
-This creates `.cursor/rules/<agent-slug>.mdc` files in your project.
+В проекте будут созданы файлы `.cursor/rules/<agent-slug>.mdc`.
 
-## Activate a Rule
+## Активация правила
 
-In Cursor, reference an agent in your prompt:
+В Cursor можно сослаться на агента в промпте:
 
 ```
 @frontend-developer Review this React component for performance issues.
 ```
 
-Or enable a rule as always-on by editing its frontmatter:
+Или сделать правило всегда активным, изменив его frontmatter:
 
 ```yaml
 ---
@@ -31,7 +30,7 @@ alwaysApply: true
 ---
 ```
 
-## Regenerate
+## Повторная генерация
 
 ```bash
 ./scripts/convert.sh --tool cursor

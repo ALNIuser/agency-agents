@@ -1,40 +1,36 @@
-# OpenCode Integration
+# Интеграция с OpenCode
 
-> **❌ Don't do this:**
+> **❌ Не делайте так:**
 >
 > ```bash
-> # WRONG — will fail with schema validation errors
+> # НЕПРАВИЛЬНО — приведёт к ошибкам валидации схемы
 > cp agency-agents/engineering/*.md .opencode/agents/
 > ```
 >
-> **✅ Do this instead:**
+> **✅ Делайте так:**
 >
 > ```bash
 > /path/to/agency-agents/scripts/install.sh --tool opencode
 > ```
 >
-> The source files use named colors and a `tools` field that OpenCode rejects.
-> The installer converts them to `#RRGGBB` hex and strips incompatible fields
-> automatically.
+> Исходные файлы используют именованные цвета и поле `tools`, которые OpenCode не поддерживает.
+> Установщик автоматически конвертирует их в шестнадцатеричные коды `#RRGGBB` и удаляет несовместимые поля.
 
-OpenCode agents are `.md` files with YAML frontmatter stored in
-`.opencode/agents/`. The converter maps named colors to hex codes and adds
-`mode: subagent` so agents are invoked on-demand via `@agent-name` rather
-than cluttering the primary agent picker.
+Агенты OpenCode — это файлы `.md` с YAML frontmatter, размещённые в каталоге `.opencode/agents/`. Конвертер сопоставляет именованные цвета с hex-кодами и добавляет `mode: subagent`, чтобы агенты вызывались по требованию через `@agent-name`, не загромождая основной список агентов.
 
-## Install
+## Установка
 
 ```bash
-# Run from your project root
+# Запустите из корня вашего проекта
 cd /your/project
 /path/to/agency-agents/scripts/install.sh --tool opencode
 ```
 
-This creates `.opencode/agents/<slug>.md` files in your project directory.
+В результате в каталоге проекта будут созданы файлы `.opencode/agents/<slug>.md`.
 
-## Activate an Agent
+## Активация агента
 
-In OpenCode, invoke a subagent with the `@` prefix:
+В OpenCode вызовите субагента с префиксом `@`:
 
 ```
 @frontend-developer help build this component.
@@ -44,11 +40,11 @@ In OpenCode, invoke a subagent with the `@` prefix:
 @reality-checker review this PR.
 ```
 
-You can also select agents from the OpenCode UI's agent picker.
+Также можно выбрать агента из списка выбора агентов в интерфейсе OpenCode.
 
-## Agent Format
+## Формат агента
 
-Each generated agent file contains:
+Каждый сгенерированный файл агента содержит:
 
 ```yaml
 ---
@@ -59,21 +55,19 @@ color: "#00FFFF"
 ---
 ```
 
-- **mode: subagent** — agent is available on-demand, not shown in the primary Tab-cycle list
-- **color** — hex code (named colors from source files are converted automatically)
+- **mode: subagent** — агент доступен по требованию, не отображается в основном списке переключения по Tab
+- **color** — шестнадцатеричный код (именованные цвета из исходных файлов конвертируются автоматически)
 
-## Project vs Global
+## Проектный или глобальный доступ
 
-Agents in `.opencode/agents/` are **project-scoped**. To make them available
-globally across all projects, first generate the agent files, then install
-with `--path`:
+Агенты в `.opencode/agents/` доступны **только в рамках проекта**. Чтобы сделать их доступными глобально во всех проектах, сначала сгенерируйте файлы агентов, затем установите с параметром `--path`:
 
 ```bash
 ./scripts/convert.sh --tool opencode
 ./scripts/install.sh --tool opencode --path ~/.config/opencode/agents
 ```
 
-## Regenerate
+## Повторная генерация
 
 ```bash
 ./scripts/convert.sh --tool opencode

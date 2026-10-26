@@ -1,22 +1,21 @@
-# GitHub Copilot Integration
+# Интеграция с GitHub Copilot
 
-The Agency works with GitHub Copilot out of the box. No conversion needed —
-agents use the existing `.md` + YAML frontmatter format.
+The Agency работает с GitHub Copilot «из коробки». Конвертация не требуется — агенты используют существующий формат `.md` с YAML frontmatter.
 
-## Install
+## Установка
 
 ```bash
-# Copy all agents to your GitHub Copilot agents directories
+# Скопировать всех агентов в каталоги агентов GitHub Copilot
 ./scripts/install.sh --tool copilot
 
-# Or manually copy a category
+# Или скопировать вручную отдельную категорию
 cp engineering/*.md ~/.github/agents/
 cp engineering/*.md ~/.copilot/agents/
 ```
 
-## Activate an Agent
+## Активация агента
 
-In any GitHub Copilot session, reference an agent by name:
+В любой сессии GitHub Copilot можно обратиться к агенту по имени:
 
 ```
 Activate Frontend Developer and help me build a React component.
@@ -26,7 +25,6 @@ Activate Frontend Developer and help me build a React component.
 Use the Reality Checker agent to verify this feature is production-ready.
 ```
 
-## Agent Directory
+## Список агентов
 
-Agents are organized into divisions. See the [main README](../../README.md) for
-the full current roster.
+Агенты сгруппированы по подразделениям. Полный список смотрите в [корневом README](../../README.md).

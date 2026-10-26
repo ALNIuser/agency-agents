@@ -1,33 +1,32 @@
-# Gemini CLI Integration
+# Интеграция с Gemini CLI
 
-Packages all Agency agents as Gemini CLI subagents. These agents
-install to `~/.gemini/agents/`.
+Упаковывает всех агентов The Agency в виде субагентов Gemini CLI. Агенты устанавливаются в `~/.gemini/agents/`.
 
-## Install
+## Установка
 
 ```bash
-# Generate the Gemini CLI agent files first
+# Сначала сгенерировать файлы агентов для Gemini CLI
 ./scripts/convert.sh --tool gemini-cli
 
-# Then install them to ~/.gemini/agents/
+# Затем установить их в ~/.gemini/agents/
 ./scripts/install.sh --tool gemini-cli
 ```
 
-## Use an Agent
+## Использование агента
 
-In Gemini CLI, reference an agent by name in your prompt:
+В Gemini CLI можно сослаться на агента по имени в промпте:
 
 ```
 Use the frontend-developer agent to help me build this UI.
 ```
 
-Or invoke the agent directly if your version of Gemini CLI supports it:
+Или вызвать агент напрямую, если ваша версия Gemini CLI поддерживает это:
 
 ```bash
 gemini --agent frontend-developer "How should I structure this React component?"
 ```
 
-## Structure
+## Структура
 
 ```
 ~/.gemini/agents/
@@ -37,7 +36,7 @@ gemini --agent frontend-developer "How should I structure this React component?"
   ...
 ```
 
-## Regenerate
+## Повторная генерация
 
 ```bash
 ./scripts/convert.sh --tool gemini-cli

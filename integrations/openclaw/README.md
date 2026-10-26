@@ -1,33 +1,30 @@
-# OpenClaw Integration
+# Интеграция с OpenClaw
 
-OpenClaw agents are installed as workspaces containing `SOUL.md`, `AGENTS.md`,
-and `IDENTITY.md` files. The installer copies each workspace into
-`~/.openclaw/agency-agents/` and registers it when the `openclaw` CLI is
-available.
+Агенты OpenClaw устанавливаются в виде рабочих пространств, содержащих файлы `SOUL.md`, `AGENTS.md` и `IDENTITY.md`. Установщик копирует каждое рабочее пространство в `~/.openclaw/agency-agents/` и регистрирует его, если доступен CLI `openclaw`.
 
-Before installing, generate the OpenClaw workspaces:
+Перед установкой необходимо сгенерировать рабочие пространства OpenClaw:
 
 ```bash
 ./scripts/convert.sh --tool openclaw
 ```
 
-## Install
+## Установка
 
 ```bash
 ./scripts/install.sh --tool openclaw
 ```
 
-## Activate an Agent
+## Активация агента
 
-After installation, agents are available by `agentId` in OpenClaw sessions.
+После установки агенты доступны по `agentId` в сессиях OpenClaw.
 
-If the OpenClaw gateway is already running, restart it after installation:
+Если шлюз OpenClaw уже запущен, перезапустите его после установки:
 
 ```bash
 openclaw gateway restart
 ```
 
-## Regenerate
+## Повторная генерация
 
 ```bash
 ./scripts/convert.sh --tool openclaw

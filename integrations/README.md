@@ -1,33 +1,33 @@
-# 🔌 Integrations
+# 🔌 Интеграции
 
-This directory contains The Agency integrations and converted formats for
-supported agentic coding tools.
+В этом каталоге находятся интеграции The Agency и преобразованные форматы для
+поддерживаемых инструментов работы с агентами.
 
-## Supported Tools
+## Поддерживаемые инструменты
 
-- **[Claude Code](#claude-code)** — `.md` agents, use the repo directly
-- **[GitHub Copilot](#github-copilot)** — `.md` agents, use the repo directly
-- **[Antigravity](#antigravity)** — `SKILL.md` per agent in `antigravity/`
-- **[Gemini CLI](#gemini-cli)** — `.md` agent files in `gemini-cli/agents/`
-- **[OpenCode](#opencode)** — `.md` agent files in `opencode/`
-- **[OpenClaw](#openclaw)** — `SOUL.md` + `AGENTS.md` + `IDENTITY.md` workspaces
-- **[Cursor](#cursor)** — `.mdc` rule files in `cursor/`
-- **[Aider](#aider)** — `CONVENTIONS.md` roster index in `aider/`
-- **[Windsurf](#windsurf)** — `.windsurfrules` in `windsurf/`
-- **[Kimi Code](#kimi-code)** — YAML agent specs in `kimi/`
-- **[Qwen Code](#qwen-code)** — project-scoped `.md` SubAgents in `.qwen/agents/`
-- **[Codex](#codex)** — `.toml` custom agents in `codex/`
-- **[Mistral Vibe](vibe/README.md)** — `.toml` agents + prompt files generated in `vibe/`
-- **Osaurus** -- `SKILL.md` skills generated in `osaurus/`
-- **[Hermes](hermes/README.md)** -- lazy-router plugin generated in `hermes/`
+- **[Claude Code](#claude-code)** — агенты `.md`, используются напрямую из репозитория
+- **[GitHub Copilot](#github-copilot)** — агенты `.md`, используются напрямую из репозитория
+- **[Antigravity](#antigravity)** — `SKILL.md` для каждого агента в `antigravity/`
+- **[Gemini CLI](#gemini-cli)** — файлы агентов `.md` в `gemini-cli/agents/`
+- **[OpenCode](#opencode)** — файлы агентов `.md` в `opencode/`
+- **[OpenClaw](#openclaw)** — рабочие пространства `SOUL.md` + `AGENTS.md` + `IDENTITY.md`
+- **[Cursor](#cursor)** — файлы правил `.mdc` в `cursor/`
+- **[Aider](#aider)** — индексный файл `CONVENTIONS.md` в `aider/`
+- **[Windsurf](#windsurf)** — файл `.windsurfrules` в `windsurf/`
+- **[Kimi Code](#kimi-code)** — спецификации агентов в формате YAML в `kimi/`
+- **[Qwen Code](#qwen-code)** — субагенты `.md` для проекта в `.qwen/agents/`
+- **[Codex](#codex)** — пользовательские агенты `.toml` в `codex/`
+- **[Mistral Vibe](vibe/README.md)** — агенты `.toml` и файлы промптов, генерируемые в `vibe/`
+- **Osaurus** — навыки `SKILL.md`, генерируемые в `osaurus/`
+- **[Hermes](hermes/README.md)** — плагин ленивого маршрутизатора, генерируемый в `hermes/`
 
-## Quick Install
+## Быстрая установка
 
 ```bash
-# Install for all detected tools automatically
+# Автоматическая установка для всех обнаруженных инструментов
 ./scripts/install.sh
 
-# Install a specific home-scoped tool
+# Установка для конкретного инструмента пользовательского уровня
 ./scripts/install.sh --tool antigravity
 ./scripts/install.sh --tool copilot
 ./scripts/install.sh --tool openclaw
@@ -36,29 +36,26 @@ supported agentic coding tools.
 ./scripts/install.sh --tool osaurus
 ./scripts/install.sh --tool hermes
 
-# Gemini CLI needs generated integration files on a fresh clone
+# Для Gemini CLI требуется сгенерировать файлы интеграции при первом клонировании
 ./scripts/convert.sh --tool gemini-cli
 ./scripts/install.sh --tool gemini-cli
 
-# Qwen Code also needs generated SubAgent files on a fresh clone
+# Для Qwen Code также требуется сгенерировать файлы SubAgent при первом клонировании
 ./scripts/convert.sh --tool qwen
 ./scripts/install.sh --tool qwen
 ```
 
-If you install OpenClaw and the gateway is already running, restart it after installation:
+Если вы установили OpenClaw и шлюз уже запущен, перезапустите его после установки:
 
 ```bash
 openclaw gateway restart
 ```
 
-For project-scoped tools such as OpenCode, Cursor, Aider, Windsurf, and Qwen
-Code, run
-the installer from your target project root as shown in the tool-specific
-sections below.
+Для инструментов, работающих в рамках проекта (OpenCode, Cursor, Aider, Windsurf, Qwen Code), запускайте установщик из корня целевого проекта, как показано в разделах ниже.
 
-## Regenerating Integration Files
+## Повторная генерация файлов интеграции
 
-If you add or modify agents, regenerate all integration files:
+Если вы добавили или изменили агентов, повторно сгенерируйте все файлы интеграции:
 
 ```bash
 ./scripts/convert.sh
@@ -68,157 +65,143 @@ If you add or modify agents, regenerate all integration files:
 
 ## Claude Code
 
-The Agency was originally designed for Claude Code. Agents work natively
-without conversion.
+The Agency изначально разрабатывался для Claude Code. Агенты работают нативно без конвертации.
 
 ```bash
-cp -r <category>/*.md ~/.claude/agents/
-# or install everything at once:
+cp -r <категория>/*.md ~/.claude/agents/
+# или установить всё сразу:
 ./scripts/install.sh --tool claude-code
 ```
 
-See [claude-code/README.md](claude-code/README.md) for details.
+Подробнее см. [claude-code/README.md](claude-code/README.md).
 
 ---
 
 ## GitHub Copilot
 
-The Agency also works natively with GitHub Copilot. Agents can be copied
-directly into `~/.github/agents/` and `~/.copilot/agents/` without conversion.
+The Agency также работает нативно с GitHub Copilot. Агенты можно копировать напрямую в `~/.github/agents/` и `~/.copilot/agents/` без конвертации.
 
 ```bash
 ./scripts/install.sh --tool copilot
 ```
 
-See [github-copilot/README.md](github-copilot/README.md) for details.
+Подробнее см. [github-copilot/README.md](github-copilot/README.md).
 
 ---
 
 ## Antigravity
 
-Skills are installed to `~/.gemini/config/skills/`. Each agent becomes
-a separate skill prefixed with `agency-` to avoid naming conflicts.
+Навыки устанавливаются в `~/.gemini/config/skills/`. Каждый агент становится отдельным навыком с префиксом `agency-` во избежание конфликтов имен.
 
 ```bash
 ./scripts/install.sh --tool antigravity
 ```
 
-See [antigravity/README.md](antigravity/README.md) for details.
+Подробнее см. [antigravity/README.md](antigravity/README.md).
 
 ---
 
 ## Gemini CLI
 
-Agents are packaged as Gemini CLI subagents.
-Subagents are installed to `~/.gemini/agents/`.
-Because the agent files are generated artifacts, run
-`./scripts/convert.sh --tool gemini-cli` before installing from a fresh clone.
+Агенты упакованы в виде субагентов Gemini CLI. Субагенты устанавливаются в `~/.gemini/agents/`. Поскольку файлы агентов являются результатом генерации, перед установкой из свежего клона необходимо выполнить `./scripts/convert.sh --tool gemini-cli`.
 
 ```bash
 ./scripts/convert.sh --tool gemini-cli
 ./scripts/install.sh --tool gemini-cli
 ```
 
-See [gemini-cli/README.md](gemini-cli/README.md) for details.
+Подробнее см. [gemini-cli/README.md](gemini-cli/README.md).
 
 ---
 
 ## OpenCode
 
-Each agent becomes a project-scoped `.md` file in `.opencode/agents/`.
+Каждый агент становится файлом `.md` для проекта в `.opencode/agents/`.
 
 ```bash
 cd /your/project && /path/to/agency-agents/scripts/install.sh --tool opencode
 ```
 
-See [opencode/README.md](opencode/README.md) for details.
+Подробнее см. [opencode/README.md](opencode/README.md).
 
 ---
 
 ## OpenClaw
 
-Each agent becomes an OpenClaw workspace containing `SOUL.md`, `AGENTS.md`,
-and `IDENTITY.md`.
+Каждый агент становится рабочим пространством OpenClaw, содержащим `SOUL.md`, `AGENTS.md` и `IDENTITY.md`.
 
-Before installing, generate the OpenClaw workspaces:
+Перед установкой необходимо сгенерировать рабочие пространства OpenClaw:
 
 ```bash
 ./scripts/convert.sh --tool openclaw
 ```
 
-Then install them:
+Затем установить их:
 
 ```bash
 ./scripts/install.sh --tool openclaw
 ```
 
-See [openclaw/README.md](openclaw/README.md) for details.
+Подробнее см. [openclaw/README.md](openclaw/README.md).
 
 ---
 
 ## Cursor
 
-Each agent becomes a `.mdc` rule file. Rules are project-scoped — run the
-installer from your project root.
+Каждый агент становится файлом правил `.mdc`. Правила работают в рамках проекта — установщик нужно запускать из корня целевого проекта.
 
 ```bash
 cd /your/project && /path/to/agency-agents/scripts/install.sh --tool cursor
 ```
 
-See [cursor/README.md](cursor/README.md) for details.
+Подробнее см. [cursor/README.md](cursor/README.md).
 
 ---
 
 ## Aider
 
-`CONVENTIONS.md` is the roster index — name, description, and the path to each
-agent's full instructions. Aider keeps a conventions file in context for the
-whole session, so the file lists the agents instead of inlining a million
-tokens of them.
+`CONVENTIONS.md` — это индексный список агентов: имя, описание и путь к полным инструкциям каждого агента. Aider хранит файл conventions в контексте всей сессии, поэтому в нём перечислены агенты, а не вставлены миллионы токенов их инструкций.
 
 ```bash
 cd /your/project && /path/to/agency-agents/scripts/install.sh --tool aider
 ```
 
-See [aider/README.md](aider/README.md) for details.
+Подробнее см. [aider/README.md](aider/README.md).
 
 ---
 
 ## Windsurf
 
-All agents are consolidated into a single `.windsurfrules` file for your
-project root.
+Все агенты объединены в один файл `.windsurfrules` в корне проекта.
 
 ```bash
 cd /your/project && /path/to/agency-agents/scripts/install.sh --tool windsurf
 ```
 
-See [windsurf/README.md](windsurf/README.md) for details.
+Подробнее см. [windsurf/README.md](windsurf/README.md).
 
 ---
 
 ## Kimi Code
 
-Each agent is converted to a Kimi Code CLI agent specification (YAML format with
-separate system prompt files). Agents are installed to `~/.config/kimi/agents/`.
+Каждый агент конвертируется в спецификацию Kimi Code CLI (формат YAML с отдельными файлами системных промптов). Агенты устанавливаются в `~/.config/kimi/agents/`.
 
-Because the Kimi agent files are generated from the source Markdown, run
-`./scripts/convert.sh --tool kimi` before installing from a fresh clone.
+Поскольку файлы агентов Kimi генерируются из исходных Markdown-файлов, перед установкой из свежего клона необходимо выполнить `./scripts/convert.sh --tool kimi`.
 
 ```bash
 ./scripts/convert.sh --tool kimi
 ./scripts/install.sh --tool kimi
 ```
 
-### Usage
+### Использование
 
-After installation, use an agent with the `--agent-file` flag:
+После установки можно использовать агента с флагом `--agent-file`:
 
 ```bash
 kimi --agent-file ~/.config/kimi/agents/frontend-developer/agent.yaml
 ```
 
-Or in a specific project:
+Или в конкретном проекте:
 
 ```bash
 cd /your/project
@@ -226,41 +209,39 @@ kimi --agent-file ~/.config/kimi/agents/frontend-developer/agent.yaml \
      --work-dir /your/project
 ```
 
-See [kimi/README.md](kimi/README.md) for details.
+Подробнее см. [kimi/README.md](kimi/README.md).
 
 ---
 
 ## Qwen Code
 
-Each agent becomes a project-scoped `.md` SubAgent file in `.qwen/agents/`.
+Каждый агент становится файлом SubAgent `.md` для проекта в `.qwen/agents/`.
 
-From a fresh clone, generate the Qwen files first:
+Из свежего клона сначала сгенерируйте файлы Qwen:
 
 ```bash
 ./scripts/convert.sh --tool qwen
 ```
 
-Then install them from your project root:
+Затем установите их из корня целевого проекта:
 
 ```bash
 cd /your/project && /path/to/agency-agents/scripts/install.sh --tool qwen
 ```
 
-See [qwen/README.md](qwen/README.md) for details.
+Подробнее см. [qwen/README.md](qwen/README.md).
 
 ---
 
 ## Codex
 
-Each agent is converted into a standalone Codex custom agent TOML file and
-installed to `~/.codex/agents/`.
+Каждый агент конвертируется в отдельный файл пользовательского агента Codex формата TOML и устанавливается в `~/.codex/agents/`.
 
-Because Codex uses generated TOML files rather than the source Markdown
-directly, run the converter before installing from a fresh clone:
+Поскольку Codex использует сгенерированные TOML-файлы, а не исходные Markdown напрямую, перед установкой из свежего клона необходимо запустить конвертер:
 
 ```bash
 ./scripts/convert.sh --tool codex
 ./scripts/install.sh --tool codex
 ```
 
-See [codex/README.md](codex/README.md) for details.
+Подробнее см. [codex/README.md](codex/README.md).

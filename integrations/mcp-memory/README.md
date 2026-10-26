@@ -1,18 +1,18 @@
-# MCP Memory Integration
+# Интеграция MCP Memory
 
-> Give any agent persistent memory across sessions using the Model Context Protocol (MCP).
+> Обеспечьте любому агенту постоянную память между сессиями с помощью Model Context Protocol (MCP).
 
-## What It Does
+## Для чего это нужно
 
-By default, agents in The Agency start every session from scratch. Context is passed manually via copy-paste between agents and sessions. An MCP memory server changes that:
+По умолчанию агенты The Agency начинают каждую сессию с нуля. Контекст передаётся вручную путём копирования между агентами и сессиями. MCP-сервер памяти меняет эту модель:
 
-- **Cross-session memory**: An agent remembers decisions, deliverables, and context from previous sessions
-- **Handoff continuity**: When one agent hands off to another, the receiving agent can recall exactly what was done — no copy-paste required
-- **Rollback on failure**: When a QA check fails or an architecture decision turns out wrong, roll back to a known-good state instead of starting over
+- **Память между сессиями**: агент запоминает принятые решения, результаты работы и контекст из предыдущих сессий
+- **Непрерывность передачи задач**: когда один агент передаёт задачу другому, принимающий агент может вспомнить, что было сделано — без копирования и вставки
+- **Откат при ошибке**: если проверка QA не пройдена или архитектурное решение оказалось неверным, можно откатиться к последнему рабочему состоянию вместо того, чтобы начинать с нуля
 
-## Setup
+## Настройка
 
-You need an MCP server that provides memory tools: `remember`, `recall`, `rollback`, and `search`. Add it to your MCP client config (Claude Code, Cursor, etc.):
+Необходим MCP-сервер, предоставляющий инструменты памяти: `remember`, `recall`, `rollback`, `search`. Добавьте его в конфигурацию MCP-клиента (Claude Code, Cursor и др.):
 
 ```json
 {
@@ -25,55 +25,55 @@ You need an MCP server that provides memory tools: `remember`, `recall`, `rollba
 }
 ```
 
-Any MCP server that exposes `remember`, `recall`, `rollback`, and `search` tools will work. Check the [MCP ecosystem](https://modelcontextprotocol.io) for available implementations.
+Подойдёт любой MCP-сервер, реализующий инструменты `remember`, `recall`, `rollback` и `search`. Список доступных реализаций можно найти в [экосистеме MCP](https://modelcontextprotocol.io).
 
-## How to Add Memory to Any Agent
+## Как добавить память любому агенту
 
-To enhance an existing agent with persistent memory, add a **Memory Integration** section to the agent's prompt. This section instructs the agent to use MCP memory tools at key moments.
+Чтобы расширить существующего агента постоянной памятью, добавьте в его промпт раздел **Memory Integration**. В нём описываются моменты, в которые агент должен использовать инструменты MCP-памяти.
 
-### The Pattern
+### Шаблон
 
 ```markdown
 ## Memory Integration
 
-When you start a session:
-- Recall relevant context from previous sessions using your role and the current project as search terms
-- Review any memories tagged with your agent name to pick up where you left off
+При старте сессии:
+- Вспомните релевантный контекст из предыдущих сессий, используя вашу роль и название проекта в качестве поисковых запросов
+- Просмотрите воспоминания с тегом вашего имени агента, чтобы продолжить с того места, на котором остановились
 
-When you make key decisions or complete deliverables:
-- Remember the decision or deliverable with descriptive tags (your agent name, the project, the topic)
-- Include enough context that a future session — or a different agent — can understand what was done and why
+При принятии важных решений или завершении работы:
+- Сохраните решение или результат в памяти с описательными тегами (имя агента, проект, тема)
+- Добавьте достаточно контекста, чтобы будущая сессия или другой агент могли понять, что было сделано и почему
 
-When handing off to another agent:
-- Remember your deliverables tagged for the receiving agent
-- Include the handoff metadata: what you completed, what's pending, and what the next agent needs to know
+При передаче задачи другому агенту:
+- Сохраните результаты своей работы с тегом принимающего агента
+- Укажите метаданные передачи: что сделано, что осталось, что нужно знать следующему агенту
 
-When something fails and you need to recover:
-- Search for the last known-good state
-- Use rollback to restore to that point rather than rebuilding from scratch
+При ошибке и необходимости восстановления:
+- Найдите последнее рабочее состояние
+- Используйте rollback для отката к нему вместо полного пересоздания
 ```
 
-### What the Agent Does With This
+### Как это работает
 
-The LLM will use MCP memory tools automatically when given these instructions:
+LLM автоматически использует инструменты MCP-памяти при наличии таких инструкций:
 
-- `remember` — store a decision, deliverable, or context snapshot with tags
-- `recall` — search for relevant memories by keyword, tag, or semantic similarity
-- `rollback` — revert to a previous state when something goes wrong
-- `search` — find specific memories across sessions and agents
+- `remember` — сохранить решение, результат работы или снимок контекста с тегами
+- `recall` — поиск релевантных воспоминаний по ключевому слову, тегу или семантическому сходству
+- `rollback` — откат к предыдущему состоянию при ошибке
+- `search` — поиск воспоминаний по сессиям и агентам
 
-No code changes to the agent files. No API calls to write. The MCP tools handle everything.
+Изменять файлы агентов не требуется. Никаких API-вызовов добавлять не нужно — всё выполняется через инструменты MCP.
 
-## Example: Enhancing the Backend Architect
+## Пример: добавление памяти Backend Architect
 
-See [backend-architect-with-memory.md](backend-architect-with-memory.md) for a complete example — the standard Backend Architect agent with a Memory Integration section added.
+См. [backend-architect-with-memory.md](backend-architect-with-memory.md) — полный пример стандартного агента Backend Architect с добавленным разделом Memory Integration.
 
-## Example: Memory-Powered Workflow
+## Пример: рабочий процесс с памятью
 
-See [../../examples/workflow-with-memory.md](../../examples/workflow-with-memory.md) for the Startup MVP workflow enhanced with persistent memory, showing how agents pass context through memory instead of copy-paste.
+См. [../../examples/workflow-with-memory.md](../../examples/workflow-with-memory.md) — рабочий процесс Startup MVP с постоянной памятью, демонстрирующий передачу контекста между агентами через память вместо копирования.
 
-## Tips
+## Советы
 
-- **Tag consistently**: Use the agent name and project name as tags on every memory. This makes recall reliable.
-- **Let the LLM decide what's important**: The memory instructions are guidance, not rigid rules. The LLM will figure out when to remember and what to recall.
-- **Rollback is the killer feature**: When a Reality Checker fails a deliverable, the original agent can roll back to its last checkpoint instead of trying to manually undo changes.
+- **Используйте единые теги**: добавляйте имя агента и название проекта в теги каждого воспоминания — это сделает поиск надёжным
+- **Доверяйте LLM**: инструкции — ориентир, а не жёсткий алгоритм. Модель сама решит, когда сохранить или вспомнить информацию
+- **Откат — ключевая возможность**: если Reality Checker отклоняет результат, исходный агент может откатиться к последней контрольной точке вместо ручного исправления

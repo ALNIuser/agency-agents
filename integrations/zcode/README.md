@@ -1,29 +1,23 @@
-# ZCode Integration
+# Интеграция с ZCode
 
-[ZCode](https://z.ai) is Z.ai's GLM-based coding agent harness. Each agency
-agent is rendered as a standalone Markdown agent file with `name` and
-`description` frontmatter, which ZCode discovers from its agents directory.
+[ZCode](https://z.ai) — это инструмент для работы с агентами на базе GLM от Z.ai. Каждый агент The Agency преобразуется в отдельный Markdown-файл с frontmatter, содержащим `name` и `description`. ZCode автоматически обнаруживает такие файлы в каталоге агентов.
 
-The generated files come from `scripts/convert.sh --tool zcode`, which writes
-one Markdown file per agency agent into `integrations/zcode/agents/`. Those
-generated files are not committed (see `.gitignore`); regenerate them locally.
+Сгенерированные файлы создаются командой `scripts/convert.sh --tool zcode` — для каждого агента в `integrations/zcode/agents/` записывается отдельный Markdown-файл. Эти сгенерированные файлы не коммитятся в репозиторий (см. `.gitignore`), их нужно генерировать локально.
 
-## Generate
+## Генерация
 
-From the repository root:
+Из корня репозитория:
 
 ```bash
 ./scripts/convert.sh --tool zcode
 ```
 
-## Install
+## Установка
 
-Run the installer from your target directory:
+Запустите установщик из целевого каталога:
 
 ```bash
 cd /your/project && /path/to/agency-agents/scripts/install.sh --tool zcode
 ```
 
-Agents install to `~/.zcode/agents/<slug>.md` (user scope) — the directory
-ZCode reads subagents from. Use `--division` / `--agent` to install a subset,
-or set `ZCODE_AGENTS_DIR` to override the destination.
+Агенты устанавливаются в `~/.zcode/agents/<slug>.md` (пользовательский уровень) — именно из этого каталога ZCode загружает субагентов. Для установки только части агентов можно использовать флаги `--division` или `--agent`. Место назначения можно переопределить переменной окружения `ZCODE_AGENTS_DIR`.

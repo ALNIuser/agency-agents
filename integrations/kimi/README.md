@@ -1,38 +1,36 @@
-# Kimi Code CLI Integration
+# Интеграция с Kimi Code CLI
 
-Converts all Agency agents into Kimi Code CLI agent specifications. Each agent
-becomes a directory containing `agent.yaml` (agent spec) and `system.md` (system
-prompt).
+Преобразует всех агентов The Agency в спецификации Kimi Code CLI. Для каждого агента создаётся каталог, содержащий `agent.yaml` (спецификация агента) и `system.md` (системный промпт).
 
-## Installation
+## Установка
 
-### Prerequisites
+### Предварительные требования
 
-- [Kimi Code CLI](https://github.com/MoonshotAI/kimi-cli) installed
+- Установленный [Kimi Code CLI](https://github.com/MoonshotAI/kimi-cli)
 
-### Install
+### Установка агентов
 
 ```bash
-# Generate integration files (required on fresh clone)
+# Сгенерировать файлы интеграции (требуется при первом клонировании)
 ./scripts/convert.sh --tool kimi
 
-# Install agents
+# Установить агентов
 ./scripts/install.sh --tool kimi
 ```
 
-This copies agents to `~/.config/kimi/agents/`.
+Агенты копируются в `~/.config/kimi/agents/`.
 
-## Usage
+## Использование
 
-### Activate an Agent
+### Активация агента
 
-Use the `--agent-file` flag to load a specific agent:
+Для загрузки конкретного агента используйте флаг `--agent-file`:
 
 ```bash
 kimi --agent-file ~/.config/kimi/agents/frontend-developer/agent.yaml
 ```
 
-### In a Project
+### В проекте
 
 ```bash
 cd /your/project
@@ -41,67 +39,67 @@ kimi --agent-file ~/.config/kimi/agents/frontend-developer/agent.yaml \
      "Review this React component for performance issues"
 ```
 
-### List Installed Agents
+### Список установленных агентов
 
 ```bash
 ls ~/.config/kimi/agents/
 ```
 
-## Agent Structure
+## Структура агента
 
-Each agent directory contains:
+Каждый каталог агента содержит:
 
 ```
 ~/.config/kimi/agents/frontend-developer/
-├── agent.yaml    # Agent specification (tools, subagents)
-└── system.md     # System prompt with personality and instructions
+├── agent.yaml    # Спецификация агента (инструменты, субагенты)
+└── system.md     # Системный промпт с личностью и инструкциями
 ```
 
-### agent.yaml format
+### Формат agent.yaml
 
 ```yaml
 version: 1
 agent:
   name: frontend-developer
-  extend: default  # Inherits from Kimi's built-in default agent
+  extend: default  # Наследует встроенного агента Kimi по умолчанию
   system_prompt_path: ./system.md
   tools:
     - "kimi_cli.tools.shell:Shell"
     - "kimi_cli.tools.file:ReadFile"
-    # ... all default tools
+    # ... все инструменты по умолчанию
 ```
 
-## Regenerate
+## Повторная генерация
 
-After modifying source agents:
+После изменения исходных агентов:
 
 ```bash
 ./scripts/convert.sh --tool kimi
 ./scripts/install.sh --tool kimi
 ```
 
-## Troubleshooting
+## Устранение неполадок
 
-### Agent file not found
+### Файл агента не найден
 
-Ensure you've run `convert.sh` before `install.sh`:
+Убедитесь, что сначала выполнен `convert.sh`, а затем `install.sh`:
 
 ```bash
 ./scripts/convert.sh --tool kimi
 ```
 
-### Kimi CLI not detected
+### Kimi CLI не обнаружен
 
-Make sure `kimi` is in your PATH:
+Убедитесь, что `kimi` доступен в PATH:
 
 ```bash
 which kimi
 kimi --version
 ```
 
-### Invalid YAML
+### Ошибка в YAML
 
-Validate the generated files:
+Проверьте корректность сгенерированных файлов:
 
 ```bash
 python3 -c "import yaml; yaml.safe_load(open('integrations/kimi/frontend-developer/agent.yaml'))"

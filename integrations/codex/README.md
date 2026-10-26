@@ -1,77 +1,73 @@
-# Codex Integration
+# Интеграция с Codex
 
-Converts all Agency agents into Codex custom agent TOML files. Each source
-agent becomes one standalone `.toml` file containing the minimal Codex-required
-fields: `name`, `description`, and `developer_instructions`.
+Преобразует всех агентов The Agency в файлы пользовательских агентов Codex в формате TOML. Для каждого исходного агента создаётся отдельный файл `.toml`, содержащий только минимально необходимые для Codex поля: `name`, `description` и `developer_instructions`.
 
-## Installation
+## Установка
 
-### Prerequisites
+### Предварительные требования
 
-- [Codex](https://developers.openai.com/codex/overview) installed
+- Установленный [Codex](https://developers.openai.com/codex/overview)
 
-### Convert And Install
+### Конвертация и установка
 
 ```bash
-# Generate integration files (required on fresh clone)
+# Сгенерировать файлы интеграции (требуется при первом клонировании)
 ./scripts/convert.sh --tool codex
 
-# Install agents
+# Установить агентов
 ./scripts/install.sh --tool codex
 ```
 
-This copies generated agent files to `~/.codex/agents/`.
+Сгенерированные файлы агентов копируются в `~/.codex/agents/`.
 
-## Generated Format
+## Формат сгенерированных файлов
 
-Each generated file lives in:
+Каждый сгенерированный файл находится по пути:
 
 ```text
 integrations/codex/agents/<slug>.toml
 ```
 
-The mapping is intentionally minimal:
+Сопоставление полей намеренно минимально:
 
-- `name` is copied from the source frontmatter unchanged
-- `description` is copied from the source frontmatter unchanged
-- `developer_instructions` contains the full Markdown body unchanged
+- `name` копируется из frontmatter исходного файла без изменений
+- `description` копируется из frontmatter исходного файла без изменений
+- `developer_instructions` содержит полное содержимое Markdown-тела исходного файла без изменений
 
-Source-only metadata such as `color`, `emoji`, `vibe`, and other unsupported
-frontmatter fields are omitted.
+Метаданные, используемые только в исходных файлах (такие как `color`, `emoji`, `vibe` и другие неподдерживаемые в Codex поля frontmatter), опускаются.
 
-## Usage
+## Использование
 
-After installation, reference the custom agent by name in Codex:
+После установки можно ссылаться на пользовательского агента по его имени в Codex:
 
 ```text
 Use the Frontend Developer agent to review this component.
 ```
 
-Codex uses the `name` field inside the TOML file as the source of truth, so the
-generated filename slug is only for filesystem safety.
+Codex использует поле `name` в TOML-файле как источник истины, поэтому slug в имени сгенерированного файла нужен только для обеспечения корректности имён в файловой системе.
 
-## Regenerate
+## Повторная генерация
 
-After modifying source agents:
+После изменения исходных файлов агентов:
 
 ```bash
 ./scripts/convert.sh --tool codex
 ./scripts/install.sh --tool codex
 ```
 
-## Troubleshooting
+## Устранение неполадок
 
-### Codex integration not found
+### Файлы интеграции с Codex не найдены
 
-Generate the Codex artifacts before installing:
+Сначала сгенерируйте артефакты для Codex, затем установите их:
 
 ```bash
 ./scripts/convert.sh --tool codex
 ```
 
-### Codex not detected
+### Codex не обнаружен
 
-Make sure `codex` is in your PATH, or that `~/.codex/` already exists:
+Убедитесь, что `codex` доступен в PATH, или что каталог `~/.codex/` уже существует:
 
 ```bash
 which codex

@@ -1,52 +1,44 @@
-# Aider Integration
+# Интеграция с Aider
 
-`CONVENTIONS.md` is the roster index: every agent's name, what it is for, its
-division, and the path to its full instructions.
+Файл `CONVENTIONS.md` — это индексный список агентов: имя каждого агента, его назначение, подразделение и путь к полным инструкциям.
 
-## Why an index and not the agents
+## Зачем нужен индекс, а не сами агенты
 
-Aider keeps a conventions file in context for the whole session — that is the
-point of the file. The 279 agent bodies together are about 3.8 million
-characters, roughly a million tokens, so a conventions file holding all of them
-does not fit in any model and costs a fortune in the attempt.
+Aider хранит файл conventions в контексте всей сессии — именно для этого он и предназначен. Полные тексты всех 279 агентов вместе составляют около 3,8 млн символов (~1 млн токенов), поэтому файл со всеми инструкциями не поместится ни в одну модель и был бы крайне дорогим.
 
-The index is about 97,000 characters (~24k tokens). Load it read-only so aider
-marks it cacheable, and pull in a single agent's full instructions when you
-actually need them.
+Индекс занимает около 97 000 символов (~24 тыс. токенов). Его следует загружать в режиме только для чтения — Aider пометит его как пригодный для кэширования. Полные инструкции отдельного агента загружайте в сессию только тогда, когда они действительно нужны.
 
-## Install
+## Установка
 
 ```bash
-# Run from your project root
+# Запустите из корня вашего проекта
 cd /your/project
 /path/to/agency-agents/scripts/install.sh --tool aider
 ```
 
-## Use an agent
+## Использование агента
 
-Naming the agent is usually enough — its description is already in context:
+Как правило, достаточно просто указать имя агента — его описание уже есть в контексте:
 
 ```
 Use the Frontend Developer agent to refactor this component.
 ```
 
-When you want the agent's full instructions, read its file into the session.
-The index gives you the path:
+Если нужны полные инструкции агента, загрузите его файл в сессию. Путь можно найти в индексе:
 
 ```
 /read-only /path/to/agency-agents/engineering/engineering-frontend-developer.md
 ```
 
-## Manual usage
+## Ручное использование
 
 ```bash
 aider --read CONVENTIONS.md
 ```
 
-`--read` marks the file read-only and lets aider cache it when prompt caching
-is enabled, so the index is not re-sent on every turn.
+Флаг `--read` помечает файл как доступный только для чтения и позволяет Aider использовать кэширование промптов, если оно включено — индекс не будет повторно отправляться при каждом запросе.
 
-## Regenerate
+## Повторная генерация
 
 ```bash
 ./scripts/convert.sh --tool aider

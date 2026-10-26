@@ -1,43 +1,40 @@
-# Antigravity Integration
+# Интеграция с Antigravity
 
-Installs the full Agency roster as Antigravity skills. Each agent is prefixed
-with `agency-` to avoid conflicts with existing skills.
+Устанавливает весь список агентов The Agency в виде навыков Antigravity. Каждый агент получает префикс `agency-` во избежание конфликтов с уже существующими навыками.
 
-## Install
+## Установка
 
 ```bash
 ./scripts/install.sh --tool antigravity
 ```
 
-This copies files from `integrations/antigravity/` to
-`~/.gemini/config/skills/` (global). For project-scoped skills, Antigravity
-also reads `<project>/.agents/skills/`.
+Файлы копируются из `integrations/antigravity/` в `~/.gemini/config/skills/` (глобально). Для навыков, доступных только в проекте, Antigravity также считывает `<project>/.agents/skills/`.
 
-## Activate a Skill
+## Активация навыка
 
-In Antigravity, activate an agent by its slug:
+В Antigravity активируйте агента по его slug:
 
 ```
 Use the agency-frontend-developer skill to review this component.
 ```
 
-Available slugs follow the pattern `agency-<agent-name>`, e.g.:
+Доступные slug'и соответствуют шаблону `agency-<имя-агента>`, например:
 - `agency-frontend-developer`
 - `agency-backend-architect`
 - `agency-reality-checker`
 - `agency-growth-hacker`
 
-## Regenerate
+## Повторная генерация
 
-After modifying agents, regenerate the skill files:
+После изменения исходных агентов повторно сгенерируйте файлы навыков:
 
 ```bash
 ./scripts/convert.sh --tool antigravity
 ```
 
-## File Format
+## Формат файла
 
-Each skill is a `SKILL.md` file with Antigravity-compatible frontmatter:
+Каждый навык — это файл `SKILL.md` с frontmatter, совместимым с Antigravity:
 
 ```yaml
 ---
