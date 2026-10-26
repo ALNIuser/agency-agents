@@ -198,13 +198,13 @@ WHEN task fails QA:
     → Send specific QA feedback to developer
     → Developer fixes ONLY the identified issues
     → Re-submit for QA
-    
+
   IF attempt == 2:
     → Send accumulated QA feedback
     → Consider: Is the developer agent the right fit?
     → Developer fixes with additional context
     → Re-submit for QA
-    
+
   IF attempt == 3:
     → ESCALATE
     → Options:

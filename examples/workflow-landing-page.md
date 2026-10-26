@@ -100,7 +100,7 @@ Evaluate:
 Give me specific changes, not general advice.
 ```
 
-## Timeline
+## Хронология
 
 | Time | Activity | Agent |
 |------|----------|-------|

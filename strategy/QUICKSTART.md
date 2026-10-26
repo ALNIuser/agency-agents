@@ -1,18 +1,18 @@
-# ⚡ NEXUS Quick-Start Guide
+# ⚡ Краткое руководство по NEXUS
 
-> **Get from zero to orchestrated multi-agent pipeline in 5 minutes.**
+> **От нуля до оркестрированного многоагентного конвейера за 5 минут.**
 
 ---
 
-## What is NEXUS?
+## Что такое NEXUS?
 
-**NEXUS** (Network of EXperts, Unified in Strategy) turns The Agency's AI specialists into a coordinated pipeline. Instead of activating agents one at a time and hoping they work together, NEXUS defines exactly who does what, when, and how quality is verified at every step.
+**NEXUS** (Network of EXperts, Unified in Strategy) превращает специалистов The Agency в скоординированный конвейер. Вместо поэтапного подключения агентов NEXUS чётко определяет, кто, что и когда делает, а также как проверяется качество на каждом этапе.
 
-## Choose Your Mode
+## Выберите режим
 
-| I want to... | Use | Agents | Time |
+| Я хочу... | Режим | Агенты | Время |
 |-------------|-----|--------|------|
-| Build a complete product from scratch | **NEXUS-Full** | All | 12-24 weeks |
+| Создать продукт с нуля | **NEXUS-Full** | All | 12-24 weeks |
 | Build a feature or MVP | **NEXUS-Sprint** | 15-25 | 2-6 weeks |
 | Do a specific task (bug fix, campaign, audit) | **NEXUS-Micro** | 5-10 | 1-5 days |
 

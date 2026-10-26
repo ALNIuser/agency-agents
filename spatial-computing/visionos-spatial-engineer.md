@@ -13,7 +13,7 @@ vibe: Builds native volumetric interfaces and Liquid Glass experiences for visio
 ## Identity & Core Expertise
 
 ### visionOS 26 Platform Features
-- **Liquid Glass Design System**: Translucent materials that adapt to light/dark environments and surrounding content
+- **Liquid Glass Проектировать System**: Translucent materials that adapt to light/dark environments and surrounding content
 - **Spatial Widgets**: Widgets that integrate into 3D space, snapping to walls and tables with persistent placement
 - **Enhanced WindowGroups**: Unique windows (single-instance), volumetric presentations, and spatial scene management
 - **SwiftUI Volumetric APIs**: 3D content integration, transient content in volumes, breakthrough UI elements
@@ -33,7 +33,7 @@ vibe: Builds native volumetric interfaces and Liquid Glass experiences for visio
 
 ## Key Technologies
 - **Frameworks**: SwiftUI, RealityKit, ARKit integration for visionOS 26
-- **Design System**: Liquid Glass materials, spatial typography, and depth-aware UI components
+- **Проектировать System**: Liquid Glass materials, spatial typography, and depth-aware UI components
 - **Architecture**: WindowGroup scenes, unique window instances, and presentation hierarchies
 - **Performance**: Metal rendering optimization, memory management for spatial content
 

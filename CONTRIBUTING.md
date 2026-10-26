@@ -1,32 +1,32 @@
-# 🤝 Contributing to The Agency
+# 🤝 Участие в проекте The Agency
 
-First off, thank you for considering contributing to The Agency! It's people like you who make this collection of AI agents better for everyone.
+Спасибо, что рассматриваете возможность участия в проекте The Agency! Именно благодаря таким людям, как вы, эта коллекция ИИ-агентов становится лучше.
 
-## 📋 Table of Contents
+## 📋 Содержание
 
-- [Code of Conduct](#code-of-conduct)
-- [How Can I Contribute?](#how-can-i-contribute)
-- [Agent Design Guidelines](#agent-design-guidelines)
-- [Pull Request Process](#pull-request-process)
-- [Style Guide](#style-guide)
-- [Community](#community)
-
----
-
-## 📜 Code of Conduct
-
-This project and everyone participating in it is governed by our Code of Conduct. By participating, you are expected to uphold this code:
-
-- **Be Respectful**: Treat everyone with respect. Healthy debate is encouraged, but personal attacks are not tolerated.
-- **Be Inclusive**: Welcome and support people of all backgrounds and identities.
-- **Be Collaborative**: What we create together is better than what we create alone.
-- **Be Professional**: Keep discussions focused on improving the agents and the community.
+- [Кодекс поведения](#кодекс-поведения)
+- [Как я могу помочь?](#как-я-могу-помочь)
+- [Рекомендации по созданию агентов](#рекомендации-по-созданию-агентов)
+- [Процесс Pull Request](#процесс-pull-request)
+- [Руководство по стилю](#руководство-по-стилю)
+- [Сообщество](#сообщество)
 
 ---
 
-## 🎯 How Can I Contribute?
+## 📜 Кодекс поведения
 
-### 1. Create a New Agent
+Участие в проекте регулируется этим Кодексом поведения. Участвуя, вы соглашаетесь его соблюдать:
+
+- **Уважение**: Относитесь ко всем с уважением. Конструктивные дискуссии приветствуются, личные нападки — нет.
+- **Инклюзивность**: Приветствуем и поддерживаем людей разных бэкграундов и идентичностей.
+- **Сотрудничество**: То, что создано вместе, лучше, чем созданное по отдельности.
+- **Профессионализм**: Обсуждения должны быть направлены на улучшение агентов и сообщества.
+
+---
+
+## 🎯 Как я могу помочь?
+
+### 1. Создать нового агента
 
 Have an idea for a specialized agent? Great! Here's how to add one:
 
@@ -52,7 +52,7 @@ Have an idea for a specialized agent? Great! Here's how to add one:
 4. **Test your agent** in real scenarios
 5. **Submit a Pull Request** with your agent
 
-### 2. Improve Existing Agents
+### 2. Улучшить существующих агентов
 
 Found a way to make an agent better? Contributions welcome:
 
@@ -62,7 +62,7 @@ Found a way to make an agent better? Contributions welcome:
 - Add success metrics and benchmarks
 - Fix typos, improve clarity, enhance documentation
 
-### 3. Share Success Stories
+### 3. Поделиться опытом
 
 Used these agents successfully? Share your story:
 
@@ -71,7 +71,7 @@ Used these agents successfully? Share your story:
 - Write a blog post and link it
 - Create a video tutorial
 
-### 4. Report Issues
+### 4. Сообщить о проблеме
 
 Found a problem? Let us know:
 

@@ -28,7 +28,7 @@ You're building a SaaS MVP — a team retrospective tool for remote teams. You h
 Activate Sprint Prioritizer.
 
 Project: RetroBoard — a real-time team retrospective tool for remote teams.
-Timeline: 4 weeks to MVP launch.
+Хронология: 4 weeks to MVP launch.
 Core features: user auth, create retro boards, add cards, vote, action items.
 Constraints: solo developer, React + Node.js stack, deploy to Vercel + Railway.
 

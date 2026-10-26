@@ -1,12 +1,12 @@
-# 🌐 NEXUS — Network of EXperts, Unified in Strategy
+# 🌐 NEXUS — Сеть экспертов, объединённых стратегией
 
-## The Agency's Complete Operational Playbook for Multi-Agent Orchestration
+## Полное операционное руководство The Agency по оркестрации многоагентных систем
 
-> **NEXUS** transforms The Agency's independent AI specialists into a synchronized intelligence network. This is not a prompt collection — it is a **deployment doctrine** that turns The Agency into a force multiplier for any project, product, or organization.
+> **NEXUS** превращает независимых ИИ-специалистов The Agency в синхронизированную сеть. Это не набор промтов — это **доктрина развертывания**, превращающая агентство в мультипликатор сил для любого проекта, продукта или организации.
 
 ---
 
-## Table of Contents
+## Содержание
 
 1. [Strategic Foundation](#1-strategic-foundation)
 2. [The NEXUS Operating Model](#2-the-nexus-operating-model)

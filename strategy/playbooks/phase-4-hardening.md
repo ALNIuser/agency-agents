@@ -17,7 +17,7 @@ The final quality gauntlet. The Reality Checker defaults to "NEEDS WORK" — you
 ## Critical Mindset
 
 > **The Reality Checker's default verdict is NEEDS WORK.**
-> 
+>
 > This is not pessimism — it's realism. Production readiness requires:
 > - Complete user journeys working end-to-end
 > - Cross-device consistency (desktop, tablet, mobile)
